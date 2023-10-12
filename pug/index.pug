@@ -1,0 +1,102 @@
+extend ../components/template.pug
+block content
+    .content 
+        .content__section-slide
+            section(data-bs-ride="carousel").content__slides.carousel.slide.carousel-fade#carouselExampleFade
+              .carousel-inner
+                    .carousel-item.active
+                        picture.carousel-item__img
+                            source(media="(min-width:1110px)" srcset="/images/Desktop/desktopSlides_2-1920x466.jpg")
+                            source(media="(min-width:768px)" srcset="/images/Tablet/tabletSlides_2-1110x466.jpg")
+                            img(src="/images/Mobile/mobileSlide_2-722x1048.jpg" alt="Imagen de inicio").d-block.w-100
+                        .slideContent 
+                            p Fundacion
+                            p Pinita 
+                            p Mas que sonrisas 
+                            .slideContent__link 
+                                a(href="Fundacion.html" target="blank") Nuestra Fundación 
+                                img(src="/images/icono/flecha_blanca.svg", alt="logo de flecha")
+                    .carousel-item
+                        picture.carousel-item__img
+                            source(media="(min-width:1110px)" srcset="/images/Desktop/desktopSlides_1-1920x466.jpg")
+                            source(media="(min-width:768px)" srcset="/images/Tablet/tabletSlides_1-1110x466.jpg")
+                            img(src="/images/Mobile/mobileSlide_1-722x1048.jpg" alt="niña de verde").d-block.w-100
+                        .slideContent
+                            .slideContent__box
+                                img(src="/images/icono/logotipo.svg" alt="logo pinita")
+                                h2 Aceptamos #[strong donaciones economicas o en especie]
+                                a(href="#" target="blank") Donar
+                    button(type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev").carousel-control-prev.hidden
+                        span(aria-hidden="true").carousel-control-prev-icon.hidden
+                        span.visually-hidden.hidden Previous
+                    button(type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next").carousel-control-next.hidden
+                        span(aria-hidden="true").carousel-control-next-icon.hidden
+                        span.visually-hidden.hidden Next
+        .content__section-nuestrafundacion
+            .content__section-nuestrafundacion-txt 
+                p "Cuando ayudamos a nuestro prójimo de corazón, es como #[strong sanamos errores, tristezas, y encontramos un nuevo camino]"
+                a(href="Fundacion.html" target="blank") Conoce nuestra fundación 
+                    img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+            .content__section-nuestrafundacion-motivacion 
+                .content__section-nuestrafundacion-motivacion-text
+                     p A veces no es sólo brillar, también es #[strong ayudar abrillar a alguien más]
+            .content__section-nuestrafundacion-ayuda 
+                 p "ayudar a otro es un privilegio, agradece la oportunidad de hacerlo"
+            .content__section-nuestrafundacion-imgcafe 
+                .content__section-nuestrafundacion-imgcafe-color
+                    p "Tus acciones demuestran #[strong de qué está echo tu corazón]"
+                .content__section-nuestrafundacion-imgcafe-cuadro 
+                    p La gratitud lo cambia #[strong TODO]
+                .content__section-nuestrafundacion-texto
+            .content__section-nuestrafundacion-programas 
+                p #[strong programas sociales]
+                p Apoyamos a los niños, jóvenes  y adultos que se encuentran en mala situación 
+            .content__section-nuestrafundacion-circulo
+                .content__section-nuestrafundacion-circulo-item#itemProg1
+
+                    .content__section-nuestrafundacion-circulo-item-txt
+                        p Comedor
+                        a(href="#" target="blank") ver mas
+                            img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+
+                .content__section-nuestrafundacion-circulo-item#itemProg2
+                    .content__section-nuestrafundacion-circulo-item-txt
+                        p Ayuda Psicologica
+                        a(href="#" target="blank") ver mas
+                            img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+                .content__section-nuestrafundacion-circulo-item#itemProg3
+                    .content__section-nuestrafundacion-circulo-item-txt
+                        p Albergue
+                        a(href="#" target="blank") ver mas
+                            img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+                .content__section-nuestrafundacion-circulo-item#itemProg4
+                    .content__section-nuestrafundacion-circulo-item-txt
+                        p Meriendas a hospitales
+                        a(href="#" target="blank") ver mas
+                            img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+                .content__section-nuestrafundacion-circulo-item#itemProg5
+                    .content__section-nuestrafundacion-circulo-item-txt
+                        p Visitas a asilos anexos y clinicas
+                        a(href="#" target="blank") ver mas
+                            img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+            .content__section-nuestrafundacion-blog 
+                h1 Nuestro Blog   
+                
+            .content__section-nuestrafundacion-blogimg
+                p Titulo del post
+                img(src="/images/Mobile/itemsCircle_1-600x600.jpg", alt="54165465416")
+                .content__section-nuestrafundacion-blogimg-box
+                    p #[strong Autor] Dayana ornelas
+                    p #[strong Fecha] 10/10/2023
+                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem natus impedit placeat, voluptas quia voluptates maiores eum aperiam nesciunt beatae quis explicabo labore incidunt atque enim non cumque neque et. 
+                        a(href="#" target="blank") ver mas
+                            img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+            .content__section-nuestrafundacion-blogimg
+                p Titulo del post
+                img(src="/images/Mobile/itemsCircle_1-600x600.jpg", alt="54165465416")
+                .content__section-nuestrafundacion-blogimg-box
+                    p #[strong Autor] Dayana ornelas
+                    p #[strong Fecha] 11/10/2023
+                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem natus impedit placeat, voluptas quia voluptates maiores eum aperiam nesciunt beatae quis explicabo labore incidunt atque enim non cumque neque et. 
+                        a(href="#" target="blank") ver mas
+                            img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")

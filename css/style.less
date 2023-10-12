@@ -1,0 +1,610 @@
+@import "variables.less";
+@import "globals.less";
+.carousel-item{
+    position: relative !important;
+    display: inline-block !important;
+   
+}
+/*Aqui empieza el primer carrusel */
+.slideContent{
+	padding: 0;
+	position:absolute;
+    top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+	color: @color-claro;
+	width: 100vw;
+    background-color: rgba(33, 37, 41, 0.555);
+    padding-left: 20px ;
+
+		/* parrafos de fundacio , pinita & mas que sonrisas*/
+        /*Fundacion*/
+		p:nth-child(1){
+			font-family: @font-family;
+			color: @color-claro;
+            border-bottom: 2px solid @color-primario;
+			font-size: 2.4rem;
+			font-weight: 300;
+			box-sizing: border-box;
+            text-align: left;
+            margin-bottom: 0;
+            
+
+		}
+        /*parrafo de pinita*/
+		p:nth-child(2){
+			font-family: @font-family;
+			font-size: 6rem;
+            margin-bottom: 0;
+            font-weight: 600;
+            
+		}
+        /*parrafo de mas que sonrisas*/
+        p:nth-child(3){
+            color: @color-primario;
+            font-size: 2rem;
+            font-weight: 400;
+            margin: 0;
+            
+            
+        }
+            /*link de nuestra fundacion*/
+        &__link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+            background-color: @color-primario;
+            border-radius: 20px;
+            padding: 5px 10px;
+         /* etiqueta a */
+         a{
+            text-decoration: none;
+            color: white;
+            padding:▸ 9px 25px;
+            font-size: 16px;
+            font-weight:100;
+            }
+            /* imagen de flecha*/
+            img{
+                width: 25px;
+            }
+
+    
+    }   
+    &__box{
+         h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2.4rem;
+            margin-bottom: 0;
+            font-weight: 600;
+            color: @color-claro;
+            align-items: flex-start;
+            text-align: left;
+            font-weight: 350;
+
+             
+	    }
+        img{
+            width: 160px;
+        } 
+
+        a{
+            /*justify-content: center;*/
+           /* align-items: center;*/
+            gap: 5px;
+            margin: 5% 0;
+            background-color: @color-primario;
+            border-radius: 13px;
+            padding: 3px 10px;  
+
+            text-decoration: none;
+            color: white;
+            font-size:  3rem;
+            font-weight:300;
+        }
+    }
+}
+
+/*----------------seccion de la pagina principal--------------*/
+.content__section-nuestrafundacion{
+    &-txt{
+        p{
+        
+        color: @color-obscuro;
+        font-size: 2rem;
+        font-family: @font-family3;
+        align-items:center;
+        margin: 12px;
+        line-height: 1.4;   /*espacio entre lineas*/
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            margin: 15px;
+            font-family: @font-family2;
+            font-size: 2rem;
+            font-weight: 750;
+    
+            img{
+                width: 25px;
+                
+            }
+        }
+    }
+      
+    /*imagen de pinita en hostital*/
+    &-motivacion{
+        margin-top: 10%;
+        position: relative;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap; 
+        background-image: url(../images/Mobile/mobileItemDonacion480x520.jpg);
+        background-repeat: no-repeat;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;        width:  0auto;
+        height: 400px;
+        &-text{
+            position: absolute;
+            top: 30%;
+            right: 0px;
+            height: 250px;
+            align-items: center;
+            width: 45%;
+            border-radius: 25px 0 0 0;
+            padding: 5px;
+            background-color: rgba(33, 37, 41, 0.555);
+            p{
+                color: @color-claro;
+                font-family: @fuente-base1;
+                font-size: 2.5rem;
+                text-align: end;
+            }
+        }
+    }
+   /*-----parrafo de dos bordes-----------------*/ 
+    &-ayuda{
+        margin-top: 15%;
+        p {
+            border-top: 2px solid @color-primario;
+            border-bottom: 2px solid @color-primario;
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin: 25px;
+            text-align:center;
+            font-weight: 450;
+            
+        }
+    }
+    /*-----fondo de payaso con la ancianita en color cafe------*/
+    &-imgcafe{
+        margin-top: 20%;
+        position: relative;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap; 
+        background-image: url(../images/Mobile/mobileItemDonacion2480x520.jpg);
+        width:  auto;
+        height: 400px;
+        background-size: cover;
+        &-color{
+            align-items: center;
+            width: 100%;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;            background-color: rgba(238, 152, 24, 42%);
+            p{
+                color: @color-claro;
+                font-size: 3rem;
+                text-transform: uppercase;
+                text-align:left;
+                font-family: @font-family3;
+            }
+
+        }
+        &-cuadro{
+box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;            position: absolute; /* Establece una posición absoluta para el elemento con color */
+            top: 320px;
+            left: 50px;
+            width: 70%; /* Ocupa todo el ancho del contenedor */
+            height: 40%; /* Ocupa todo el alto del contenedor */
+            background-color: #B0710D; /* Color azul con 50% de opacidad */
+            border-radius: 30px 0 30px 0;
+            p{
+                position: absolute;
+                top: 20%;
+                color: @color-claro;
+                font-family: @fuente-base1;
+                font-size: 2.8rem;
+                text-align: center;
+
+            }
+            
+        }
+        
+
+    }
+
+    &-programas{
+        margin-top: 30%;
+        p:nth-child(1){
+        color: @color-obscuro;
+        border-bottom: 1px solid @color-primario ;
+        margin-bottom: 0;
+        font-size: 4rem;
+        line-height: normal;
+        text-align:center;
+        text-transform: uppercase;
+        text-shadow: 0px 1px 2.5px #8F9090;
+        }
+    
+
+        p:nth-child(2){
+            color: black;
+            font-size: 2rem;
+            margin: 6px 6px;
+            padding: 5px;
+            align-items: center;
+            text-align:center;
+            font-family: @font-family;
+            font-weight: 400;
+        }
+    }
+
+    /*estilos de los circulos de los programas*/
+    &-circulo{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        #itemProg1{
+            background-image: url(../images/Mobile/itemsCircle_1-600x600.jpg);
+        }
+        #itemProg2{
+            background-image: url(../images/Mobile/itemsCircle_2-600x600.jpg);
+        }
+        #itemProg3{
+            background-image: url(../images/Mobile/itemsCircle_3-600x600.jpg);
+        }
+        #itemProg4{
+            background-image: url(../images/Mobile/itemsCircle_4-600x600.jpg);
+        }
+        #itemProg5{
+            background-image: url(../images/Mobile/itemsCircle_5-600x600.jpg);
+        }
+        &-item{
+            
+            background-position: center;
+            background-size: cover;
+            clip-path: circle(50% at 50% 50%);
+            width: 147px;
+            height: 147px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: @color-claro;
+            font-weight: 500;
+            margin: 5px;
+            &-txt{
+                background-color: rgba(33, 37, 41, 0.555);
+                width: 145px;
+                height: auto;
+                a{
+                    
+                    text-decoration: none;
+                    float: right;
+                    color: @color-primario;
+                    font-size: 1.8rem;  
+                    font-weight: 200;
+                    img{
+                        justify-content: center;
+                        align-items: center;
+                        width: 25px;
+                    }
+                }
+                p{
+                    font-size: 1.8rem;
+                    text-align: center;
+                    font-family: @fuente-base1;
+                }
+                
+            }
+            
+
+        }
+       
+        img{
+            margin: 7px;
+            width: 150px; /* Tamaño de la caja circular */
+            height: auto; /* Tamaño de la caja circular */  
+        }
+    }
+    /*estilos para los blog*/
+    &-blog{
+       
+        h1{
+        color: @color-obscuro;
+        padding-bottom: 0;
+        font-size: 4.5rem;
+        line-height: normal;
+        text-align:center;
+        text-transform:capitalize;
+        text-shadow: 0px 1px 2.5px #8F9090
+        } 
+           
+    }
+    &-blogimg{
+        margin: 10px;
+        line-height: 1.5;
+        margin-top: 20px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;        
+                /* este es el parrafo de "Titulo de post"*/
+                p:nth-child(1){
+                   
+                font-size: 2.5rem;
+                color: @color-obscuro;
+                text-align: center;
+                margin: 0px;
+                } 
+            img{
+                width: 354px; /* Ancho de la imagen */
+                height: 190px; /* Altura automática para mantener la proporción original */
+                border-radius: 10px 10px 10px 10px;
+            }
+            
+        &-box{
+            /*---Autor----*/
+            p:nth-child(1){
+            
+            font-size: 1.3rem;
+            color: black;
+            margin: 0px;
+            line-height: 2em;
+            }
+            /*---fecha---*/
+            p:nth-child(2){
+            
+            font-size: 1.3rem;
+            color: black;
+            border-bottom: 1px solid @color-primario;
+
+            }
+            /*---texto----*/
+            p:nth-child(3){
+            margin: 0px;
+            padding: 5%;
+            font-size: 2rem;
+            text-align:left;
+            color: black;
+            font-family: @fuente-base1
+            
+            
+            }
+            a {
+                display: flex;
+                line-height: 25px;
+                text-decoration: none;
+                text-align: end;
+                justify-content:end;
+                color: black;
+                font-size: 1.8rem;  
+                    
+
+                img{
+                    display:flex;
+                    width: 25px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    
+    
+    
+}
+
+/*------footer--------*/
+footer{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    color: @color-claro;
+    .footer__header{
+        background-color: @color-variacion;
+        width: 100%;
+        &__box{
+            display: grid;
+            color: @color-claro;
+            grid-template-rows: auto auto;
+            grid-template-columns: auto auto;
+            grid-template-areas: "phone cellphone"
+                                "email email";
+            font-size: @font-family;
+            line-height: 2rem;
+            font-family: @font-family;
+            padding: 20px 10px;
+            margin: 0 auto;
+            &__phone{
+                grid-area: phone;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            &__phone p,
+            &__cellphone p,
+            &__email p{
+                margin-bottom: 0;
+                font-size: 1.6rem;
+                font-family: 'inter';
+                font-weight: 100;
+            }
+
+            &__cellphone{
+                grid-area: cellphone;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            &__email{
+                grid-area: email;
+                display: flex;
+                justify-content: flex-start;
+                padding: 10px 0px;
+                align-items: center;
+            }
+        }
+        
+        &-icon{
+            
+        }
+        &-icon img{
+            width: 30px;
+            height: auto;
+            margin: 0 10px;
+        }
+
+    }
+    .footer__box{
+        &__body{
+            display: flex;
+            flex-direction: column;
+            background-color: @color-obscuro;
+            padding: 30px;
+            align-items: center;
+            &-logo{
+                width: 200px;
+            }
+            &-links{
+                margin: 30px auto;
+                text-align: center;
+
+                h2{
+                    font-weight: @fuente-base1;
+                    font-size: 2rem;
+                }
+                li {
+                    margin: 10px 0;
+                    list-style: none;
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        color: @color-claro;
+                        font-weight: @font-family;
+                        font-size: 1.8rem;
+                        }
+                    }
+                }
+                &-address{
+                    text-align: center;
+                    img{
+                        width: 80px;
+                        margin: 20px auto;
+                    }
+                    p{
+                        font-size: 16px;
+                        width: 170px;
+                        text-align: center;
+                        margin: 5px auto;
+                        font-weight: 400;
+                    }
+					/*---------------AQUI--------------*/
+                }
+                &-schedule{
+                    margin: 40px auto;
+                    text-align: center;
+                    h2{
+                        font-weight: 400;
+                        font-size: 2rem;
+                    }
+                    &-hours{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr 1fr 1fr;
+                        grid-template-areas: "semana horario-semana"
+                                             "sabado horario-sabado"
+                                             "domingo horario-domingo";
+                        font-size: 1.5rem;
+                        p:nth-child(1){
+                            grid-area: semana;
+                            margin: 0 10px;
+                            text-align: right;
+                        }
+                        p:nth-child(2){
+                            grid-area: horario-semana;
+                            margin: 0 10px;
+                            text-align: left;
+                        }
+                        p:nth-child(3){
+                            grid-area: sabado;
+                            margin: 0 10px;
+                            text-align: right;
+                        }
+                        p:nth-child(4){
+                            grid-area: horario-sabado;
+                            margin: 0 10px;
+                            text-align: left;
+                        }
+                        p:nth-child(5){
+                            grid-area: domingo;
+                            margin: 0 10px;
+                            text-align: right;
+                        }
+                        p:nth-child(6){
+                            grid-area: horario-domingo;
+                            margin: 0 10px;
+                            text-align: left;
+                        }
+                    }
+                }
+                &-socialmedia{
+                    text-align: center;
+                    #logoFooter{
+                        display: none;
+                    }
+                    &__icon{
+                        img{
+                            width: 60px; 
+                        }
+                    }
+                  
+                }
+            
+        }
+    }   
+    .footer__foot{
+        background-color: @color-primario;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: @color-claro;
+        height: 81px;
+        margin: 0;
+        p{
+            margin: 0;
+        }
+        .divisor{
+            display: none;
+        }
+        .rights{
+            
+            p{
+                font-size: 1.4rem;
+                font-weight: 400;
+                text-align: center;
+                margin: 0;
+                border-bottom: 1px solid @color-claro;
+            }
+        }
+        .link__jmc{
+            a{
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: @color-claro;
+            }
+        }
+    }
+
+}
