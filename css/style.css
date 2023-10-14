@@ -444,6 +444,60 @@ body {
   width: 25px;
   height: auto;
 }
+/**--------------FUNDACION-----------------------*/
+.content__section-Fundacion {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../images/Mobile/mobileSlide_somos-722x1048.jpg);
+  background-size: cover;
+  width: auto;
+  height: 500px;
+}
+.content__section-Fundacion-text {
+  line-height: 1.2;
+  position: absolute;
+  width: 360vw;
+  height: 500px;
+  background-color: rgba(33, 37, 41, 0.555);
+}
+.content__section-Fundacion-text p:nth-child(1) {
+  font-family: 'Inter', sans-serf;
+  margin: 10px;
+  position: relative;
+  top: 160px;
+  font-size: 6.5rem;
+  color: #FFFFFF;
+}
+.content__section-Fundacion-text p:nth-child(2) {
+  font-family: 'Inter', sans-serf;
+  position: relative;
+  top: 160px;
+  margin: 10px;
+  font-size: 6.5rem;
+  color: #FFFFFF;
+}
+.content__section-Fundacion-text p:nth-child(3) {
+  font-family: 'Inter', sans-serf;
+  position: relative;
+  top: 160px;
+  margin: 10px;
+  font-size: 6.5rem;
+  color: #FFFFFF;
+  border-bottom: 2px solid #F39E16;
+}
+.content__section-Fundacion-circulo {
+  background-color: #F39E16;
+  /* Cambia el color del círculo según tus preferencias */
+  border-radius: 25px 25px 25px 25px;
+  /* Esto hace que el elemento sea un círculo */
+  position: absolute;
+  /* Posiciona el círculo dentro del contenedor */
+}
+.content__section-Fundacion-quienessomos {
+  color: #474643;
+}
 /*------footer--------*/
 footer {
   margin-top: 55px;
