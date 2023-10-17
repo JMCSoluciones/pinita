@@ -487,20 +487,184 @@ body {
   color: #FFFFFF;
   border-bottom: 2px solid #F39E16;
 }
-.content__section-Fundacion-circulo {
-  background-color: #F39E16;
-  /* Cambia el color del círculo según tus preferencias */
-  border-radius: 25px 25px 25px 25px;
-  /* Esto hace que el elemento sea un círculo */
-  position: absolute;
-  /* Posiciona el círculo dentro del contenedor */
-}
 .content__section-Fundacion-quienessomos {
+  position: relative;
+}
+.content__section-Fundacion-quienessomos h2 {
+  margin-top: 10%;
   color: #474643;
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Inter', sans-serf;
+}
+.content__section-Fundacion-quienessomos p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #474643;
+  margin: 15px;
+  margin-right: 130px;
+  font-size: 2rem;
+  font-family: 'Inter', sans-serf;
+  text-align: left;
+}
+.content__section-Fundacion-quienessomos img {
+  position: absolute;
+  right: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: auto;
+}
+.content__section-Fundacion-circulo {
+  position: absolute;
+  right: -20px;
+  border-radius: 5px solid #9747FF;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url(/images/Mobile/fundacion.jpg);
+  top: 97%;
+  background-size: cover;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*------Contenido de Mision-----*/
+.content__section-Fundacion-Mision {
+  top: 70px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../images/Mobile/mobileItemMision480x520.jpg);
+  background-size: cover;
+  width: auto;
+  height: 480px;
+}
+.content__section-Fundacion-Mision-text {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 360vw;
+  height: 480px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.content__section-Fundacion-Mision-text h1 {
+  margin: 20px;
+  color: #FFFFFF;
+  font-size: 5rem;
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 2px solid #F39E16;
+}
+.content__section-Fundacion-Mision-text p {
+  margin-right: 100px;
+  font-family: 'Inter', sans-serf;
+  margin: 20px;
+  color: #FFFFFF;
+  font-size: 3rem;
+  text-align: left;
+}
+.content__section-Fundacion-Valores p {
+  top: 100px;
+  position: relative;
+  color: #474643;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 500;
+  border-bottom: 2px solid #F39E16;
+}
+.content__section-Fundacion-lista {
+  margin-top: 15%;
+}
+.content__section-Fundacion-lista-listaval-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 55px;
+  position: relative;
+}
+.content__section-Fundacion-lista-listaval-text p {
+  text-decoration: none;
+  margin: 20px;
+  line-height: 25px;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 80px;
+  color: #474643;
+  margin-left: 80px;
+  letter-spacing: 0.1sem;
+}
+.content__section-Fundacion-lista-listaval-text img {
+  position: absolute;
+  top: 97px;
+  width: 35px;
+  margin-left: 42px;
+}
+.content__section-Fundacion-vision {
+  margin-top: 20%;
+  top: 70px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../images/Mobile/mobileItemVision480x520.jpg);
+  background-size: cover;
+  width: auto;
+  height: 480px;
+}
+.content__section-Fundacion-vision-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  line-height: 1.2;
+  width: 360vw;
+  height: 480px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.content__section-Fundacion-vision-text h2 {
+  margin: 20px;
+  color: #FFFFFF;
+  font-size: 5rem;
+  font-family: 'Raleway', sans-serif;
+  text-align: right;
+  border-bottom: 2px solid #F39E16;
+}
+.content__section-Fundacion-vision-text p {
+  font-family: 'Inter', sans-serf;
+  margin: 20px;
+  color: #FFFFFF;
+  font-size: 3rem;
+  text-align: right;
 }
 /*------footer--------*/
 footer {
-  margin-top: 55px;
+  margin-top: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
