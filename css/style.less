@@ -456,10 +456,10 @@
     color: @color-obscuro;
     }
 }
-/*------------Login-----------------*/
-.login{
+/*------------Contenido Login-----------------*/
+.content.login.content{
     
-    &-inicio{
+    &__inicio{
         
         p{
             color: black;
@@ -467,32 +467,41 @@
             text-align: center;
             border-bottom: 2px solid #3DAEED;
         }
+
+        &__form{
+        margin: 25px;
+        padding: 20px;
+        box-shadow: rgba(253, 183, 0,) 0px 0px 0px 1px;
+        .mb-3{ 
+            margin: 15spx;
+        .form-label{
+            font-family: @font-family3;
+            color: black;
+            font-size: 2rem;
+        }
+             margin-top: 10%;
+        input{
+            font-family: @font-family3;
+            color: black;
+            font-size: 1.8rem; 
+        }
+    
+    }
+    .boton{
+        display: flex;
+        justify-content: center;
+        
+        button{
+            font-size: 1.9rem;
+            font-weight: 500;
+        }
+    
+    }
+    }   
     } 
-       
-}
-.mb-3{ 
-    
-    margin: 10px;
-    .form-label{
-        color: black;
-        font-size: 2rem;
-    }
-    margin-top: 10%;
-    input{
-        color: black;
-        font-size: 2rem; 
-    }
     
 }
-.boton{
-    display: flex;
-    justify-content: center;
-    button{
-        font-size: 1.9rem;
-        font-weight: 500;
-    }
-    
-}
+
 
 
    
