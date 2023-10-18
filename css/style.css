@@ -616,6 +616,44 @@ body {
   font-weight: 500;
   color: #FFFFFF;
 }
+/*----------Contacto--------------------------*/
+.contentContacto__titulo p {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 2px solid #3DAEED;
+}
+.contentContacto__titulo__formu {
+  margin: 25px;
+  padding: 10px;
+  -webkit-box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+          box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+}
+.contentContacto__titulo__formu .mb-3 {
+  margin-top: 10%;
+}
+.contentContacto__titulo__formu .mb-3 .form-label {
+  font-family: 'Inter', sans-serf;
+  color: black;
+  font-size: 2rem;
+}
+.contentContacto__titulo__formu .mb-3 input {
+  font-family: 'Inter', sans-serf;
+  color: black;
+  font-size: 1.8rem;
+}
+.contentContacto__titulo__formu .boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contentContacto__titulo__formu .boton button {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
 /*------footer--------*/
 footer {
   margin-top: 55px;
