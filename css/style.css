@@ -303,13 +303,13 @@ body {
           align-items: center;
 }
 .content__section-nuestrafundacion-circulo #itemProg1 {
-  background-image: url(../images/Mobile/itemsCircle_1-600x600.jpg);
-}
-.content__section-nuestrafundacion-circulo #itemProg2 {
   background-image: url(../images/Mobile/itemsCircle_2-600x600.jpg);
 }
-.content__section-nuestrafundacion-circulo #itemProg3 {
+.content__section-nuestrafundacion-circulo #itemProg2 {
   background-image: url(../images/Mobile/itemsCircle_3-600x600.jpg);
+}
+.content__section-nuestrafundacion-circulo #itemProg3 {
+  background-image: url(../images/Mobile/itemsCircle_1-600x600.jpg);
 }
 .content__section-nuestrafundacion-circulo #itemProg4 {
   background-image: url(../images/Mobile/itemsCircle_4-600x600.jpg);
@@ -322,8 +322,8 @@ body {
   background-size: cover;
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
-  width: 147px;
-  height: 147px;
+  width: 155px;
+  height: 155px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,16 +358,26 @@ body {
           align-items: center;
   width: 25px;
 }
+.content__section-nuestrafundacion-circulo-item-txt .btn.btn-primary {
+  width: auto;
+  height: 20px;
+}
 .content__section-nuestrafundacion-circulo-item-txt p {
   font-size: 1.8rem;
   text-align: center;
   font-family: 32px;
 }
-.content__section-nuestrafundacion-circulo img {
-  margin: 7px;
-  width: 150px;
+.content__section-nuestrafundacion-circulo .btn.btn-vermas {
+  color: #fcaf00;
+  font-size: 1.8rem;
+  margin-top: 10px;
+  float: right;
+}
+.content__section-nuestrafundacion-circulo .btn.btn-vermas img {
+  margin: 5px;
+  width: auto;
   /* Tamaño de la caja circular */
-  height: auto;
+  height: 25px;
   /* Tamaño de la caja circular */
 }
 .content__section-nuestrafundacion-blog h1 {

@@ -50,34 +50,44 @@ block content
                 .content__section-nuestrafundacion-texto
             .content__section-nuestrafundacion-programas 
                 p #[strong programas sociales]
-                p Apoyamos a los niños, jóvenes  y adultos que se encuentran en mala situación 
+                p Apoyamos a los niños, jóvenes y adultos que se encuentran en mala situación 
             .content__section-nuestrafundacion-circulo
                 .content__section-nuestrafundacion-circulo-item#itemProg1
-
                     .content__section-nuestrafundacion-circulo-item-txt
                         p Comedor
-                        a(href="#" target="blank") ver mas
+                        button.btn.btn-vermas(type='button') Ver mas                            
                             img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
-
+                        #modalComedor.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalComedorLabel')
+                            .modal-dialog(role='document')
+                                .modal-content
+                                    .modal-header
+                                        h1#modalComedorLabel.modal-title.fs-5 Entrega de #[br] #[strong alimentos a clientes]
+                                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                            span(aria-hidden='true') &times;
+                                    .modal-body
+                                        p En pocas cosas se puede invertir mejor nuestro tiempo y esfuerzo que repartiendo sonrisas acompañadas de un alimento caliente a quien más lo necesita.
+                                            img(src="/images/Mobile/itemsCircle_2-600x600.jpg", alt="comdor viejito" srcset ="")
+                                    .modal-footer
+                                        button.btn.btn-secondary(type='button' class="btn-close" data-bs-dismiss='modal' aria-label="Close") Close
                 .content__section-nuestrafundacion-circulo-item#itemProg2
                     .content__section-nuestrafundacion-circulo-item-txt
                         p Ayuda Psicologica
-                        a(href="#" target="blank") ver mas
+                        button.btn.btn-vermas(type='button') Ver mas                            
                             img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
                 .content__section-nuestrafundacion-circulo-item#itemProg3
                     .content__section-nuestrafundacion-circulo-item-txt
                         p Albergue
-                        a(href="#" target="blank") ver mas
+                        button.btn.btn-vermas(type='button') Ver mas                            
                             img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
                 .content__section-nuestrafundacion-circulo-item#itemProg4
                     .content__section-nuestrafundacion-circulo-item-txt
                         p Meriendas a hospitales
-                        a(href="#" target="blank") ver mas
+                        button.btn.btn-vermas(type='button') Ver mas                            
                             img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
                 .content__section-nuestrafundacion-circulo-item#itemProg5
                     .content__section-nuestrafundacion-circulo-item-txt
                         p Visitas a asilos anexos y clinicas
-                        a(href="#" target="blank") ver mas
+                        button.btn.btn-vermas(type='button') Ver mas                            
                             img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
             .content__section-nuestrafundacion-blog 
                 h1 Nuestro Blog   

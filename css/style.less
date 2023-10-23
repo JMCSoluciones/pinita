@@ -260,13 +260,13 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;            position: absolute;
         justify-content: center;
         align-items: center;
         #itemProg1{
-            background-image: url(../images/Mobile/itemsCircle_1-600x600.jpg);
-        }
-        #itemProg2{
             background-image: url(../images/Mobile/itemsCircle_2-600x600.jpg);
         }
-        #itemProg3{
+        #itemProg2{
             background-image: url(../images/Mobile/itemsCircle_3-600x600.jpg);
+        }
+        #itemProg3{
+            background-image: url(../images/Mobile/itemsCircle_1-600x600.jpg);
         }
         #itemProg4{
             background-image: url(../images/Mobile/itemsCircle_4-600x600.jpg);
@@ -279,8 +279,8 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;            position: absolute;
             background-position: center;
             background-size: cover;
             clip-path: circle(50% at 50% 50%);
-            width: 147px;
-            height: 147px;
+            width: 155px;
+            height: 155px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -304,23 +304,41 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;            position: absolute;
                         width: 25px;
                     }
                 }
+                .btn.btn-primary{
+                    width: auto;
+                    height: 20px;
+                }
                 p{
                     font-size: 1.8rem;
                     text-align: center;
                     font-family: @fuente-base1;
+                    
                 }
+                
                 
             }
             
 
         }
        
-        img{
-            margin: 7px;
-            width: 150px; /* Tamaño de la caja circular */
-            height: auto; /* Tamaño de la caja circular */  
+        
+
+        .btn.btn-vermas{
+            color: @color-primario; 
+            font-size: 1.8rem;
+            margin-top: 10px;
+            float: right;
+            
+            img{
+                margin: 5px;
+                width: auto; /* Tamaño de la caja circular */
+                height: 25px; /* Tamaño de la caja circular */  
+            }
         }
+       
+
     }
+    
     /*estilos para los blog*/
     &-blog{
        
