@@ -322,8 +322,8 @@ body {
   background-size: cover;
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
-  width: 155px;
-  height: 155px;
+  width: 165px;
+  height: 165px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,25 +360,40 @@ body {
 }
 .content__section-nuestrafundacion-circulo-item-txt .btn.btn-primary {
   width: auto;
-  height: 20px;
+  height: 10px;
+  color: #fcaf00;
+  font-size: 1.9rem;
+  background: transparent;
+  border: none;
+  float: right;
+  padding: 10%;
+  margin: 5%;
+}
+.content__section-nuestrafundacion-circulo-item-txt .btn.btn-primary img {
+  margin-top: 3%;
+  float: right;
+  width: 25px;
 }
 .content__section-nuestrafundacion-circulo-item-txt p {
-  font-size: 1.8rem;
+  margin: 5%;
+  color: #FFFFFF;
+  font-size: 2rem;
   text-align: center;
   font-family: 32px;
 }
-.content__section-nuestrafundacion-circulo .btn.btn-vermas {
-  color: #fcaf00;
-  font-size: 1.8rem;
-  margin-top: 10px;
-  float: right;
+.content__section-nuestrafundacion-circulo .modal-title {
+  color: #474643;
+  font-size: 1.8rems;
 }
-.content__section-nuestrafundacion-circulo .btn.btn-vermas img {
-  margin: 5px;
-  width: auto;
-  /* Tamaño de la caja circular */
-  height: 25px;
-  /* Tamaño de la caja circular */
+.content__section-nuestrafundacion-circulo .modal-title strong {
+  font-size: 3rem;
+  line-height: 20px;
+}
+.content__section-nuestrafundacion-circulo .modal-body p {
+  font-size: 1.8rem;
+}
+.content__section-nuestrafundacion-circulo .modal-body .modal-body-img {
+  background-image: url(//images/Mobile/itemsCircle_2-600x600.jpg);
 }
 .content__section-nuestrafundacion-blog h1 {
   color: #474643;
@@ -416,6 +431,7 @@ body {
   /*---texto----*/
 }
 .content__section-nuestrafundacion-blogimg-box p:nth-child(1) {
+  text-align: left;
   font-size: 1.3rem;
   color: black;
   margin: 0px;

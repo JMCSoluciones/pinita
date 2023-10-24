@@ -61,12 +61,13 @@ block content
                     .modal-dialog(role='document')
                         .modal-content
                             .modal-header
-                                h1#exampleModalLabel.modal-title.fs-5 Entrega de #[br] #[strong alimentos a clientes]
+                                h1#exampleModalLabel.modal-title.fs-5 Entrega de #[br] #[strong alimentos a #[br] clientes]
                                 button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                                     span(aria-hidden='true') &times;
                             .modal-body
                                 p En pocas cosas se puede invertir mejor nuestro tiempo y esfuerzo que repartiendo sonrisas acompañadas de un alimento caliente a quien más lo necesita.
-                                    img(src="/images/Mobile/itemsCircle_2-600x600.jpg", alt="comdor viejito" srcset ="")
+                                    .modal-body-img
+                                    //img(src="/images/Mobile/itemsCircle_2-600x600.jpg", alt="comdor viejito" class="imagen-redonda" srcset ="")
                             .modal-footer
                 .content__section-nuestrafundacion-circulo-item#itemProg2
                     .content__section-nuestrafundacion-circulo-item-txt
