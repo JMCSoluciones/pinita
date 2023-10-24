@@ -301,6 +301,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*-------estilo en modales------*/
 }
 .content__section-nuestrafundacion-circulo #itemProg1 {
   background-image: url(../images/Mobile/itemsCircle_2-600x600.jpg);
@@ -381,19 +382,50 @@ body {
   text-align: center;
   font-family: 32px;
 }
-.content__section-nuestrafundacion-circulo .modal-title {
+.content__section-nuestrafundacion-circulo .modal-content {
+  overflow: hidden;
+}
+.content__section-nuestrafundacion-circulo .modal-content .modal-title {
   color: #474643;
-  font-size: 1.8rems;
+  font-size: 2.5rem !important;
 }
-.content__section-nuestrafundacion-circulo .modal-title strong {
-  font-size: 3rem;
-  line-height: 20px;
+.content__section-nuestrafundacion-circulo .modal-content .modal-title strong {
+  font-size: 4rem;
+  line-height: 25px;
+  border-bottom: 2px solid #FCAF00;
 }
-.content__section-nuestrafundacion-circulo .modal-body p {
-  font-size: 1.8rem;
+.content__section-nuestrafundacion-circulo .modal-content .modal-body p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #474643;
+  margin: 5px;
+  margin-right: 145px;
+  font-size: 2rem;
+  font-family: 'Inter', sans-serf;
+  text-align: left;
+  position: relative;
 }
-.content__section-nuestrafundacion-circulo .modal-body .modal-body-img {
-  background-image: url(//images/Mobile/itemsCircle_2-600x600.jpg);
+.content__section-nuestrafundacion-circulo .modal-content .modal-body img {
+  position: absolute;
+  padding-top: 0.75px;
+  left: 180px;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.content__section-nuestrafundacion-circulo .modal-content .modal-footer .btn.btn-link {
+  position: relative;
+  right: 60px;
+  text-decoration: none;
+  color: #fcaf00;
+  font-size: 2rem;
 }
 .content__section-nuestrafundacion-blog h1 {
   color: #474643;

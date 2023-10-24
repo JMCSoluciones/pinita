@@ -204,7 +204,8 @@
 
         }
         &-cuadro{
-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;            position: absolute; /* Establece una posición absoluta para el elemento con color */
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;            
+            position: absolute; /* Establece una posición absoluta para el elemento con color */
             top: 320px;
             left: 50px;
             width: 70%; /* Ocupa todo el ancho del contenedor */
@@ -334,28 +335,57 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;            position: absolute;
             
 
         }
-        
-        .modal-title{
-            color: @color-obscuro;
-            font-size: 1.8rems;
-            strong{
-             font-size: 3rem;  
-             line-height: 20px; 
-            }
-        }
-        .modal-body{
-            p{
-                font-size: 1.8rem;
+       /*-------estilo en modales------*/ 
+       .modal-content{
+            overflow: hidden;
+            .modal-title{
+                color: @color-obscuro;
+                font-size: 2.5rem !important;
+                strong{
+                font-size: 4rem;  
+                line-height: 25px;
+                
+                border-bottom: 2px solid #FCAF00;
+                
+                }
+                
+            } 
+            
+            .modal-body{
+                
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    color: @color-obscuro;
+                    margin: 5px;
+                    margin-right: 145px;
+                    font-size: 2rem;
+                    font-family: @font-family3;
+                    text-align: left;
+                    position: relative;
+                }
+                img{
+                    position: absolute;
+                    padding-top: 0.75px;
+                    left: 180px;
+                    width: 200px;
+                    height: auto;
+                    border-radius: 50%;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                }
                 
             }
-            .modal-body-img{
-                background-image: url(//images/Mobile/itemsCircle_2-600x600.jpg);
-
+            .modal-footer{
+                .btn.btn-link{
+                    position: relative;
+                    right: 60px;
+                    text-decoration: none;
+                    color: @color-primario;
+                    font-size: 2rem;
+                }
             }
+        
         }
-       
-       
-
     }
     
     /*estilos para los blog*/

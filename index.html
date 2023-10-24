@@ -105,92 +105,176 @@
                   <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                  <p>En pocas cosas se puede invertir mejor nuestro tiempo y esfuerzo que repartiendo sonrisas acompañadas de un alimento caliente a quien más lo necesita.
-                    <div class="modal-body-img"></div>
-                    <!--img(src="/images/Mobile/itemsCircle_2-600x600.jpg", alt="comdor viejito" class="imagen-redonda" srcset ="")-->
-                  </p>
+                  <p>En pocas cosas se puede invertir mejor nuestro tiempo y esfuerzo que repartiendo sonrisas acompañadas de un alimento caliente a quien más lo necesita.<img class="imagen-redonda" src="/images/Mobile/itemsCircle_2-600x600.jpg" alt="comdor viejito" srcset=""/></p>
                 </div>
-                <div class="modal-footer"></div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Registrate">Registrate como voluntaro                                    <img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade modal fade" id="Registrate" tabindex="-1" aria-labelledby="RegistrateLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="RegistrateLabel">Entrega de <br/> <strong>alimentos a <br/> clientes</strong></h1>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="contentRegistro">
+                    <div class="contentRegistro__box">
+                      <div class="contentRegistro__box__usuario"> 
+                        <p>Usuario</p>
+                        <p>Ingrese el nombre de usuario de 8 caracteres con el que podrá inisiar sesión. El nombre de usuario no debe contener solo números.
+                          <div class="contentRegistro__box__usuario__formulario">
+                            <div class="mb-3">
+                              <input class="form-control" id="formGroupExampleInput" type="text" placeholder="Ingrese Usuario"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Nombre Completo:</label>
+                              <input class="form-control" id="formGroupExampleInput2" type="text" placeholder="Ingrese su nombre completo"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Fecha Nacimiento:</label>
+                              <input class="form-control" id="formGroupExampleInput3" type="text" placeholder=""/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Nacionalidad:</label>
+                              <input class="form-control" id="formGroupExampleInput4" type="text" placeholder="Ingrese su nacionalidad"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Domicilio:</label>
+                              <input class="form-control" id="formGroupExampleInput5" type="text" placeholder="Ingrese su domicilio"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Telefono:</label>
+                              <input class="form-control" id="formGroupExampleInput6" type="text" placeholder="Ingrese su telefono a 10 digitos sin espacio"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Tipo de usuario:</label>
+                              <select class="form-select" aria-label="Tipo de Usuario:">
+                                <option selected="">Tipo de Usuario</option>
+                                <option value="1">Beneficiario</option>
+                                <option value="2">Benefactor </option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Observaciones:</label>
+                              <textarea class="form-control" id="floatingTextarea7" placeholder="Las observaciones deben contener maximo 180 caracteres" style="height: 100px"></textarea>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Password:</label>
+                              <label class="form-label2" for="formGroupExampleInput2">La contraseña debe contener al menos una mayuscula, una minuscula, un caracter especial y un numero. Debe tener entre 8 y 12 caracteres.</label>
+                              <input class="form-control" id="formGroupExampleInput8" type="text" placeholder="Password asta 12 caracteres"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Confirmar Password:</label>
+                              <input class="form-control" id="formGroupExampleInput9" type="text" placeholder="Confirmar Password"/>
+                            </div>
+                            <div class="boton"> 
+                              <button class="btn btn-warning" type="button">Iniciar Sesión</button>
+                            </div>
+                            <div class="boton-azul">
+                              <button class="btn btn-warning" type="button">Cancelar</button>
+                            </div>
+                          </div>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                  <button class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
+                </div>
               </div>
             </div>
           </div>
           <div class="content__section-nuestrafundacion-circulo-item" id="itemProg2">
             <div class="content__section-nuestrafundacion-circulo-item-txt">
               <p>Ayuda Psicologica</p>
-              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver mas                            <img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Pscologia">Ver mas                            <img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
             </div>
           </div>
-          <div class="modal fade modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modalComedorLabel">
+          <div class="modal fade modal fade" id="Pscologia" tabindex="-1" aria-labelledby="modalComedorLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Entrega de <br/> <strong>alimentos a clientes</strong></h1>
+                  <h1 class="modal-title fs-5" id="PscologiaLabel">Ayuda <br/> <strong>psicológica</strong></h1>
                   <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                  <p>En pocas cosas se puede invertir mejor nuestro tiempo y esfuerzo que repartiendo sonrisas acompañadas de un alimento caliente a quien más lo necesita.<img src="/images/Mobile/itemsCircle_2-600x600.jpg" alt="comdor viejito" srcset=""/></p>
+                  <p>Servicio de atención psicológica gratuita. <br/><br/>“La buena vida es un proceso, no un estado de ser. Se trata de una direccion, no un destino”<img src="/images/Mobile/itemsCircle_3-600x600.jpg" alt="Psicologia" srcset=""/></p>
                 </div>
-                <div class="modal-footer"></div>
+                <div class="modal-footer">
+                  <button class="btn btn-link" type="button">Registrate como voluntario<img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                </div>
               </div>
             </div>
           </div>
           <div class="content__section-nuestrafundacion-circulo-item" id="itemProg3">
             <div class="content__section-nuestrafundacion-circulo-item-txt">
               <p>Albergue</p>
-              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver mas                            <img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#albergue">Ver mas                            <img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
             </div>
           </div>
-          <div class="modal fade modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modalComedorLabel">
+          <div class="modal fade modal fade" id="albergue" tabindex="-1" aria-labelledby="modalComedorLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Entrega de <br/> <strong>alimentos a clientes</strong></h1>
+                  <h1 class="modal-title fs-5" id="albergueLabel"><strong>Albergue</strong></h1>
                   <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                  <p>En pocas cosas se puede invertir mejor nuestro tiempo y esfuerzo que repartiendo sonrisas acompañadas de un alimento caliente a quien más lo necesita.<img src="/images/Mobile/itemsCircle_2-600x600.jpg" alt="comdor viejito" srcset=""/></p>
+                  <p>Servio de albergue c “Ayuda a otros y veras como en realidad estas haciendo un mundo mejor para ti”<img src="/images/Mobile/itemsCircle_1-600x600.jpg" alt="Albergue" srcset=""/></p>
                 </div>
-                <div class="modal-footer"></div>
+                <div class="modal-footer">
+                  <button class="btn btn-link" type="button">Registrate como voluntario<img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                </div>
               </div>
             </div>
           </div>
           <div class="content__section-nuestrafundacion-circulo-item" id="itemProg4">
             <div class="content__section-nuestrafundacion-circulo-item-txt">
               <p>Meriendas a hospitales</p>
-              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver mas                                                        <img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Meriendas">Ver mas                                                        <img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
             </div>
           </div>
-          <div class="modal fade modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modalComedorLabel">
+          <div class="modal fade modal fade" id="Meriendas" tabindex="-1" aria-labelledby="MeriendasLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Entrega de <br/> <strong>alimentos a clientes</strong></h1>
+                  <h1 class="modal-title fs-5" id="MeriendasLabel">Meriendas a <br/> <strong>hospitales</strong></h1>
                   <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                  <p>En pocas cosas se puede invertir mejor nuestro tiempo y esfuerzo que repartiendo sonrisas acompañadas de un alimento caliente a quien más lo necesita.<img src="/images/Mobile/itemsCircle_2-600x600.jpg" alt="comdor viejito" srcset=""/></p>
+                  <p>Servico de desayunos a hospitales<br/> <br/>“Todos necesitan voluntarios como tú”<img src="/images/Mobile/itemsCircle_4-600x600.jpg" alt="Meriendas" srcset=""/></p>
                 </div>
-                <div class="modal-footer"></div>
+                <div class="modal-footer">
+                  <button class="btn btn-link" type="button">Registrate como voluntario<img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                </div>
               </div>
             </div>
           </div>
           <div class="content__section-nuestrafundacion-circulo-item" id="itemProg5">
             <div class="content__section-nuestrafundacion-circulo-item-txt">
               <p>Visitas a asilos anexos y clinicas</p>
-              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver mas                                                        <img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#visitasHospitales">Ver mas                                                        <img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
             </div>
           </div>
-          <div class="modal fade modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modalComedorLabel">
+          <div class="modal fade modal fade" id="visitasHospitales" tabindex="-1" aria-labelledby="visitasHospitalesLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Entrega de <br/> <strong>alimentos a clientes</strong></h1>
+                  <h1 class="modal-title fs-5" id="visitasHospitalesLabel">Visitas a <br/> <strong>asilos</strong> <br/> <strong>anexos</strong> <br/> <strong>y clinicas</strong></h1>
                   <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                  <p>En pocas cosas se puede invertir mejor nuestro tiempo y esfuerzo que repartiendo sonrisas acompañadas de un alimento caliente a quien más lo necesita.<img src="/images/Mobile/itemsCircle_2-600x600.jpg" alt="comdor viejito" srcset=""/></p>
+                  <p>"La sonrisa que te regala un niño o un adulto con todo su corazó, es una de las cosas más hermosas que se pueden experimentar"<img src="/images/Mobile/itemsCircle_5-600x600.jpg" alt="visitas" srcset=""/></p>
                 </div>
-                <div class="modal-footer"></div>
+                <div class="modal-footer">
+                  <button class="btn btn-link" type="button">Registrate como voluntario<img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                </div>
               </div>
             </div>
           </div>
