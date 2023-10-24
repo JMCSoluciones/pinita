@@ -110,6 +110,7 @@
 }
 
 /*----------------seccion de la pagina principal--------------*/
+
 .content__section-nuestrafundacion{
     &-txt{
         p{
@@ -520,17 +521,170 @@
             color:@color-claro ;
             border-bottom: 2px solid #F39E16;
         }
-    
-    }
-    &-circulo{
-        background-color: #F39E16; /* Cambia el color del círculo según tus preferencias */
-        border-radius: 25px 25px 25px 25px; /* Esto hace que el elemento sea un círculo */
-        position: absolute; /* Posiciona el círculo dentro del contenedor */
         
     }
     
-    &-quienessomos{
-    color: @color-obscuro;
+}
+.content__section-Fundacion-quienessomos{
+    position: relative;
+    h2{
+        margin-top: 10%;
+        color: @color-obscuro;
+        text-align: center;
+        font-size: 4rem;
+        font-family: @font-family3;
+    }
+    p{
+        display: flex;
+        flex-direction: column;
+        color: @color-obscuro;
+        margin: 15px;
+        margin-right: 130px;
+        font-size: 2rem;
+        font-family: @font-family3;
+        text-align: left;
+        
+        
+    }
+    img{
+        position: absolute;
+        right: 180px;
+        display:flex;
+        width: 30px;
+        height: auto;
+    }
+   
+}
+.content__section-Fundacion-circulo{
+    position: absolute;
+    display: flex;
+    right: -20px;
+    border-radius: 5px solid #9747FF;
+    flex-wrap: wrap;
+    background-image: url(/images/Mobile/fundacion.jpg);
+    top: 97%;
+    background-size: cover;
+    clip-path: circle(50% at 50% 50%);
+    width: 150px;
+    height: 150px;
+    display: flex;
+}
+/*------Contenido de Mision-----*/
+.content__section-Fundacion-Mision{
+    top: 70px;
+    position: relative;
+    display: flex;
+    background-image: url(../images/Mobile/mobileItemMision480x520.jpg);
+    background-size: cover;
+    width:  auto;
+    height: 480px; 
+    &-text{
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;        line-height: 1.2;
+        display: flex;
+        flex-direction: column;
+        width: 360vw;
+        height: 480px;
+        background-color: rgba(0, 0, 0, 20%);
+        h1{
+            margin: 20px;
+            color: @color-claro;
+            font-size: 5rem;
+            font-family: @font-family;
+            border-bottom: 2px solid #F39E16;
+
+        }
+        p{
+            margin-right: 100px;
+            font-family: @font-family3;
+            margin: 20px;
+            color:@color-claro;
+            font-size: 3rem;
+            text-align: left;
+            
+        }
+    }
+}
+.content__section-Fundacion-Valores{
+    p{
+        top: 100px;
+        position: relative;
+        color: @color-obscuro;
+        font-size: 3.5rem;
+        text-align: center;
+        font-weight: 500;
+        border-bottom: 2px solid #F39E16;
+        
+        
+    }
+}
+.content__section-Fundacion-lista{
+    margin-top: 15%;
+    &-listaval{
+        &-text{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 55px;
+            position: relative;
+            
+          p{
+            
+            text-decoration: none;
+            margin: 20px;
+            line-height: 25px;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 80px;
+            color: @color-obscuro;
+            margin-left: 80px;
+            letter-spacing: 0.1sem;
+        
+            
+          }  
+          img{
+            position: absolute;
+            top: 97px;
+            width: 35px;
+            margin-left: 42px;
+            
+          }
+        }
+
+    }
+}
+.content__section-Fundacion-vision{
+    margin-top: 20%;
+    top: 70px;
+    position: relative;
+    display: flex;
+    background-image: url(../images/Mobile/mobileItemVision480x520.jpg);
+    background-size: cover;
+    width:  auto;
+    height: 480px; 
+    &-text{
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;        line-height: 1.2;
+        width: 360vw;
+        height: 480px;
+        background-color: rgba(0, 0, 0, 20%);
+        h2{
+            margin: 20px;
+            color: @color-claro;
+            font-size: 5rem;
+            font-family: @font-family;
+            text-align:right;
+            border-bottom: 2px solid #F39E16;
+
+        }
+        p{
+            
+            font-family: @font-family3;
+            margin: 20px;
+            color:@color-claro;
+            font-size: 3rem;
+            text-align: right;
+            
+        }
     }
 }
 /*------------Contenido Login-----------------*/
@@ -719,9 +873,10 @@
 
 
 
+
 /*------footer--------*/
 footer{
-    margin-top: 55px;
+    margin-top: 25%;
     display: flex;
     flex-direction: column;
     color: @color-claro;
