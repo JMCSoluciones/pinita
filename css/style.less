@@ -471,6 +471,202 @@
     
     
 }
+/**--------------FUNDACION-----------------------*/
+.content__section-Fundacion{
+    position: relative;
+    display: flex;
+    background-image: url(../images/Mobile/mobileSlide_somos-722x1048.jpg);
+    background-size: cover;
+    width:  auto;
+    height: 500px;
+    &-text{
+        line-height: 1.2;
+        position: absolute;
+        width: 360vw;
+        height: 500px;
+        background-color: rgba(33, 37, 41, 0.555);
+        p:nth-child(1){
+            font-family: @font-family3;
+            margin: 10px;
+            position: relative;
+            top: 160px;
+            font-size: 6.5rem;
+            color:@color-claro ;
+        }
+        p:nth-child(2){
+            font-family: @font-family3;
+            position: relative;
+            top: 160px;
+            margin: 10px;
+            font-size: 6.5rem;
+            color:@color-claro ;
+        }
+        p:nth-child(3){
+            font-family: @font-family3;
+            position: relative;
+            top: 160px;
+            margin: 10px;
+            font-size: 6.5rem;
+            color:@color-claro ;
+            border-bottom: 2px solid #F39E16;
+        }
+    
+    }
+    &-circulo{
+        background-color: #F39E16; /* Cambia el color del círculo según tus preferencias */
+        border-radius: 25px 25px 25px 25px; /* Esto hace que el elemento sea un círculo */
+        position: absolute; /* Posiciona el círculo dentro del contenedor */
+        
+    }
+    
+    &-quienessomos{
+    color: @color-obscuro;
+    }
+}
+/*------------Contenido Login-----------------*/
+.content.login.content{
+    
+    &__inicio{
+        
+        p{
+            color: black;
+            font-size: 3rem;
+            text-align: center;
+            border-bottom: 2px solid #3DAEED;
+        }
+
+        &__form{
+        margin: 25px;
+        padding: 20px;
+        box-shadow: rgba(253, 183, 0,) 0px 0px 0px 1px;
+        .mb-3{ 
+            margin: 15spx;
+        .form-label{
+            font-family: @font-family3;
+            color: black;
+            font-size: 2rem;
+        }
+             margin-top: 10%;
+        input{
+            font-family: @font-family3;
+            color: black;
+            font-size: 1.8rem; 
+        }
+    
+    }
+    .boton{
+        display: flex;
+        justify-content: center;
+        
+        button{
+            font-size: 1.9rem;
+            font-weight: 500;
+        }
+    
+    }
+    }   
+    } 
+    
+}
+/*----------REGISTRO--------------------------*/
+.contentRegistro{
+    &__box{
+        &__usuario{
+            p:nth-child(1){
+                color: black;
+                font-size: 3rem;
+                text-align: center;
+                border-bottom: 2px solid #3DAEED;
+                margin-bottom: 10%;
+            }
+
+            p:nth-child(2){
+                margin: 15px;
+                padding: 5px;
+                font-size: 1.5rem;
+                color: @color-obscuro;
+            }
+                &__formulario{
+                    margin: 15px;
+                    padding: 10px;
+                    box-shadow: rgba(253, 183, 0,) 0px 0px 0px 1px;
+                    .mb-3{
+                        margin: 15px;
+                        .form-label{
+                            color: black;
+                            font-family: @font-family3;
+                            font-size: 2.2rem;
+                        }
+                        .form-label2{
+                            color: black;
+                            font-family: @font-family3;
+                            font-size: 1.5rem;
+                            text-align: justify;
+                            margin-bottom: 5%;
+                        }
+                        .form-select{
+                            font-family: @font-family3;
+                        }
+                        select{
+                            font-size: 1.5rem;
+                            color: #212529;
+
+                        }
+                        .form-control{
+                            font-size: 1.5rem;
+                        }
+                        input{
+                            
+                            font-family: @font-family3;
+                            font-size: 1.5rem;
+                            
+                        }
+                        
+                       
+                    }
+                    
+                    .boton{
+                        margin-bottom: 15px;
+                        display: flex;
+                        justify-content: center;
+                        button{
+                            font-family: @font-family3;
+                            font-size: 1.9rem;
+                            font-weight: 500;
+                            
+                        }
+                    }
+                    .boton-azul{
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 15px;
+                        
+                        button{
+                            font-family: @font-family3;
+                            background: #2CA7EC;
+                            font-size: 1.9rem;
+                            font-weight: 500;
+                            color: @color-claro;
+                            
+
+                        }
+                    }
+                }
+        }  
+       
+    }
+    
+
+
+}
+
+
+
+   
+
+
+
+
 
 /*------footer--------*/
 footer{

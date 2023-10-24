@@ -502,6 +502,178 @@ body {
   width: 25px;
   height: auto;
 }
+/**--------------FUNDACION-----------------------*/
+.content__section-Fundacion {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../images/Mobile/mobileSlide_somos-722x1048.jpg);
+  background-size: cover;
+  width: auto;
+  height: 500px;
+}
+.content__section-Fundacion-text {
+  line-height: 1.2;
+  position: absolute;
+  width: 360vw;
+  height: 500px;
+  background-color: rgba(33, 37, 41, 0.555);
+}
+.content__section-Fundacion-text p:nth-child(1) {
+  font-family: 'Inter', sans-serf;
+  margin: 10px;
+  position: relative;
+  top: 160px;
+  font-size: 6.5rem;
+  color: #FFFFFF;
+}
+.content__section-Fundacion-text p:nth-child(2) {
+  font-family: 'Inter', sans-serf;
+  position: relative;
+  top: 160px;
+  margin: 10px;
+  font-size: 6.5rem;
+  color: #FFFFFF;
+}
+.content__section-Fundacion-text p:nth-child(3) {
+  font-family: 'Inter', sans-serf;
+  position: relative;
+  top: 160px;
+  margin: 10px;
+  font-size: 6.5rem;
+  color: #FFFFFF;
+  border-bottom: 2px solid #F39E16;
+}
+.content__section-Fundacion-circulo {
+  background-color: #F39E16;
+  /* Cambia el color del círculo según tus preferencias */
+  border-radius: 25px 25px 25px 25px;
+  /* Esto hace que el elemento sea un círculo */
+  position: absolute;
+  /* Posiciona el círculo dentro del contenedor */
+}
+.content__section-Fundacion-quienessomos {
+  color: #474643;
+}
+/*------------Contenido Login-----------------*/
+.content.login.content__inicio p {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 2px solid #3DAEED;
+}
+.content.login.content__inicio__form {
+  margin: 25px;
+  padding: 20px;
+  -webkit-box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+          box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+}
+.content.login.content__inicio__form .mb-3 {
+  margin: 15spx;
+  margin-top: 10%;
+}
+.content.login.content__inicio__form .mb-3 .form-label {
+  font-family: 'Inter', sans-serf;
+  color: black;
+  font-size: 2rem;
+}
+.content.login.content__inicio__form .mb-3 input {
+  font-family: 'Inter', sans-serf;
+  color: black;
+  font-size: 1.8rem;
+}
+.content.login.content__inicio__form .boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.content.login.content__inicio__form .boton button {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+/*----------REGISTRO--------------------------*/
+.contentRegistro__box__usuario p:nth-child(1) {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 2px solid #3DAEED;
+  margin-bottom: 10%;
+}
+.contentRegistro__box__usuario p:nth-child(2) {
+  margin: 15px;
+  padding: 5px;
+  font-size: 1.5rem;
+  color: #474643;
+}
+.contentRegistro__box__usuario__formulario {
+  margin: 15px;
+  padding: 10px;
+  -webkit-box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+          box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+}
+.contentRegistro__box__usuario__formulario .mb-3 {
+  margin: 15px;
+}
+.contentRegistro__box__usuario__formulario .mb-3 .form-label {
+  color: black;
+  font-family: 'Inter', sans-serf;
+  font-size: 2.2rem;
+}
+.contentRegistro__box__usuario__formulario .mb-3 .form-label2 {
+  color: black;
+  font-family: 'Inter', sans-serf;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-bottom: 5%;
+}
+.contentRegistro__box__usuario__formulario .mb-3 .form-select {
+  font-family: 'Inter', sans-serf;
+}
+.contentRegistro__box__usuario__formulario .mb-3 select {
+  font-size: 1.5rem;
+  color: #212529;
+}
+.contentRegistro__box__usuario__formulario .mb-3 .form-control {
+  font-size: 1.5rem;
+}
+.contentRegistro__box__usuario__formulario .mb-3 input {
+  font-family: 'Inter', sans-serf;
+  font-size: 1.5rem;
+}
+.contentRegistro__box__usuario__formulario .boton {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contentRegistro__box__usuario__formulario .boton button {
+  font-family: 'Inter', sans-serf;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+.contentRegistro__box__usuario__formulario .boton-azul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+.contentRegistro__box__usuario__formulario .boton-azul button {
+  font-family: 'Inter', sans-serf;
+  background: #2CA7EC;
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
 /*------footer--------*/
 footer {
   margin-top: 55px;
