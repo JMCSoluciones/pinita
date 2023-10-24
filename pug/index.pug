@@ -74,14 +74,14 @@ block content
                     .modal-dialog(role='document')
                         .modal-content
                             .modal-header
-                                h1#RegistrateLabel.modal-title.fs-5 Entrega de #[br] #[strong alimentos a #[br] clientes]
+                                h1#RegistrateLabel.modal-title.fs-5 #[strong Registrate]
                                 button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                                     span(aria-hidden='true') &times;
                             .modal-body
                                 .contentRegistro
                                     .contentRegistro__box
                                         .contentRegistro__box__usuario 
-                                            p Usuario
+                                            
                                             p Ingrese el nombre de usuario de 8 caracteres con el que podrá inisiar sesión. El nombre de usuario no debe contener solo números.
                                                 .contentRegistro__box__usuario__formulario
                                                     .mb-3
@@ -117,13 +117,19 @@ block content
                                                     .mb-3
                                                         label.form-label(for='formGroupExampleInput2') Confirmar Password:
                                                         input#formGroupExampleInput9.form-control(type='text' placeholder='Confirmar Password')
-                                                    .boton 
-                                                        button.btn.btn-warning(type='button') Iniciar Sesión
-                                                    .boton-azul
-                                                        button.btn.btn-warning(type='button') Cancelar
                             .modal-footer
                                 button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
                                 button.btn.btn-success(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+                #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel2' tabindex='-1')
+                    .modal-dialog.modal-dialog-centered
+                        .modal-content
+                            .modal-header
+                                h5#exampleModalToggleLabel2.modal-title Resgistro 
+                                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            .modal-body
+                                | Registro exitoso!
+                            .modal-footer 
+                                button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
                 .content__section-nuestrafundacion-circulo-item#itemProg2
                     .content__section-nuestrafundacion-circulo-item-txt
                         p Ayuda Psicologica
@@ -140,8 +146,68 @@ block content
                                 p Servicio de atención psicológica gratuita. #[br]#[br]“La buena vida es un proceso, no un estado de ser. Se trata de una direccion, no un destino”
                                     img(src="/images/Mobile/itemsCircle_3-600x600.jpg", alt="Psicologia" srcset ="")       
                             .modal-footer
-                                button.btn.btn-link(type='button') Registrate como voluntario
+                                button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Registrate como voluntaro
                                     img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+                #Registrate.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='RegistrateLabel')
+                    .modal-dialog(role='document')
+                        .modal-content
+                            .modal-header
+                                h1#RegistrateLabel.modal-title.fs-5 #[strong Registrate]
+                                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                            .modal-body
+                                .contentRegistro
+                                    .contentRegistro__box
+                                        .contentRegistro__box__usuario 
+                                            
+                                            p Ingrese el nombre de usuario de 8 caracteres con el que podrá inisiar sesión. El nombre de usuario no debe contener solo números.
+                                                .contentRegistro__box__usuario__formulario
+                                                    .mb-3
+                                                        input#formGroupExampleInput.form-control(type='text' placeholder='Ingrese Usuario')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Nombre Completo:
+                                                        input#formGroupExampleInput2.form-control(type='text' placeholder='Ingrese su nombre completo')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Fecha Nacimiento:
+                                                        input#formGroupExampleInput3.form-control(type='text' placeholder='')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Nacionalidad:
+                                                        input#formGroupExampleInput4.form-control(type='text' placeholder='Ingrese su nacionalidad')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Domicilio:
+                                                        input#formGroupExampleInput5.form-control(type='text' placeholder='Ingrese su domicilio')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Telefono:
+                                                        input#formGroupExampleInput6.form-control(type='text' placeholder='Ingrese su telefono a 10 digitos sin espacio')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Tipo de usuario:
+                                                        select.form-select(aria-label='Tipo de Usuario:')
+                                                            option(selected='') Tipo de Usuario
+                                                            option(value='1') Beneficiario
+                                                            option(value='2') Benefactor 
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Observaciones:
+                                                        textarea#floatingTextarea7.form-control(placeholder='Las observaciones deben contener maximo 180 caracteres' style='height: 100px')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Password:
+                                                        label.form-label2(for='formGroupExampleInput2') La contraseña debe contener al menos una mayuscula, una minuscula, un caracter especial y un numero. Debe tener entre 8 y 12 caracteres.
+                                                        input#formGroupExampleInput8.form-control(type='text' placeholder='Password asta 12 caracteres')   
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Confirmar Password:
+                                                        input#formGroupExampleInput9.form-control(type='text' placeholder='Confirmar Password')
+                            .modal-footer
+                                button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                                button.btn.btn-success(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+                #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel2' tabindex='-1')
+                    .modal-dialog.modal-dialog-centered
+                        .modal-content
+                            .modal-header
+                                h5#exampleModalToggleLabel2.modal-title Resgistro 
+                                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            .modal-body
+                                | Registro exitoso!
+                            .modal-footer 
+                                button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
                 .content__section-nuestrafundacion-circulo-item#itemProg3
                     .content__section-nuestrafundacion-circulo-item-txt
                         p Albergue
@@ -158,8 +224,68 @@ block content
                                 p Servio de albergue c “Ayuda a otros y veras como en realidad estas haciendo un mundo mejor para ti”
                                     img(src="/images/Mobile/itemsCircle_1-600x600.jpg", alt="Albergue" srcset ="")
                             .modal-footer
-                                button.btn.btn-link(type='button') Registrate como voluntario
+                                button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Registrate como voluntaro
                                         img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+                #Registrate.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='RegistrateLabel')
+                    .modal-dialog(role='document')
+                        .modal-content
+                            .modal-header
+                                h1#RegistrateLabel.modal-title.fs-5 #[strong Registrate]
+                                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                            .modal-body
+                                .contentRegistro
+                                    .contentRegistro__box
+                                        .contentRegistro__box__usuario 
+                                            
+                                            p Ingrese el nombre de usuario de 8 caracteres con el que podrá inisiar sesión. El nombre de usuario no debe contener solo números.
+                                                .contentRegistro__box__usuario__formulario
+                                                    .mb-3
+                                                        input#formGroupExampleInput.form-control(type='text' placeholder='Ingrese Usuario')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Nombre Completo:
+                                                        input#formGroupExampleInput2.form-control(type='text' placeholder='Ingrese su nombre completo')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Fecha Nacimiento:
+                                                        input#formGroupExampleInput3.form-control(type='text' placeholder='')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Nacionalidad:
+                                                        input#formGroupExampleInput4.form-control(type='text' placeholder='Ingrese su nacionalidad')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Domicilio:
+                                                        input#formGroupExampleInput5.form-control(type='text' placeholder='Ingrese su domicilio')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Telefono:
+                                                        input#formGroupExampleInput6.form-control(type='text' placeholder='Ingrese su telefono a 10 digitos sin espacio')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Tipo de usuario:
+                                                        select.form-select(aria-label='Tipo de Usuario:')
+                                                            option(selected='') Tipo de Usuario
+                                                            option(value='1') Beneficiario
+                                                            option(value='2') Benefactor 
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Observaciones:
+                                                        textarea#floatingTextarea7.form-control(placeholder='Las observaciones deben contener maximo 180 caracteres' style='height: 100px')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Password:
+                                                        label.form-label2(for='formGroupExampleInput2') La contraseña debe contener al menos una mayuscula, una minuscula, un caracter especial y un numero. Debe tener entre 8 y 12 caracteres.
+                                                        input#formGroupExampleInput8.form-control(type='text' placeholder='Password asta 12 caracteres')   
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Confirmar Password:
+                                                        input#formGroupExampleInput9.form-control(type='text' placeholder='Confirmar Password')
+                            .modal-footer
+                                button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                                button.btn.btn-success(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+                #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel2' tabindex='-1')
+                    .modal-dialog.modal-dialog-centered
+                        .modal-content
+                            .modal-header
+                                h5#exampleModalToggleLabel2.modal-title Resgistro 
+                                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            .modal-body
+                                | Registro exitoso!
+                            .modal-footer 
+                                button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
                 .content__section-nuestrafundacion-circulo-item#itemProg4
                     .content__section-nuestrafundacion-circulo-item-txt
                         p Meriendas a hospitales
@@ -176,8 +302,68 @@ block content
                                 p Servico de desayunos a hospitales#[br] #[br]“Todos necesitan voluntarios como tú”
                                     img(src="/images/Mobile/itemsCircle_4-600x600.jpg", alt="Meriendas" srcset ="")
                             .modal-footer
-                                button.btn.btn-link(type='button') Registrate como voluntario
+                                button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Registrate como voluntaro
                                     img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+                #Registrate.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='RegistrateLabel')
+                    .modal-dialog(role='document')
+                        .modal-content
+                            .modal-header
+                                h1#RegistrateLabel.modal-title.fs-5 #[strong Registrate]
+                                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                            .modal-body
+                                .contentRegistro
+                                    .contentRegistro__box
+                                        .contentRegistro__box__usuario 
+                                            
+                                            p Ingrese el nombre de usuario de 8 caracteres con el que podrá inisiar sesión. El nombre de usuario no debe contener solo números.
+                                                .contentRegistro__box__usuario__formulario
+                                                    .mb-3
+                                                        input#formGroupExampleInput.form-control(type='text' placeholder='Ingrese Usuario')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Nombre Completo:
+                                                        input#formGroupExampleInput2.form-control(type='text' placeholder='Ingrese su nombre completo')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Fecha Nacimiento:
+                                                        input#formGroupExampleInput3.form-control(type='text' placeholder='')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Nacionalidad:
+                                                        input#formGroupExampleInput4.form-control(type='text' placeholder='Ingrese su nacionalidad')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Domicilio:
+                                                        input#formGroupExampleInput5.form-control(type='text' placeholder='Ingrese su domicilio')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Telefono:
+                                                        input#formGroupExampleInput6.form-control(type='text' placeholder='Ingrese su telefono a 10 digitos sin espacio')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Tipo de usuario:
+                                                        select.form-select(aria-label='Tipo de Usuario:')
+                                                            option(selected='') Tipo de Usuario
+                                                            option(value='1') Beneficiario
+                                                            option(value='2') Benefactor 
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Observaciones:
+                                                        textarea#floatingTextarea7.form-control(placeholder='Las observaciones deben contener maximo 180 caracteres' style='height: 100px')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Password:
+                                                        label.form-label2(for='formGroupExampleInput2') La contraseña debe contener al menos una mayuscula, una minuscula, un caracter especial y un numero. Debe tener entre 8 y 12 caracteres.
+                                                        input#formGroupExampleInput8.form-control(type='text' placeholder='Password asta 12 caracteres')   
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Confirmar Password:
+                                                        input#formGroupExampleInput9.form-control(type='text' placeholder='Confirmar Password')
+                            .modal-footer
+                                button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                                button.btn.btn-success(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+                #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel2' tabindex='-1')
+                    .modal-dialog.modal-dialog-centered
+                        .modal-content
+                            .modal-header
+                                h5#exampleModalToggleLabel2.modal-title Resgistro 
+                                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            .modal-body
+                                | Registro exitoso!
+                            .modal-footer 
+                                button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
                 .content__section-nuestrafundacion-circulo-item#itemProg5
                     .content__section-nuestrafundacion-circulo-item-txt
                         p Visitas a asilos anexos y clinicas
@@ -194,8 +380,68 @@ block content
                                 p "La sonrisa que te regala un niño o un adulto con todo su corazó, es una de las cosas más hermosas que se pueden experimentar"
                                     img(src="/images/Mobile/itemsCircle_5-600x600.jpg", alt="visitas" srcset ="") 
                             .modal-footer
-                                button.btn.btn-link(type='button') Registrate como voluntario
+                                button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Registrate como voluntaro
                                     img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+                #Registrate.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='RegistrateLabel')
+                    .modal-dialog(role='document')
+                        .modal-content
+                            .modal-header
+                                h1#RegistrateLabel.modal-title.fs-5 #[strong Registrate]
+                                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                            .modal-body
+                                .contentRegistro
+                                    .contentRegistro__box
+                                        .contentRegistro__box__usuario 
+                                            
+                                            p Ingrese el nombre de usuario de 8 caracteres con el que podrá inisiar sesión. El nombre de usuario no debe contener solo números.
+                                                .contentRegistro__box__usuario__formulario
+                                                    .mb-3
+                                                        input#formGroupExampleInput.form-control(type='text' placeholder='Ingrese Usuario')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Nombre Completo:
+                                                        input#formGroupExampleInput2.form-control(type='text' placeholder='Ingrese su nombre completo')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Fecha Nacimiento:
+                                                        input#formGroupExampleInput3.form-control(type='text' placeholder='')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Nacionalidad:
+                                                        input#formGroupExampleInput4.form-control(type='text' placeholder='Ingrese su nacionalidad')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Domicilio:
+                                                        input#formGroupExampleInput5.form-control(type='text' placeholder='Ingrese su domicilio')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Telefono:
+                                                        input#formGroupExampleInput6.form-control(type='text' placeholder='Ingrese su telefono a 10 digitos sin espacio')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Tipo de usuario:
+                                                        select.form-select(aria-label='Tipo de Usuario:')
+                                                            option(selected='') Tipo de Usuario
+                                                            option(value='1') Beneficiario
+                                                            option(value='2') Benefactor 
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Observaciones:
+                                                        textarea#floatingTextarea7.form-control(placeholder='Las observaciones deben contener maximo 180 caracteres' style='height: 100px')
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Password:
+                                                        label.form-label2(for='formGroupExampleInput2') La contraseña debe contener al menos una mayuscula, una minuscula, un caracter especial y un numero. Debe tener entre 8 y 12 caracteres.
+                                                        input#formGroupExampleInput8.form-control(type='text' placeholder='Password asta 12 caracteres')   
+                                                    .mb-3
+                                                        label.form-label(for='formGroupExampleInput2') Confirmar Password:
+                                                        input#formGroupExampleInput9.form-control(type='text' placeholder='Confirmar Password')
+                            .modal-footer
+                                button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                                button.btn.btn-success(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+                #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel2' tabindex='-1')
+                    .modal-dialog.modal-dialog-centered
+                        .modal-content
+                            .modal-header
+                                h5#exampleModalToggleLabel2.modal-title Resgistro 
+                                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            .modal-body
+                                | Registro exitoso!
+                            .modal-footer 
+                                button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
             .content__section-nuestrafundacion-blog 
                 h1 Nuestro Blog   
                 

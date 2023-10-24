@@ -117,14 +117,13 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="RegistrateLabel">Entrega de <br/> <strong>alimentos a <br/> clientes</strong></h1>
+                  <h1 class="modal-title fs-5" id="RegistrateLabel"><strong>Registrate</strong></h1>
                   <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
                   <div class="contentRegistro">
                     <div class="contentRegistro__box">
                       <div class="contentRegistro__box__usuario"> 
-                        <p>Usuario</p>
                         <p>Ingrese el nombre de usuario de 8 caracteres con el que podrá inisiar sesión. El nombre de usuario no debe contener solo números.
                           <div class="contentRegistro__box__usuario__formulario">
                             <div class="mb-3">
@@ -171,12 +170,6 @@
                               <label class="form-label" for="formGroupExampleInput2">Confirmar Password:</label>
                               <input class="form-control" id="formGroupExampleInput9" type="text" placeholder="Confirmar Password"/>
                             </div>
-                            <div class="boton"> 
-                              <button class="btn btn-warning" type="button">Iniciar Sesión</button>
-                            </div>
-                            <div class="boton-azul">
-                              <button class="btn btn-warning" type="button">Cancelar</button>
-                            </div>
                           </div>
                         </p>
                       </div>
@@ -186,6 +179,20 @@
                 <div class="modal-footer">
                   <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
                   <button class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">Resgistro </h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Registro exitoso!</div>
+                <div class="modal-footer"> 
+                  <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Aceptar</button>
                 </div>
               </div>
             </div>
@@ -207,7 +214,91 @@
                   <p>Servicio de atención psicológica gratuita. <br/><br/>“La buena vida es un proceso, no un estado de ser. Se trata de una direccion, no un destino”<img src="/images/Mobile/itemsCircle_3-600x600.jpg" alt="Psicologia" srcset=""/></p>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn btn-link" type="button">Registrate como voluntario<img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Registrate">Registrate como voluntaro<img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade modal fade" id="Registrate" tabindex="-1" aria-labelledby="RegistrateLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="RegistrateLabel"><strong>Registrate</strong></h1>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="contentRegistro">
+                    <div class="contentRegistro__box">
+                      <div class="contentRegistro__box__usuario"> 
+                        <p>Ingrese el nombre de usuario de 8 caracteres con el que podrá inisiar sesión. El nombre de usuario no debe contener solo números.
+                          <div class="contentRegistro__box__usuario__formulario">
+                            <div class="mb-3">
+                              <input class="form-control" id="formGroupExampleInput" type="text" placeholder="Ingrese Usuario"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Nombre Completo:</label>
+                              <input class="form-control" id="formGroupExampleInput2" type="text" placeholder="Ingrese su nombre completo"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Fecha Nacimiento:</label>
+                              <input class="form-control" id="formGroupExampleInput3" type="text" placeholder=""/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Nacionalidad:</label>
+                              <input class="form-control" id="formGroupExampleInput4" type="text" placeholder="Ingrese su nacionalidad"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Domicilio:</label>
+                              <input class="form-control" id="formGroupExampleInput5" type="text" placeholder="Ingrese su domicilio"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Telefono:</label>
+                              <input class="form-control" id="formGroupExampleInput6" type="text" placeholder="Ingrese su telefono a 10 digitos sin espacio"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Tipo de usuario:</label>
+                              <select class="form-select" aria-label="Tipo de Usuario:">
+                                <option selected="">Tipo de Usuario</option>
+                                <option value="1">Beneficiario</option>
+                                <option value="2">Benefactor </option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Observaciones:</label>
+                              <textarea class="form-control" id="floatingTextarea7" placeholder="Las observaciones deben contener maximo 180 caracteres" style="height: 100px"></textarea>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Password:</label>
+                              <label class="form-label2" for="formGroupExampleInput2">La contraseña debe contener al menos una mayuscula, una minuscula, un caracter especial y un numero. Debe tener entre 8 y 12 caracteres.</label>
+                              <input class="form-control" id="formGroupExampleInput8" type="text" placeholder="Password asta 12 caracteres"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Confirmar Password:</label>
+                              <input class="form-control" id="formGroupExampleInput9" type="text" placeholder="Confirmar Password"/>
+                            </div>
+                          </div>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                  <button class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">Resgistro </h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Registro exitoso!</div>
+                <div class="modal-footer"> 
+                  <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Aceptar</button>
                 </div>
               </div>
             </div>
@@ -229,7 +320,91 @@
                   <p>Servio de albergue c “Ayuda a otros y veras como en realidad estas haciendo un mundo mejor para ti”<img src="/images/Mobile/itemsCircle_1-600x600.jpg" alt="Albergue" srcset=""/></p>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn btn-link" type="button">Registrate como voluntario<img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Registrate">Registrate como voluntaro<img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade modal fade" id="Registrate" tabindex="-1" aria-labelledby="RegistrateLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="RegistrateLabel"><strong>Registrate</strong></h1>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="contentRegistro">
+                    <div class="contentRegistro__box">
+                      <div class="contentRegistro__box__usuario"> 
+                        <p>Ingrese el nombre de usuario de 8 caracteres con el que podrá inisiar sesión. El nombre de usuario no debe contener solo números.
+                          <div class="contentRegistro__box__usuario__formulario">
+                            <div class="mb-3">
+                              <input class="form-control" id="formGroupExampleInput" type="text" placeholder="Ingrese Usuario"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Nombre Completo:</label>
+                              <input class="form-control" id="formGroupExampleInput2" type="text" placeholder="Ingrese su nombre completo"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Fecha Nacimiento:</label>
+                              <input class="form-control" id="formGroupExampleInput3" type="text" placeholder=""/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Nacionalidad:</label>
+                              <input class="form-control" id="formGroupExampleInput4" type="text" placeholder="Ingrese su nacionalidad"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Domicilio:</label>
+                              <input class="form-control" id="formGroupExampleInput5" type="text" placeholder="Ingrese su domicilio"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Telefono:</label>
+                              <input class="form-control" id="formGroupExampleInput6" type="text" placeholder="Ingrese su telefono a 10 digitos sin espacio"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Tipo de usuario:</label>
+                              <select class="form-select" aria-label="Tipo de Usuario:">
+                                <option selected="">Tipo de Usuario</option>
+                                <option value="1">Beneficiario</option>
+                                <option value="2">Benefactor </option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Observaciones:</label>
+                              <textarea class="form-control" id="floatingTextarea7" placeholder="Las observaciones deben contener maximo 180 caracteres" style="height: 100px"></textarea>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Password:</label>
+                              <label class="form-label2" for="formGroupExampleInput2">La contraseña debe contener al menos una mayuscula, una minuscula, un caracter especial y un numero. Debe tener entre 8 y 12 caracteres.</label>
+                              <input class="form-control" id="formGroupExampleInput8" type="text" placeholder="Password asta 12 caracteres"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Confirmar Password:</label>
+                              <input class="form-control" id="formGroupExampleInput9" type="text" placeholder="Confirmar Password"/>
+                            </div>
+                          </div>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                  <button class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">Resgistro </h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Registro exitoso!</div>
+                <div class="modal-footer"> 
+                  <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Aceptar</button>
                 </div>
               </div>
             </div>
@@ -251,7 +426,91 @@
                   <p>Servico de desayunos a hospitales<br/> <br/>“Todos necesitan voluntarios como tú”<img src="/images/Mobile/itemsCircle_4-600x600.jpg" alt="Meriendas" srcset=""/></p>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn btn-link" type="button">Registrate como voluntario<img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Registrate">Registrate como voluntaro<img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade modal fade" id="Registrate" tabindex="-1" aria-labelledby="RegistrateLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="RegistrateLabel"><strong>Registrate</strong></h1>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="contentRegistro">
+                    <div class="contentRegistro__box">
+                      <div class="contentRegistro__box__usuario"> 
+                        <p>Ingrese el nombre de usuario de 8 caracteres con el que podrá inisiar sesión. El nombre de usuario no debe contener solo números.
+                          <div class="contentRegistro__box__usuario__formulario">
+                            <div class="mb-3">
+                              <input class="form-control" id="formGroupExampleInput" type="text" placeholder="Ingrese Usuario"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Nombre Completo:</label>
+                              <input class="form-control" id="formGroupExampleInput2" type="text" placeholder="Ingrese su nombre completo"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Fecha Nacimiento:</label>
+                              <input class="form-control" id="formGroupExampleInput3" type="text" placeholder=""/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Nacionalidad:</label>
+                              <input class="form-control" id="formGroupExampleInput4" type="text" placeholder="Ingrese su nacionalidad"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Domicilio:</label>
+                              <input class="form-control" id="formGroupExampleInput5" type="text" placeholder="Ingrese su domicilio"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Telefono:</label>
+                              <input class="form-control" id="formGroupExampleInput6" type="text" placeholder="Ingrese su telefono a 10 digitos sin espacio"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Tipo de usuario:</label>
+                              <select class="form-select" aria-label="Tipo de Usuario:">
+                                <option selected="">Tipo de Usuario</option>
+                                <option value="1">Beneficiario</option>
+                                <option value="2">Benefactor </option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Observaciones:</label>
+                              <textarea class="form-control" id="floatingTextarea7" placeholder="Las observaciones deben contener maximo 180 caracteres" style="height: 100px"></textarea>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Password:</label>
+                              <label class="form-label2" for="formGroupExampleInput2">La contraseña debe contener al menos una mayuscula, una minuscula, un caracter especial y un numero. Debe tener entre 8 y 12 caracteres.</label>
+                              <input class="form-control" id="formGroupExampleInput8" type="text" placeholder="Password asta 12 caracteres"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Confirmar Password:</label>
+                              <input class="form-control" id="formGroupExampleInput9" type="text" placeholder="Confirmar Password"/>
+                            </div>
+                          </div>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                  <button class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">Resgistro </h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Registro exitoso!</div>
+                <div class="modal-footer"> 
+                  <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Aceptar</button>
                 </div>
               </div>
             </div>
@@ -273,7 +532,91 @@
                   <p>"La sonrisa que te regala un niño o un adulto con todo su corazó, es una de las cosas más hermosas que se pueden experimentar"<img src="/images/Mobile/itemsCircle_5-600x600.jpg" alt="visitas" srcset=""/></p>
                 </div>
                 <div class="modal-footer">
-                  <button class="btn btn-link" type="button">Registrate como voluntario<img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Registrate">Registrate como voluntaro<img src="/images/icono/flecha_amarilla.svg" alt="logo de flecha"/></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade modal fade" id="Registrate" tabindex="-1" aria-labelledby="RegistrateLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="RegistrateLabel"><strong>Registrate</strong></h1>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <div class="contentRegistro">
+                    <div class="contentRegistro__box">
+                      <div class="contentRegistro__box__usuario"> 
+                        <p>Ingrese el nombre de usuario de 8 caracteres con el que podrá inisiar sesión. El nombre de usuario no debe contener solo números.
+                          <div class="contentRegistro__box__usuario__formulario">
+                            <div class="mb-3">
+                              <input class="form-control" id="formGroupExampleInput" type="text" placeholder="Ingrese Usuario"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Nombre Completo:</label>
+                              <input class="form-control" id="formGroupExampleInput2" type="text" placeholder="Ingrese su nombre completo"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Fecha Nacimiento:</label>
+                              <input class="form-control" id="formGroupExampleInput3" type="text" placeholder=""/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Nacionalidad:</label>
+                              <input class="form-control" id="formGroupExampleInput4" type="text" placeholder="Ingrese su nacionalidad"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Domicilio:</label>
+                              <input class="form-control" id="formGroupExampleInput5" type="text" placeholder="Ingrese su domicilio"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Telefono:</label>
+                              <input class="form-control" id="formGroupExampleInput6" type="text" placeholder="Ingrese su telefono a 10 digitos sin espacio"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Tipo de usuario:</label>
+                              <select class="form-select" aria-label="Tipo de Usuario:">
+                                <option selected="">Tipo de Usuario</option>
+                                <option value="1">Beneficiario</option>
+                                <option value="2">Benefactor </option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Observaciones:</label>
+                              <textarea class="form-control" id="floatingTextarea7" placeholder="Las observaciones deben contener maximo 180 caracteres" style="height: 100px"></textarea>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Password:</label>
+                              <label class="form-label2" for="formGroupExampleInput2">La contraseña debe contener al menos una mayuscula, una minuscula, un caracter especial y un numero. Debe tener entre 8 y 12 caracteres.</label>
+                              <input class="form-control" id="formGroupExampleInput8" type="text" placeholder="Password asta 12 caracteres"/>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="formGroupExampleInput2">Confirmar Password:</label>
+                              <input class="form-control" id="formGroupExampleInput9" type="text" placeholder="Confirmar Password"/>
+                            </div>
+                          </div>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                  <button class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">Resgistro </h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Registro exitoso!</div>
+                <div class="modal-footer"> 
+                  <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Aceptar</button>
                 </div>
               </div>
             </div>
