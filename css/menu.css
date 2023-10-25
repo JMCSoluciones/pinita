@@ -17,17 +17,18 @@ ul {
   padding-left: 0 !important;
 }
 .menu {
-  background-color: #ffffff;
-  color: #ffffff;
-  height: 55px;
+  height: 60px;
 }
 .menu-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+  width: 1110px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .menu__logo {
-  max-width: 100px;
+  max-height: 25px;
   overflow: hidden;
   margin: 0 10px;
 }
@@ -42,10 +43,9 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1200px;
-  height: 90%;
+  height: 100%;
   margin: 0 auto;
-  background-color: radial-gradient(circle, #ffffff 0%, #474643 0%);
+  background-color: #ffffff;
 }
 .menu__links {
   margin: 0;
@@ -86,14 +86,14 @@ ul {
 }
 .menu__link-inside {
   padding: 20px 100px 20px 20px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .menu__link-inside:hover {
-  background-color: #798499 !important;
+  background-color: red !important;
 }
 .menu__link:hover {
-  background-color: #798499;
-  color: #ffffff;
+  background-color: #FFFFFF;
+  color: #FFFFFF;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
@@ -106,7 +106,7 @@ ul {
   transition: transform 0.3s, -webkit-transform 0.3s;
   display: block;
   margin-left: 3px;
-  background-color: #E74C3C;
+  background-color: #fcaf00;
 }
 .menu__nesting {
   -webkit-clip-path: var(--clip);
@@ -124,7 +124,7 @@ ul {
   width: max-content;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  background-color: #E74C3C;
+  background-color: #fcaf00;
 }
 .menu__hamburger {
   height: 100%;
@@ -140,13 +140,11 @@ ul {
 }
 .menu__img {
   display: block;
-  width: 36px;
+  width: 24px;
 }
 @media screen and (max-width: 800px) {
-  .menu {
-    /* &-top{
-            display: none;
-        }*/
+  .menu-top {
+    display: none;
   }
   .menu__hamburger {
     display: -webkit-box;
@@ -157,7 +155,7 @@ ul {
     padding: 15px 0;
     padding-left: 30px;
     height: auto;
-    color: #ffffff;
+    color: #FFFFFF;
     font-weight: 400;
   }
   .menu__link-inside {

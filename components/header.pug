@@ -1,11 +1,17 @@
 header
     nav.menu
         section.menu__container
+            img(src="images/icono/logotipo.svg" alt="logotipo").menu__logo
             ul.menu__links 
                 li.menu__item 
                     a(href="index.html").menu__link Inicio
                 li.menu__item 
-                    a(href="Fundacion.html").menu__link Fundacion
+                    .dropdown
+                        a.btn.btn-secondary.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                            | Fundacion
+                        ul.dropdown-menu
+                            li
+                                a.dropdown-item(href='#') Contacto
                 li.menu__item 
                     a(href="Tienda.html").menu__link Tienda
                 li.menu__item 
