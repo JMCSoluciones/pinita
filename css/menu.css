@@ -17,7 +17,7 @@ ul {
   padding-left: 0 !important;
 }
 .menu {
-  height: 60px;
+  height: 85px;
 }
 .menu-top {
   display: none;
@@ -28,9 +28,9 @@ ul {
           justify-content: space-between;
 }
 .menu__logo {
-  max-height: 25px;
+  max-height: 55px;
   overflow: hidden;
-  margin: 0 10px;
+  margin: 15px;
 }
 .menu__container {
   display: -webkit-box;
@@ -178,7 +178,7 @@ ul {
     position: fixed;
     max-width: 400px;
     width: 100%;
-    top: 50px;
+    top: 75px;
     padding: 0;
     bottom: 0;
     right: 0;
