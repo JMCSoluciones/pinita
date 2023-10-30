@@ -5,13 +5,14 @@ header
             ul.menu__links 
                 li.menu__item 
                     a(href="index.html").menu__link Inicio
-                li.menu__item 
-                    .dropdown
-                        a.btn.btn-secondary.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='True')
-                            | Fundacion
-                            ul.dropdown-menu
-                                li
-                                    a.dropdown-item(href='#') Contacto
+                li.menu__item.menu__item-show
+                    a(href="#").menu__link Fundacion 
+                        img(src="/images/icono/flecha_blanca.svg", alt="flecha sub").menu__arrow
+                    ul.menu__nesting
+                        li.menu__inside
+                            a(href="Fundacion.html").menu__link.menu__link-inside Quienes somos?
+                        li.menu__inside
+                            a(href="contacto.html").menu__link.menu__link-inside Contacto   
                 li.menu__item 
                     a(href="Tienda.html").menu__link Tienda
                 li.menu__item 

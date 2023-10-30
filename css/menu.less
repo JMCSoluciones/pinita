@@ -63,21 +63,23 @@ ul{
             color: @color-claro;
         }
         &-inside:hover{
-            background-color: red !important;
+            background-color: rgba(255, 211, 67, 0.925) !important;
         }
     }
     &__link:hover{
-        background-color: @color-claro;
+        
         color: @color-claro;
         transition: background-color .5s;
    
     }
+    /*---- estlilo de la flecha del sub---*/
     &__arrow{
         transform: var(--transform);
         transition: transform .3s;
         display: block;
-        margin-left: 3px;
-        background-color: @color-primario;
+        margin-left: 8px;
+        background-color: transparent;
+        width: 25px;
     }
     &__nesting{
         clip-path: var(--clip);
@@ -102,7 +104,7 @@ ul{
     }
     &__img{
         display: block;
-        width: 24px;
+        width: 25px;
     }
     
 }
@@ -121,18 +123,23 @@ ul{
             height: auto;
             color: @color-claro;
             font-weight: @font-regular;
+            direction: none;
+            font-size: 2rem;
+            text-decoration: none;
             &-inside{
                 width: 90%;
                 margin-left: auto;
                 border-left: 1px solid @color-hover;
+                   
             }
+            
         }
         &__item{
             --clip: 0;
             overflow: hidden;
             &-active{
                 --transform: rotate(0);
-                --background: @color-hover;
+                --background: #57C1EE;
             }
             &-show{
                 background-color: var(--background);
@@ -159,7 +166,7 @@ ul{
             }
         }
         &__arrow{
-            margin-left: auto;
+            
             margin-right: 20px;
         }
         &__nesting{

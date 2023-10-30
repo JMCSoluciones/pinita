@@ -2,9 +2,7 @@
     const listElements = document.querySelectorAll('.menu__item-show');
     const list = document.querySelector('.menu__links');
     const menu = document.querySelector('.menu__hamburger');
-    const dropdownElementList = document.querySelectorAll('.dropdown-toggle')
-    const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl))
-
+    
     const addClick = ()=>{
         listElements.forEach(element =>{
             element.addEventListener('click', ()=>{
