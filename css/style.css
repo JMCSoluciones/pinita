@@ -835,7 +835,7 @@ body {
 }
 .contentRegistro__box__usuario__formulario .boton button {
   font-family: 'Inter', sans-serf;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .contentRegistro__box__usuario__formulario .boton-azul {
@@ -850,7 +850,7 @@ body {
 .contentRegistro__box__usuario__formulario .boton-azul button {
   font-family: 'Inter', sans-serf;
   background: #2CA7EC;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #FFFFFF;
 }
