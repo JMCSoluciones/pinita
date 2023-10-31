@@ -517,6 +517,15 @@ body {
   width: 25px;
   height: auto;
 }
+.content__section-nuestrafundacion-blogimg .btn.btn-primary {
+  background-color: #fcaf00;
+  font-family: 'Inter', sans-serf;
+  font-size: 1.8rem;
+  border: none;
+  margin: 20px;
+  cursor: pointer;
+  margin: 20px 50px;
+}
 /**--------------FUNDACION-----------------------*/
 .content__section-Fundacion {
   position: relative;
