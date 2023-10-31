@@ -1,5 +1,15 @@
 extend ../components/template.pug
 block  content
-    .content__section-login 
-        p Inicio de sesión
+    .content.login.content
+        .content.login.content__inicio
+            p Inicio de Sesíon
+            .content.login.content__inicio__form
+                .mb-3
+                    label.form-label(for='formGroupExampleInput') Usuario:
+                    input#formGroupExampleInput.form-control(type='text' placeholder='Ingrese Usuario')
+                .mb-3
+                    label.form-label(for='formGroupExampleInput2') Password:
+                    input#formGroupExampleInput2.form-control(type='text' placeholder='Password')
+                .boton 
+                    button.btn.btn-warning(type='button') Iniciar Sesión
 
