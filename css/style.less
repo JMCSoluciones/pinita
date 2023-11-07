@@ -139,6 +139,7 @@
       
     /*imagen de pinita en hostital*/
     &-motivacion{
+        background-size: cover;
         margin-top: 10%;
         position: relative;
         display: flex;
@@ -159,9 +160,10 @@
             padding: 5px;
             background-color: rgba(33, 37, 41, 0.555);
             p{
+            
                 color: @color-claro;
                 font-family: @fuente-base1;
-                font-size: 2.5rem;
+                font-size: 2.8rem;
                 text-align: end;
             }
         }
@@ -194,13 +196,15 @@
         &-color{
             align-items: center;
             width: 100%;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;            background-color: rgba(238, 152, 24, 42%);
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;            
+            background-color: rgba(238, 152, 24, 42%);
             p{
                 margin: 15px;
                 color: @color-claro;
-                font-size: 2.5rem;
+                font-size: 2.9rem;
                 text-transform: uppercase;
                 text-align:left;
+                margin-right: 200px;
                 font-family: @font-family3;
             }
 
@@ -215,7 +219,7 @@
             background-color: #B0710D; /* Color azul con 50% de opacidad */
             border-radius: 30px 0 30px 0;
             p{
-                margin: 5px;
+                margin: 10px;
                 position: absolute;
                 top: 20%;
                 color: @color-claro;
@@ -357,7 +361,7 @@
             
             .modal-body{
                 position: relative;
-                
+                margin: 5px;
                 p{
                     display: flex;
                     flex-direction: column;
@@ -418,6 +422,7 @@
            
     }
     &-blogimg{
+        
         margin: 10px;
         line-height: 1.5;
         margin-top: 20px;
@@ -431,8 +436,11 @@
                 margin: 0px;
                 } 
             img{
-                width: 354px; /* Ancho de la imagen */
-                height: 190px; /* Altura automática para mantener la proporción original */
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                
+                height: auto; /* Altura automática para mantener la proporción original */
                 border-radius: 10px 10px 10px 10px;
             }
             
@@ -505,6 +513,7 @@
 
 /**--------------FUNDACION-----------------------*/
 .content__section-Fundacion{
+    overflow: hidden;
     position: relative;
     display: flex;
     background-image: url(../images/Mobile/mobileSlide_somos-722x1048.jpg);
@@ -547,20 +556,25 @@
     
 }
 .content__section-Fundacion-quienessomos{
+    padding: 10px;
     position: relative;
+    overflow: hidden;
     h2{
         margin-top: 10%;
         color: @color-obscuro;
         text-align: center;
         font-size: 4rem;
         font-family: @font-family3;
+        
     }
+    
     p{
+        padding: 30px;
         display: flex;
         flex-direction: column;
         color: @color-obscuro;
         margin: 15px;
-        margin-right: 140px;
+        margin-right: 200px;
         font-size: 2rem;
         font-family: @font-family3;
         text-align: left;
@@ -568,32 +582,35 @@
         
     }
     img{
+        top: 90%;
         position: absolute;
-        right: 180px;
+        right: 280px;
         display:flex;
         width: 30px;
         height: auto;
     }
+    &-circulo{
+        
+        position: absolute;
+        display: flex;
+        right: -20px;
+        border-radius: 2px solid #9747FF;
+        overflow: hidden;
+        flex-wrap: wrap;
+        background-image: url(/images/Mobile/fundacion.jpg);
+        top: 30%;
+        background-size: cover;
+        clip-path: circle(50% at 50% 50%);
+        width: 220px;
+        height: 220px;
+        display: flex;
+    }
    
 }
-.content__section-Fundacion-circulo{
-    position: absolute;
-    display: flex;
-    right: -50px;
-    border-radius: 2px solid #9747FF;
-    overflow: hidden;
-    flex-wrap: wrap;
-    background-image: url(/images/Mobile/fundacion.jpg);
-    top: 105%;
-    background-size: cover;
-    clip-path: circle(50% at 50% 50%);
-    width: 220px;
-    height: 220px;
-    display: flex;
-}
+
 /*------Contenido de Mision-----*/
 .content__section-Fundacion-Mision{
-    top: 70px;
+    top: 100px;
     position: relative;
     display: flex;
     background-image: url(../images/Mobile/mobileItemMision480x520.jpg);
@@ -627,11 +644,13 @@
     }
 }
 .content__section-Fundacion-Valores{
+    
     p{
-        top: 100px;
+        margin: 75px;
+        top: 150px;
         position: relative;
         color: @color-obscuro;
-        font-size: 3.5rem;
+        font-size: 3.8rem;
         text-align: center;
         font-weight: 500;
         border-bottom: 2px solid #F39E16;
@@ -640,7 +659,7 @@
     }
 }
 .content__section-Fundacion-lista{
-    margin-top: 15%;
+    
     &-listaval{
         &-text{
             display: flex;
@@ -674,7 +693,7 @@
     }
 }
 .content__section-Fundacion-vision{
-    margin-top: 20%;
+    margin-top: 30%;
     top: 70px;
     position: relative;
     display: flex;
