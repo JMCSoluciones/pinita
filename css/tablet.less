@@ -1,2 +1,37 @@
 @import 'globals.less';
 @import 'variables.less';
+
+
+.content__section-nuestrafundacion{
+    &-motvacion{
+        background-image: url(../images/Tablet/tabletItemDonacion_1_1440x900.jpg);
+        height: 466px;
+        background-position: center;
+        background-size: cover;
+    }
+    &-imgcafe{
+        margin-top: 20%;
+        position: relative;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap; 
+        background-image: url(../images/Tablet/tabletItemDonacion_2_1440x900.jpg);
+        width:  auto;
+        height: 400px;
+        background-size: cover;
+    }
+    &-programas{
+        margin: 70px;
+        margin-top: 40%;
+        p:nth-child(1){
+        color: @color-obscuro;
+        border-bottom: 1px solid @color-primario ;
+        margin-bottom: 0;
+        font-size: 6rem;
+        line-height: normal;
+        text-align:center;
+        text-transform: uppercase;
+        text-shadow: 0px 1px 2.5px #8F9090;
+        }
+    }
+}

@@ -397,6 +397,9 @@ body {
   line-height: 25px;
   border-bottom: 2px solid #FCAF00;
 }
+.content__section-nuestrafundacion-circulo .modal-content .modal-body {
+  position: relative;
+}
 .content__section-nuestrafundacion-circulo .modal-content .modal-body p {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,16 +410,14 @@ body {
           flex-direction: column;
   color: #474643;
   margin: 5px;
-  margin-right: 145px;
+  margin-right: 190px;
   font-size: 2rem;
   font-family: 'Inter', sans-serf;
   text-align: left;
-  position: relative;
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-body img {
   position: absolute;
-  padding-top: 0.75px;
-  left: 180px;
+  left: 310px;
   width: 200px;
   height: auto;
   border-radius: 50%;
@@ -431,7 +432,7 @@ body {
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-footer .btn.btn.btn-primary {
   position: relative;
-  right: 60px;
+  right: 180px;
   text-decoration: none;
   background-color: transparent;
   border: none;
