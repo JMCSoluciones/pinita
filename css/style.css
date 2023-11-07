@@ -851,6 +851,7 @@ body {
   font-size: 1.6rem;
 }
 .contentRegistro__box__usuario__formulario .boton {
+  padding: 10px;
   margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -860,6 +861,7 @@ body {
           justify-content: center;
 }
 .contentRegistro__box__usuario__formulario .boton button {
+  padding: 12px;
   font-family: 'Inter', sans-serf;
   font-size: 1.8rem;
   font-weight: 500;
@@ -874,6 +876,7 @@ body {
   margin-bottom: 15px;
 }
 .contentRegistro__box__usuario__formulario .boton-azul button {
+  padding: 12px;
   border: none;
   font-family: 'Inter', sans-serf;
   background: #2CA7EC;
