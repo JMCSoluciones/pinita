@@ -840,6 +840,7 @@ body {
 }
 .contentRegistro__box__usuario__formulario .mb-3 .form-control {
   font-size: 1.8rem;
+  padding: 13px;
 }
 .contentRegistro__box__usuario__formulario .mb-3 p {
   font-size: 1.8rem;
