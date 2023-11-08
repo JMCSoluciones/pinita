@@ -90,10 +90,10 @@ ul {
   color: #FFFFFF;
 }
 .menu__link-inside:hover {
-  background-color: rgba(255, 211, 67, 0.925) !important;
+  background-color: rgba(243, 170, 35, 0.925) !important;
 }
 .menu__link:hover {
-  color: #FFFFFF;
+  color: #f4c464;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
@@ -165,7 +165,7 @@ ul {
   .menu__link-inside {
     width: 90%;
     margin-left: auto;
-    border-left: 1px solid #798499;
+    border-left: 1px solid #f6b100;
   }
   .menu__item {
     --clip: 0;
