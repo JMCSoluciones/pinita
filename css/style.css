@@ -930,7 +930,7 @@ body {
   font-size: 1.9rem;
   font-weight: 500;
 }
-/*------------------------------------footer-----------------------------*/
+/*------footer--------*/
 footer {
   margin-top: 25%;
   display: -webkit-box;
@@ -990,12 +990,12 @@ footer .footer__header__box__cellphone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 footer .footer__header__box__email {
   -ms-grid-row: 2;
