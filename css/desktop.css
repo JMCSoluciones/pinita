@@ -13,6 +13,74 @@ body {
 .hidden {
   display: none !important;
 }
+.slideContent {
+  top: 80px;
+}
+.slideContent p:nth-child(1) {
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
+  border-bottom: 2px solid #fcaf00;
+  font-size: 2.1rem;
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 0;
+}
+.slideContent p:nth-child(2) {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.slideContent p:nth-child(3) {
+  color: #fcaf00;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+.slideContent__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  background-color: #fcaf00;
+  border-radius: 20px;
+  padding: 5px 10px;
+  /* etiqueta a */
+  /* imagen de flecha*/
+}
+.slideContent__link a {
+  text-decoration: none;
+  color: white;
+  padding: ▸ 9px 25px;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.slideContent__link img {
+  width: 25px;
+}
+.slideContent__box h2 {
+  font-size: 1.5rem;
+}
+.slideContent__box a {
+  padding: 0px 8px;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.content__section-nuestrafundacion-txt p {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
 footer .footer__box__body {
   display: -webkit-box;
   display: -ms-flexbox;
