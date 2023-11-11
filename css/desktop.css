@@ -76,6 +76,9 @@ body {
   border-radius: 10px;
   font-weight: 500;
 }
+.content__section-nuestrafundacion-txt {
+  margin-top: 30px;
+}
 .content__section-nuestrafundacion-txt p {
   padding: 20px;
   text-align: center;
@@ -112,22 +115,22 @@ body {
 }
 .content__section-nuestrafundacion-motivacion-text {
   position: absolute;
-  top: 30%;
+  top: 20%;
   right: 0px;
   height: 250px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 45%;
+  width: 35%;
   border-radius: 25px 0 0 0;
-  padding: 5px;
+  padding: 10px;
   background-color: rgba(33, 37, 41, 0.555);
 }
 .content__section-nuestrafundacion-motivacion-text p {
   color: #FFFFFF;
   font-family: 32px;
-  font-size: 2.8rem;
-  text-align: end;
+  font-size: 2.1rem;
+  margin-left: 55%;
 }
 .content__section-nuestrafundacion-imgcafe {
   margin-top: 20%;
@@ -158,10 +161,10 @@ body {
 .content__section-nuestrafundacion-imgcafe-color p {
   margin: 20px;
   color: #FFFFFF;
-  font-size: 2.9rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   text-align: left;
-  margin-right: 200px;
+  margin-right: 700px;
   font-family: 'Inter', sans-serf;
 }
 .content__section-nuestrafundacion-imgcafe-cuadro {
@@ -187,6 +190,12 @@ body {
   font-family: 32px;
   font-size: 1.8rem;
   right: 30px;
+}
+.content__section-nuestrafundacion-programas {
+  margin-top: 20%;
+}
+.content__section-nuestrafundacion-blog {
+  margin: 80px;
 }
 .content {
   max-width: 1110px;
