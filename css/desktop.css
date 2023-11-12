@@ -233,7 +233,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 590px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .content__section-Fundacion-Mision-text h1 {
   margin: 20px;
@@ -316,7 +316,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 590px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .content__section-Fundacion-vision-text h1 {
   margin: 20px;
