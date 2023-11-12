@@ -201,17 +201,78 @@
         flex-direction: column;
         height: 590px;
         background-color: rgba(0, 0, 0, 20%);
+        h1{
+            margin: 20px;
+            color: @color-claro;
+            font-size: 4rem;
+            font-family: @font-family;
+            border-bottom: 2px solid #F39E16;
+
+        }
+        p{
+            margin-right: 100px;
+            font-family: @font-family3;
+            margin: 20px;
+            color:@color-claro;
+            font-size: 2rem;
+            text-align: left;
+            
+        }
+        
     }
 
 }
 .content__section-Fundacion-Valores{
     max-width: 1110px;
     margin: 0 auto;
+    p{
+        margin: 75px;
+        top: 150px;
+        position: relative;
+        color: @color-obscuro;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 500;
+        border-bottom: 2px solid #F39E16;
+        
+        
+    }
     
 }
 .content__section-Fundacion-lista{
     max-width: 1110px;
     margin: 0 auto;
+    &-listaval{
+        &-text{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 55px;
+            position: relative;
+            
+          p{
+            
+            text-decoration: none;
+            margin: 20px;
+            line-height: 25px;
+            font-size: 1.9rem;
+            position: absolute;
+            top: 80px;
+            color: @color-obscuro;
+            margin-left: 80px;
+            letter-spacing: 0.1sem;
+        
+            
+          }  
+          img{
+            position: absolute;
+            top: 97px;
+            width: 35px;
+            margin-left: 42px;
+            
+          }
+        }
+
+    }
 }
 .content__section-Fundacion-vision{
     top: 100px;
@@ -226,7 +287,38 @@
         flex-direction: column;
         height: 590px;
         background-color: rgba(0, 0, 0, 20%);
+        h1{
+            margin: 20px;
+            color: @color-claro;
+            font-size: 3rem;
+            font-family: @font-family;
+            border-bottom: 2px solid #F39E16;
+
+        }
+        p{
+            margin-right: 100px;
+            font-family: @font-family3;
+            margin: 20px;
+            color:@color-claro;
+            font-size: 2rem;
+            text-align: left;
+            
+        }
     }
+
+}
+.contentRegistro{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.content.login.content{
+    
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.contentContacto{
+    max-width: 1110px;
+    margin: 0 auto; 
 }
 
 
