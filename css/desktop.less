@@ -310,11 +310,67 @@
 .contentRegistro{
     max-width: 1110px;
     margin: 0 auto;
+    &__box{
+        &__usuario{
+            p:nth-child(1){
+                text-align: end;
+                font-size: 2rem;
+            }
+        }
+    }
 }
+/*-----------------Login-----------------------*/
 .content.login.content{
     
     max-width: 1110px;
     margin: 0 auto;
+    &__inicio{
+        p{
+            font-size: 2rem;
+            text-align: end;
+        }
+        &__form{
+            margin: 60px;
+            padding: 5px;
+            box-shadow: rgba(253, 183, 0,) 0px 0px 0px 1px;
+            .mb-3{ 
+                margin: 20px;
+                
+                .form-label{
+                    font-family: @font-family3;
+                    color: black;
+                    font-size: 1.5rem;
+                    
+                }
+                    
+                    margin-top: 5%;
+                input{
+                    
+                    font-family: @font-family3;
+                    color: black;
+                    font-size: 1.2rem; 
+                    width: 368px;
+                    padding: 2px;
+                    
+
+                }
+        
+            }
+        }
+        .boton{
+            display: flex;
+            justify-content: center;
+            padding: 0px auto;
+            
+            button{
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+        
+        }
+    } 
+
+
 }
 .contentContacto{
     max-width: 1110px;

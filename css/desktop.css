@@ -337,9 +337,53 @@ body {
   max-width: 1110px;
   margin: 0 auto;
 }
+.contentRegistro__box__usuario p:nth-child(1) {
+  text-align: end;
+  font-size: 2rem;
+}
+/*-----------------Login-----------------------*/
 .content.login.content {
   max-width: 1110px;
   margin: 0 auto;
+}
+.content.login.content__inicio p {
+  font-size: 2rem;
+  text-align: end;
+}
+.content.login.content__inicio__form {
+  margin: 60px;
+  padding: 5px;
+  -webkit-box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+          box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+}
+.content.login.content__inicio__form .mb-3 {
+  margin: 20px;
+  margin-top: 5%;
+}
+.content.login.content__inicio__form .mb-3 .form-label {
+  font-family: 'Inter', sans-serf;
+  color: black;
+  font-size: 1.5rem;
+}
+.content.login.content__inicio__form .mb-3 input {
+  font-family: 'Inter', sans-serf;
+  color: black;
+  font-size: 1.2rem;
+  width: 368px;
+  padding: 2px;
+}
+.content.login.content__inicio .boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px auto;
+}
+.content.login.content__inicio .boton button {
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 .contentContacto {
   max-width: 1110px;
