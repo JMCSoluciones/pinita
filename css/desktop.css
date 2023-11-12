@@ -201,6 +201,35 @@ body {
 .content__section-nuestrafundacion-blog {
   margin: 80px;
 }
+.content__section-Fundacion {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../images/Desktop/desktopSlides_Somos-1920x466.jpg);
+  background-size: cover;
+}
+.content__section-Fundacion-quienessomos {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.content__section-Fundacion-Mision {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.content__section-Fundacion-Valores {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.content__section-Fundacion-lista {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.content__section-Fundacion-vision {
+  max-width: 1110px;
+  margin: 0 auto;
+}
 footer {
   margin-top: 30px;
 }
