@@ -217,6 +217,23 @@ body {
 .content__section-Fundacion-Mision {
   max-width: 1110px;
   margin: 0 auto;
+  background-image: url(../images/Tablet/tabletItemMision1440x900.jpg);
+  background-size: cover;
+  height: 590px;
+}
+.content__section-Fundacion-Mision-text {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 590px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .content__section-Fundacion-Valores {
   max-width: 1110px;
@@ -227,8 +244,26 @@ body {
   margin: 0 auto;
 }
 .content__section-Fundacion-vision {
+  top: 100px;
   max-width: 1110px;
   margin: 0 auto;
+  background-image: url(../images/Tablet/tabletItemVision1440x900.jpg);
+  background-size: cover;
+  height: 590px;
+}
+.content__section-Fundacion-vision-text {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 590px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 footer {
   margin-top: 30px;
