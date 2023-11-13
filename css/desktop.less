@@ -182,11 +182,31 @@
     display: flex;
     background-image: url(../images/Desktop/desktopSlides_Somos-1920x466.jpg);
     background-size: cover;
+    &-text{
+        p:nth-child(1){
+            font-size: 4rem;  
+        }  
+        p:nth-child(2){
+            font-size: 4rem;
+        }
+        p:nth-child(3){
+            font-size: 4rem;
+        }
+    }
+    
     
 }
 .content__section-Fundacion-quienessomos{
     max-width: 1110px;
     margin: 0 auto;
+    h2{
+        margin-top: 10%;
+        color: @color-obscuro;
+        text-align: center;
+        font-size: 2.8rem;
+        font-family: @font-family3;
+        
+    }
 
 }
 .content__section-Fundacion-Mision{
@@ -326,11 +346,11 @@
                     .form-label{
                         color: black;
                         font-family: @font-family3;
-                        font-size: 1.2rem;                    }
+                        font-size: 1.5rem;                    }
                     .form-label2{
                         color: black;
                         font-family: @font-family3;
-                        font-size: 1.2rem;
+                        font-size: 1.5rem;
                         text-align: justify;
                         margin-bottom: 5%;
                     }
@@ -339,13 +359,13 @@
                         
                     }
                     select{
-                        font-size: 1.7rem;
+                        font-size: 1.5rem;
                         color: #212529;
 
                     }
                     .form-control{
-                        font-size: 1.5rem;
-                        padding: 13px;
+                        font-size: 1.2rem;
+                        padding: 12px;
                         
                     }
                     p{
@@ -363,12 +383,12 @@
                 }
                 
                 .boton{
-                    padding: 10px;
+                    padding: 1px;
                     margin-bottom: 15px;
                     display: flex;
                     justify-content: center;
                     button{
-                        padding: 12px;
+                        padding: 1px;
                         font-family: @font-family3;
                         font-size: 1.8rem;
                         font-weight: 500;
@@ -381,7 +401,7 @@
                     margin-bottom: 15px;
                     
                     button{
-                        padding: 12px;
+                        padding: 1px;
                         border: none;
                         font-family: @font-family3;
                         background: #2CA7EC;
@@ -450,14 +470,18 @@
 
 
 }
+/*-------------contacto--------------------------*/
 .contentContacto{
     max-width: 1110px;
     margin: 0 auto; 
 }
 
-
+/*------------------footer--------------------*/
 footer{
     margin-top: 30px;
+    &__header{
+          
+    }
     .footer__box{
         &__body{
             display: flex;
