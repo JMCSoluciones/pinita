@@ -491,7 +491,7 @@
                 color: @color-obscuro;
                 font-size: 1.8rem;               
                 img{  
-                    ;   
+                     
                     width: 25px;
                     height: auto;
                 }
@@ -738,7 +738,7 @@
 }
 /*------------Contenido Login-----------------*/
 .content.login.content{
-    
+    padding: 10px;  
     &__inicio{
         
         p{
@@ -749,35 +749,33 @@
         }
 
         &__form{
-        margin: 25px;
-        padding: 10px;
+        margin: 15px;
+        padding: 5px;
         box-shadow: rgba(253, 183, 0,) 0px 0px 0px 1px;
+        border-radius: 10px;
             .mb-3{ 
                 margin: 15px;
                 .form-label{
                     font-family: @font-family3;
                     color: black;
-                    font-size: 2rem;
+                    font-size: @indicacion;
                 }
                 margin-top: 10%;
                 input{
                     font-family: @font-family3;
                     color: black;
-                    font-size: 1.8rem; 
+                    font-size: @placeholder; 
                 }
         
-        }
-        .boton{
-            display: flex;
-            justify-content: center;
-            
-            button{
-                font-size: 1.9rem;
-                font-weight: 500;
             }
-        
-        }
-    }   
+            .boton{
+                display: flex;
+                justify-content: center;
+                
+                
+            
+            }
+        }   
     } 
     
 }
@@ -937,7 +935,7 @@
 
 /*--------------footer--------*/
 footer{
-    padding-top: 100px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     color: @color-claro;
