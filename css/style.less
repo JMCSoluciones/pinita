@@ -781,6 +781,7 @@
 }
 /*----------REGISTRO--------------------------*/
 .contentRegistro{
+    padding: 15px; 
     &__box{
         &__usuario{
             p:nth-child(1){
@@ -794,24 +795,25 @@
             p:nth-child(2){
                 margin: 15px;
                 padding: 5px;
-                font-size: 1.5rem;
+                font-size: 1.8rem;
                 color: @color-obscuro;
             }
                 &__formulario{
                     margin: 15px;
                     padding: 10px;
                     box-shadow: rgba(253, 183, 0,) 0px 0px 0px 1px;
+                    border-radius: 10px;
                     .mb-3{
                         margin: 15px;
                         .form-label{
                             color: black;
                             font-family: @font-family3;
-                            font-size: 2.3rem;
+                            font-size: @indicacion;
                         }
                         .form-label2{
-                            color: black;
+                            color: @color-obscuro;
                             font-family: @font-family3;
-                            font-size: 1.8rem;
+                            font-size: @texto;
                             text-align: justify;
                             margin-bottom: 5%;
                         }
@@ -820,17 +822,18 @@
                             
                         }
                         select{
-                            font-size: 1.8rem;
+                            font-size: @placeholder;
                             color: #212529;
 
                         }
                         .form-control{
-                            font-size: 1.8rem;
+                            font-size: @placeholder;
                             padding: 13px;
                             
                         }
                         p{
-                            font-size: 1.8rem;
+                            font-size: @texto;
+                            color: @color-obscuro;
                             font-family: @font-family3;
                         }
                         input{
@@ -851,8 +854,8 @@
                         button{
                             padding: 12px;
                             font-family: @font-family3;
-                            font-size: 1.8rem;
-                            font-weight: 500;
+                            
+                            
                             
                         }
                     }
@@ -866,7 +869,7 @@
                             border: none;
                             font-family: @font-family3;
                             background: #2CA7EC;
-                            font-size: 1.8rem;
+                            
                             font-weight: 500;
                             color: @color-claro;
                             

@@ -509,7 +509,7 @@ body {
   margin-left: 10px;
   padding-left: 10px;
   padding: 10px;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   text-align: justify;
   color: black;
 }
@@ -804,6 +804,9 @@ body {
           justify-content: center;
 }
 /*----------REGISTRO--------------------------*/
+.contentRegistro {
+  padding: 15px;
+}
 .contentRegistro__box__usuario p:nth-child(1) {
   color: black;
   font-size: 3rem;
@@ -814,7 +817,7 @@ body {
 .contentRegistro__box__usuario p:nth-child(2) {
   margin: 15px;
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #474643;
 }
 .contentRegistro__box__usuario__formulario {
@@ -822,6 +825,7 @@ body {
   padding: 10px;
   -webkit-box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
           box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+  border-radius: 10px;
 }
 .contentRegistro__box__usuario__formulario .mb-3 {
   margin: 15px;
@@ -829,12 +833,12 @@ body {
 .contentRegistro__box__usuario__formulario .mb-3 .form-label {
   color: black;
   font-family: 'Inter', sans-serf;
-  font-size: 2.3rem;
+  font-size: 1.5rem;
 }
 .contentRegistro__box__usuario__formulario .mb-3 .form-label2 {
-  color: black;
+  color: #474643;
   font-family: 'Inter', sans-serf;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-align: justify;
   margin-bottom: 5%;
 }
@@ -842,15 +846,16 @@ body {
   font-family: 'Inter', sans-serf;
 }
 .contentRegistro__box__usuario__formulario .mb-3 select {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: #212529;
 }
 .contentRegistro__box__usuario__formulario .mb-3 .form-control {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   padding: 13px;
 }
 .contentRegistro__box__usuario__formulario .mb-3 p {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
+  color: #474643;
   font-family: 'Inter', sans-serf;
 }
 .contentRegistro__box__usuario__formulario .mb-3 input {
@@ -870,8 +875,6 @@ body {
 .contentRegistro__box__usuario__formulario .boton button {
   padding: 12px;
   font-family: 'Inter', sans-serf;
-  font-size: 1.8rem;
-  font-weight: 500;
 }
 .contentRegistro__box__usuario__formulario .boton-azul {
   display: -webkit-box;
@@ -887,7 +890,6 @@ body {
   border: none;
   font-family: 'Inter', sans-serf;
   background: #2CA7EC;
-  font-size: 1.8rem;
   font-weight: 500;
   color: #FFFFFF;
 }
