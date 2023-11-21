@@ -476,7 +476,7 @@ body {
   text-align: center;
   margin: 0px;
 }
-.content__section-nuestrafundacion-blogimg img {
+.content__section-nuestrafundacion-blogimg .foto {
   max-width: 270px;
   margin: 0 auto;
   display: -webkit-box;
@@ -894,6 +894,9 @@ body {
   color: #FFFFFF;
 }
 /*----------Contacto--------------------------*/
+.contentContacto {
+  padding: 10px;
+}
 .contentContacto__titulo p {
   color: black;
   font-size: 3rem;
@@ -905,6 +908,7 @@ body {
   padding: 10px;
   -webkit-box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
           box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+  border-radius: 15px;
 }
 .contentContacto__titulo__formu .mb-3 {
   margin-top: 10%;
@@ -912,12 +916,12 @@ body {
 .contentContacto__titulo__formu .mb-3 .form-label {
   font-family: 'Inter', sans-serf;
   color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .contentContacto__titulo__formu .mb-3 input {
   font-family: 'Inter', sans-serf;
   color: black;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 .contentContacto__titulo__formu .boton {
   display: -webkit-box;
@@ -928,7 +932,6 @@ body {
           justify-content: center;
 }
 .contentContacto__titulo__formu .boton button {
-  font-size: 1.9rem;
   font-weight: 500;
 }
 /*--------------footer--------*/
