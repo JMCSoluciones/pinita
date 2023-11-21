@@ -447,60 +447,57 @@
                 margin: 0px;
                 } 
             img{
-                max-width: 100%;
-                display: flex;
-                align-items: center;
-                
+                max-width: 270px;
+                margin: 0 auto;
+                display: flex; 
                 height: auto; /* Altura automática para mantener la proporción original */
                 border-radius: 10px 10px 10px 10px;
             }
             
         &-box{
             /*---Autor----*/
-            margin: 15px;
+            margin: 10px;
             p:nth-child(1){
-            
             text-align: left;
             font-size: 1.3rem;
             color: black;
-            margin: 0px;
+            margin-left: 20px;
             line-height: 2em;
             }
             /*---fecha---*/
             p:nth-child(2){
-            
+            margin-left: 20px;
             font-size: 1.3rem;
             color: black;
             border-bottom: 1px solid @color-primario;
-
             }
             /*---texto----*/
             p:nth-child(3){
-            margin: 0px;
-            padding: 5%;
-            font-size: 2rem;
-            text-align:left;
+            margin-left: 10px;
+            padding-left: 10px;
+            padding: 10px;
+            font-size: @texto;
+            text-align:justify;
             color: black;
-            font-family: @fuente-base1
-            
-            
             }
             a {
-                display: flex;
-                line-height: 25px;
+                 
+                line-height: 30px;
                 text-decoration: none;
-                text-align: end;
-                justify-content:end;
-                color: black;
-                font-size: 1.8rem;  
-                    
-
-                img{
-                    display:flex;
+                display: flex;
+                justify-content: flex-end !important;
+                align-items: end !important;
+                align-items: end;
+                color: @color-obscuro;
+                font-size: 1.8rem;               
+                img{  
+                    ;   
                     width: 25px;
                     height: auto;
                 }
             }
+            
+            
         }
         .btn.btn-primary{
             background-color: @color-primario;

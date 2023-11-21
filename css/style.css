@@ -477,20 +477,18 @@ body {
   margin: 0px;
 }
 .content__section-nuestrafundacion-blogimg img {
-  max-width: 100%;
+  max-width: 270px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: auto;
   /* Altura automática para mantener la proporción original */
   border-radius: 10px 10px 10px 10px;
 }
 .content__section-nuestrafundacion-blogimg-box {
   /*---Autor----*/
-  margin: 15px;
+  margin: 10px;
   /*---fecha---*/
   /*---texto----*/
 }
@@ -498,39 +496,40 @@ body {
   text-align: left;
   font-size: 1.3rem;
   color: black;
-  margin: 0px;
+  margin-left: 20px;
   line-height: 2em;
 }
 .content__section-nuestrafundacion-blogimg-box p:nth-child(2) {
+  margin-left: 20px;
   font-size: 1.3rem;
   color: black;
   border-bottom: 1px solid #fcaf00;
 }
 .content__section-nuestrafundacion-blogimg-box p:nth-child(3) {
-  margin: 0px;
-  padding: 5%;
-  font-size: 2rem;
-  text-align: left;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding: 10px;
+  font-size: 1.6rem;
+  text-align: justify;
   color: black;
-  font-family: 32px;
 }
 .content__section-nuestrafundacion-blogimg-box a {
+  line-height: 30px;
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 25px;
-  text-decoration: none;
-  text-align: end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  color: black;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: end !important;
+  align-items: end;
+  color: #474643;
   font-size: 1.8rem;
 }
 .content__section-nuestrafundacion-blogimg-box a img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 25px;
   height: auto;
 }
