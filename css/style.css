@@ -218,7 +218,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-image: url(../images/Mobile/mobileItemDonacion2480x520.jpg);
-  width: auto;
+  width: 360;
   height: 400px;
   background-size: cover;
 }
@@ -232,11 +232,12 @@ body {
   background-color: rgba(238, 152, 24, 0.42);
 }
 .content__section-nuestrafundacion-imgcafe-color p {
-  margin: 15px;
+  margin: 10px;
+  display: contents;
+  padding: 5px;
   color: #FFFFFF;
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
-  text-align: left;
   margin-right: 150px;
   font-family: 'Inter', sans-serf;
 }
@@ -256,12 +257,12 @@ body {
   border-radius: 30px 0 30px 0;
 }
 .content__section-nuestrafundacion-imgcafe-cuadro p {
-  margin: 10px;
+  margin-top: 20px;
   position: absolute;
-  top: 20%;
+  top: 20px;
   color: #FFFFFF;
   font-family: 32px;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   text-align: center;
 }
 .content__section-nuestrafundacion-programas {
