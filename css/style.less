@@ -116,7 +116,7 @@
         p{
         
         color: @color-obscuro;
-        font-size: 2rem;
+        font-size: @texto-body;
         font-family: @font-family3;
         align-items:center;
         margin: 12px;
@@ -224,8 +224,8 @@
             background-color: #B0710D; /* Color azul con 50% de opacidad */
             border-radius: 30px 0 30px 0;
             p{
-                margin-top: 20px;
-                position: absolute;
+                margin-top: 50px;
+                
                 top: 20px;
                 color: @color-claro;
                 font-family: @fuente-base1;
@@ -247,7 +247,7 @@
             color: @color-obscuro;
             border-bottom: 1px solid @color-primario ;
             margin-bottom: 0;
-            font-size: 3.8rem;
+            font-size: 3.5rem;
             line-height: normal;
             text-align:center;
             text-transform: uppercase;
@@ -366,6 +366,7 @@
             .modal-body{
                 position: relative;
                 margin: 5px;
+                height: 250px;
                 p{
                     display: flex;
                     flex-direction: column;
@@ -375,6 +376,7 @@
                     font-size: 1.5rem;
                     font-family: @font-family3;
                     text-align: left;
+                    width: 150px;
                     
                 }
                 img{
@@ -541,7 +543,7 @@
             margin: 10px;
             position: relative;
             top: 160px;
-            font-size: 6.5rem;
+            font-size: 4.2rem;
             color:@color-claro ;
         }
         p:nth-child(2){
@@ -549,7 +551,7 @@
             position: relative;
             top: 160px;
             margin: 10px;
-            font-size: 6.5rem;
+            font-size: 4.2rem;
             color:@color-claro ;
         }
         p:nth-child(3){
@@ -557,7 +559,7 @@
             position: relative;
             top: 160px;
             margin: 10px;
-            font-size: 6.5rem;
+            font-size: 4.2rem;
             color:@color-claro ;
             border-bottom: 2px solid #F39E16;
         }
@@ -573,7 +575,7 @@
         margin-top: 10%;
         color: @color-obscuro;
         text-align: center;
-        font-size: 4rem;
+        font-size: 3.1rem;
         font-family: @font-family3;
         
     }
@@ -583,18 +585,19 @@
         display: flex;
         flex-direction: column;
         color: @color-obscuro;
-        margin: 15px;
-        margin-right: 200px;
-        font-size: 2rem;
+        margin: 5px;
+        margin-right: 150px;
+        font-size: @texto-body;
         font-family: @font-family3;
         text-align: left;
         
         
     }
     img{
+        
         top: 90%;
         position: absolute;
-        right: 280px;
+        right: 180px;
         display:flex;
         width: 30px;
         height: auto;
@@ -611,8 +614,8 @@
         top: 30%;
         background-size: cover;
         clip-path: circle(50% at 50% 50%);
-        width: 220px;
-        height: 220px;
+        width: 190px;
+        height: 190px;
         display: flex;
     }
    
@@ -620,7 +623,7 @@
 
 /*------Contenido de Mision-----*/
 .content__section-Fundacion-Mision{
-    top: 100px;
+    top: 10px;
     position: relative;
     display: flex;
     background-image: url(../images/Mobile/mobileItemMision480x520.jpg);
@@ -637,7 +640,7 @@
         h1{
             margin: 20px;
             color: @color-claro;
-            font-size: 5rem;
+            font-size: @texto-titulo;
             font-family: @font-family;
             border-bottom: 2px solid #F39E16;
 
@@ -647,7 +650,7 @@
             font-family: @font-family3;
             margin: 20px;
             color:@color-claro;
-            font-size: 3rem;
+            font-size: 2.5rem;
             text-align: left;
             
         }
@@ -657,10 +660,10 @@
     
     p{
         margin: 75px;
-        top: 150px;
+        top: 5px;
         position: relative;
         color: @color-obscuro;
-        font-size: 3.8rem;
+        font-size: 3.5rem;
         text-align: center;
         font-weight: 500;
         border-bottom: 2px solid #F39E16;
@@ -680,11 +683,10 @@
           p{
             
             text-decoration: none;
-            margin: 20px;
             line-height: 25px;
-            font-size: 2.5rem;
+            font-size: @texto-body;
             position: absolute;
-            top: 80px;
+            top: 0x;
             color: @color-obscuro;
             margin-left: 80px;
             letter-spacing: 0.1sem;
@@ -693,7 +695,7 @@
           }  
           img{
             position: absolute;
-            top: 97px;
+            top: 0;
             width: 35px;
             margin-left: 42px;
             
@@ -703,8 +705,8 @@
     }
 }
 .content__section-Fundacion-vision{
-    margin-top: 30%;
-    top: 70px;
+    margin-top: 10px;
+    top: 10px;
     position: relative;
     display: flex;
     background-image: url(../images/Mobile/mobileItemVision480x520.jpg);
@@ -721,7 +723,7 @@
         h2{
             margin: 20px;
             color: @color-claro;
-            font-size: 5rem;
+            font-size: @texto-titulo;
             font-family: @font-family;
             text-align:right;
             border-bottom: 2px solid #F39E16;
@@ -732,7 +734,7 @@
             font-family: @font-family3;
             margin: 20px;
             color:@color-claro;
-            font-size: 3rem;
+            font-size: @texto-MV;
             text-align: right;
             
         }

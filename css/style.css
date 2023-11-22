@@ -134,7 +134,7 @@ body {
 }
 .content__section-nuestrafundacion-txt p {
   color: #474643;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: 'Inter', sans-serf;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -257,8 +257,7 @@ body {
   border-radius: 30px 0 30px 0;
 }
 .content__section-nuestrafundacion-imgcafe-cuadro p {
-  margin-top: 20px;
-  position: absolute;
+  margin-top: 50px;
   top: 20px;
   color: #FFFFFF;
   font-family: 32px;
@@ -273,7 +272,7 @@ body {
   color: #474643;
   border-bottom: 1px solid #fcaf00;
   margin-bottom: 0;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   line-height: normal;
   text-align: center;
   text-transform: uppercase;
@@ -401,6 +400,7 @@ body {
 .content__section-nuestrafundacion-circulo .modal-content .modal-body {
   position: relative;
   margin: 5px;
+  height: 250px;
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-body p {
   display: -webkit-box;
@@ -416,6 +416,7 @@ body {
   font-size: 1.5rem;
   font-family: 'Inter', sans-serf;
   text-align: left;
+  width: 150px;
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-body img {
   position: absolute;
@@ -568,7 +569,7 @@ body {
   margin: 10px;
   position: relative;
   top: 160px;
-  font-size: 6.5rem;
+  font-size: 4.2rem;
   color: #FFFFFF;
 }
 .content__section-Fundacion-text p:nth-child(2) {
@@ -576,7 +577,7 @@ body {
   position: relative;
   top: 160px;
   margin: 10px;
-  font-size: 6.5rem;
+  font-size: 4.2rem;
   color: #FFFFFF;
 }
 .content__section-Fundacion-text p:nth-child(3) {
@@ -584,7 +585,7 @@ body {
   position: relative;
   top: 160px;
   margin: 10px;
-  font-size: 6.5rem;
+  font-size: 4.2rem;
   color: #FFFFFF;
   border-bottom: 2px solid #F39E16;
 }
@@ -597,7 +598,7 @@ body {
   margin-top: 10%;
   color: #474643;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.1rem;
   font-family: 'Inter', sans-serf;
 }
 .content__section-Fundacion-quienessomos p {
@@ -610,16 +611,16 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #474643;
-  margin: 15px;
-  margin-right: 200px;
-  font-size: 2rem;
+  margin: 5px;
+  margin-right: 150px;
+  font-size: 1.8rem;
   font-family: 'Inter', sans-serf;
   text-align: left;
 }
 .content__section-Fundacion-quienessomos img {
   top: 90%;
   position: absolute;
-  right: 280px;
+  right: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,15 +639,15 @@ body {
   background-size: cover;
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
-  width: 220px;
-  height: 220px;
+  width: 190px;
+  height: 190px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 /*------Contenido de Mision-----*/
 .content__section-Fundacion-Mision {
-  top: 100px;
+  top: 10px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -674,7 +675,7 @@ body {
 .content__section-Fundacion-Mision-text h1 {
   margin: 20px;
   color: #FFFFFF;
-  font-size: 5rem;
+  font-size: 4.2rem;
   font-family: 'Raleway', sans-serif;
   border-bottom: 2px solid #F39E16;
 }
@@ -683,15 +684,15 @@ body {
   font-family: 'Inter', sans-serf;
   margin: 20px;
   color: #FFFFFF;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: left;
 }
 .content__section-Fundacion-Valores p {
   margin: 75px;
-  top: 150px;
+  top: 5px;
   position: relative;
   color: #474643;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   text-align: center;
   font-weight: 500;
   border-bottom: 2px solid #F39E16;
@@ -709,24 +710,23 @@ body {
 }
 .content__section-Fundacion-lista-listaval-text p {
   text-decoration: none;
-  margin: 20px;
   line-height: 25px;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   position: absolute;
-  top: 80px;
+  top: 0x;
   color: #474643;
   margin-left: 80px;
   letter-spacing: 0.1sem;
 }
 .content__section-Fundacion-lista-listaval-text img {
   position: absolute;
-  top: 97px;
+  top: 0;
   width: 35px;
   margin-left: 42px;
 }
 .content__section-Fundacion-vision {
-  margin-top: 30%;
-  top: 70px;
+  margin-top: 10px;
+  top: 10px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -754,7 +754,7 @@ body {
 .content__section-Fundacion-vision-text h2 {
   margin: 20px;
   color: #FFFFFF;
-  font-size: 5rem;
+  font-size: 4.2rem;
   font-family: 'Raleway', sans-serif;
   text-align: right;
   border-bottom: 2px solid #F39E16;
@@ -763,7 +763,7 @@ body {
   font-family: 'Inter', sans-serf;
   margin: 20px;
   color: #FFFFFF;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: right;
 }
 /*------------Contenido Login-----------------*/

@@ -108,6 +108,8 @@ ul {
   margin-left: 8px;
   background-color: transparent;
   width: 25px;
+  -webkit-transform: rotate(1deg) !important;
+          transform: rotate(1deg) !important;
 }
 .menu__nesting {
   -webkit-clip-path: var(--clip);
