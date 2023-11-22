@@ -6,8 +6,8 @@ block content
               .carousel-inner
                     .carousel-item.active
                         picture.carousel-item__img
-                            source(media="(min-width:1110px)" srcset="/images/Desktop/desktopSlides_2-1920x360.jpg")
-                            source(media="(min-width:768px)" srcset="/images/Tablet/tabletSlides_2-1110x360.jpg")
+                            source(media="(min-width:1110px)" srcset="/images/Desktop/desktopSlides_2-1920x400.jpg")
+                            source(media="(min-width:768px)" srcset="/images/Tablet/tabletSlides_2-1110x400.jpg")
                             img(src="/images/Mobile/mobileSlide_2-722x1048.jpg" alt="Imagen de inicio").d-block.w-100
                         .slideContent 
                             p Fundacion
@@ -18,8 +18,8 @@ block content
                                 img(src="/images/icono/flecha_blanca.svg", alt="logo de flecha")
                     .carousel-item
                         picture.carousel-item__img
-                            source(media="(min-width:1110px)" srcset="/images/Desktop/desktopSlides_1-1920x360.jpg")
-                            source(media="(min-width:768px)" srcset="/images/Tablet/tabletSlides_1-1110x360.jpg")
+                            source(media="(min-width:1110px)" srcset="/images/Desktop/desktopSlides_1-1920x400.jpg")
+                            source(media="(min-width:768px)" srcset="/images/Tablet/tabletSlides_1-1110x400.jpg")
                             img(src="/images/Mobile/mobileSlide_1-722x1048.jpg" alt="niña de verde").d-block.w-100
                         .slideContent
                             .slideContent__box
@@ -66,10 +66,10 @@ block content
                                     span(aria-hidden='true') &times;
                             .modal-body
                                 p En pocas cosas se puede invertir mejor nuestro tiempo y esfuerzo que repartiendo sonrisas acompañadas de un alimento caliente a quien más lo necesita.
-                                    img(src="/images/Mobile/itemsCircle_2-600x600.jpg", alt="comdor viejito" class="imagen-redonda" srcset ="")
+                                    img(src="/images/Mobile/itemsCircle_2-600x600.jpg", alt="comedor viejito" class="imagen-redonda" srcset ="")
                             .modal-footer
                                 button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Registrate como voluntaro                                    
-                                    img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+                                    img.flecha(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
                 #Registrate.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='RegistrateLabel')
                     .modal-dialog(role='document')
                         .modal-content
@@ -118,8 +118,8 @@ block content
                                                         label.form-label(for='formGroupExampleInput2') Confirmar Password:
                                                         input#formGroupExampleInput9.form-control(type='password' placeholder='Confirmar Password')
                             .modal-footer
-                                button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
-                                button.btn.btn-success(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+                                button.btn.btn-danger.btn-lg( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                                button.btn.btn-success.btn-lg(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
                 #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel2' tabindex='-1')
                     .modal-dialog.modal-dialog-centered
                         .modal-content
@@ -147,7 +147,7 @@ block content
                                     img(src="/images/Mobile/itemsCircle_3-600x600.jpg", alt="Psicologia" srcset ="")       
                             .modal-footer
                                 button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Registrate como voluntaro
-                                    img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+                                    img.flecha(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
                 #Registrate.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='RegistrateLabel')
                     .modal-dialog(role='document')
                         .modal-content
@@ -196,8 +196,8 @@ block content
                                                         label.form-label(for='formGroupExampleInput2') Confirmar Password:
                                                         input#formGroupExampleInput9.form-control(type='password' placeholder='Confirmar Password')
                             .modal-footer
-                                button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
-                                button.btn.btn-success(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+                                button.btn.btn-danger.btn-lg( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                                button.btn.btn-success.btn-lg(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
                 #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel2' tabindex='-1')
                     .modal-dialog.modal-dialog-centered
                         .modal-content
@@ -225,7 +225,7 @@ block content
                                     img(src="/images/Mobile/itemsCircle_1-600x600.jpg", alt="Albergue" srcset ="")
                             .modal-footer
                                 button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Registrate como voluntaro
-                                        img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+                                        img.flecha(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
                 #Registrate.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='RegistrateLabel')
                     .modal-dialog(role='document')
                         .modal-content
@@ -274,8 +274,8 @@ block content
                                                         label.form-label(for='formGroupExampleInput2') Confirmar Password:
                                                         input#formGroupExampleInput9.form-control(type='password' placeholder='Confirmar Password')
                             .modal-footer
-                                button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
-                                button.btn.btn-success(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+                                button.btn.btn-danger.btn-lg( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                                button.btn.btn-success.btn-lg(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
                 #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel2' tabindex='-1')
                     .modal-dialog.modal-dialog-centered
                         .modal-content
@@ -303,7 +303,7 @@ block content
                                     img(src="/images/Mobile/itemsCircle_4-600x600.jpg", alt="Meriendas" srcset ="")
                             .modal-footer
                                 button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Registrate como voluntaro
-                                    img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+                                    img.flecha(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
                 #Registrate.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='RegistrateLabel')
                     .modal-dialog(role='document')
                         .modal-content
@@ -381,7 +381,7 @@ block content
                                     img(src="/images/Mobile/itemsCircle_5-600x600.jpg", alt="visitas" srcset ="") 
                             .modal-footer
                                 button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Registrate como voluntaro
-                                    img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+                                    img.fleccha(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
                 #Registrate.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='RegistrateLabel')
                     .modal-dialog(role='document')
                         .modal-content
@@ -430,8 +430,8 @@ block content
                                                         label.form-label(for='formGroupExampleInput2') Confirmar Password:
                                                         input#formGroupExampleInput9.form-control(type='password' placeholder='Confirmar Password')
                             .modal-footer
-                                button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
-                                button.btn.btn-success(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+                                button.btn.btn-danger.btn-lg( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                                button.btn.btn-success.btn-lg(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
                 #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel2' tabindex='-1')
                     .modal-dialog.modal-dialog-centered
                         .modal-content

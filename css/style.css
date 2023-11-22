@@ -234,10 +234,10 @@ body {
 .content__section-nuestrafundacion-imgcafe-color p {
   margin: 15px;
   color: #FFFFFF;
-  font-size: 2.9rem;
+  font-size: 2rem;
   text-transform: uppercase;
   text-align: left;
-  margin-right: 200px;
+  margin-right: 150px;
   font-family: 'Inter', sans-serf;
 }
 .content__section-nuestrafundacion-imgcafe-cuadro {
@@ -261,7 +261,7 @@ body {
   top: 20%;
   color: #FFFFFF;
   font-family: 32px;
-  font-size: 2.7rem;
+  font-size: 2.4rem;
   text-align: center;
 }
 .content__section-nuestrafundacion-programas {
@@ -272,7 +272,7 @@ body {
   color: #474643;
   border-bottom: 1px solid #fcaf00;
   margin-bottom: 0;
-  font-size: 4rem;
+  font-size: 3.8rem;
   line-height: normal;
   text-align: center;
   text-transform: uppercase;
@@ -280,7 +280,7 @@ body {
 }
 .content__section-nuestrafundacion-programas p:nth-child(2) {
   color: black;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 6px 6px;
   padding: 5px;
   -webkit-box-align: center;
@@ -345,14 +345,14 @@ body {
 }
 .content__section-nuestrafundacion-circulo-item-txt {
   background-color: rgba(33, 37, 41, 0.555);
-  width: 145px;
-  height: auto;
+  width: 160px;
+  height: 160px;
 }
 .content__section-nuestrafundacion-circulo-item-txt a {
   text-decoration: none;
   float: right;
   color: #fcaf00;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 200;
 }
 .content__section-nuestrafundacion-circulo-item-txt a img {
@@ -366,22 +366,20 @@ body {
 }
 .content__section-nuestrafundacion-circulo-item-txt .btn.btn-primary {
   width: auto;
-  height: 10px;
+  border: none;
+  top: 5px;
+  margin-left: 25px;
   color: #fcaf00;
   font-size: 1.9rem;
   background: transparent;
-  border: none;
-  float: right;
-  padding: 10%;
-  margin: 5%;
 }
 .content__section-nuestrafundacion-circulo-item-txt .btn.btn-primary img {
-  margin-top: 3%;
+  margin-top: 3px;
   float: right;
   width: 25px;
 }
 .content__section-nuestrafundacion-circulo-item-txt p {
-  margin: 5%;
+  margin: 10%;
   color: #FFFFFF;
   font-size: 2rem;
   text-align: center;
@@ -392,10 +390,10 @@ body {
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-title {
   color: #474643;
-  font-size: 2.5rem !important;
+  font-size: 2.3rem !important;
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-title strong {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 25px;
   border-bottom: 2px solid #FCAF00;
 }
@@ -413,15 +411,15 @@ body {
           flex-direction: column;
   color: #474643;
   margin: 5px;
-  margin-right: 190px;
-  font-size: 2rem;
+  margin-right: 150px;
+  font-size: 1.5rem;
   font-family: 'Inter', sans-serf;
   text-align: left;
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-body img {
   position: absolute;
-  left: 310px;
-  width: 200px;
+  left: 190px;
+  width: 160px;
   height: auto;
   border-radius: 50%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -434,16 +432,19 @@ body {
   font-size: 1.5rem;
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-footer .btn.btn.btn-primary {
-  position: relative;
-  right: 180px;
-  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: transparent;
   border: none;
   color: #fcaf00;
-  font-size: 2rem;
+  font-size: 1.7rem;
+}
+.content__section-nuestrafundacion-circulo .modal-content .modal-footer .btn.btn.btn-primary .flecha {
+  width: 28px;
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-footer .btn.btn-danger {
-  font-size: 2.4rem;
+  font-size: 2rem;
   padding: 10px;
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-footer .btn.btn-success {

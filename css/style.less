@@ -203,10 +203,10 @@
             p{
                 margin: 15px;
                 color: @color-claro;
-                font-size: 2.9rem;
+                font-size: 2rem;
                 text-transform: uppercase;
                 text-align:left;
-                margin-right: 200px;
+                margin-right: 150px;
                 font-family: @font-family3;
             }
 
@@ -226,7 +226,7 @@
                 top: 20%;
                 color: @color-claro;
                 font-family: @fuente-base1;
-                font-size: 2.7rem;
+                font-size: 2.4rem;
                 text-align: center;
 
             }
@@ -239,21 +239,22 @@
     &-programas{
         margin: 70px;
         margin-top: 40%;
+
         p:nth-child(1){
-        color: @color-obscuro;
-        border-bottom: 1px solid @color-primario ;
-        margin-bottom: 0;
-        font-size: 4rem;
-        line-height: normal;
-        text-align:center;
-        text-transform: uppercase;
-        text-shadow: 0px 1px 2.5px #8F9090;
+            color: @color-obscuro;
+            border-bottom: 1px solid @color-primario ;
+            margin-bottom: 0;
+            font-size: 3.8rem;
+            line-height: normal;
+            text-align:center;
+            text-transform: uppercase;
+            text-shadow: 0px 1px 2.5px #8F9090;
         }
     
 
         p:nth-child(2){
             color: black;
-            font-size: 2rem;
+            font-size: 1.6rem;
             margin: 6px 6px;
             padding: 5px;
             align-items: center;
@@ -300,14 +301,13 @@
             margin: 5px;
             &-txt{
                 background-color: rgba(33, 37, 41, 0.555);
-                width: 145px;
-                height: auto;
+                width: 160px;
+                height: 160px;
                 a{
-                    
                     text-decoration: none;
                     float: right;
                     color: @color-primario;
-                    font-size: 1.8rem;  
+                    font-size: 1.6rem;  
                     font-weight: 200;
                     img{
                         justify-content: center;
@@ -317,22 +317,21 @@
                 }
                 .btn.btn-primary{
                     width: auto;
-                    height: 10px;
+                    border: none;
+                    top: 5px;
+                    margin-left: 25px;
                     color: @color-primario;
                     font-size: 1.9rem;
                     background: transparent;
-                    border: none;
-                    float: right;
-                    padding: 10%;
-                    margin: 5%;
+                                        
                     img{
-                        margin-top: 3%;
+                        margin-top: 3px;
                         float: right;
                         width: 25px;
                     }
                 }
                 p{
-                    margin: 5%;
+                    margin: 10%;
                     color: @color-claro;
                     font-size: 2rem;
                     text-align: center;
@@ -350,9 +349,9 @@
             overflow: hidden;
             .modal-title{
                 color: @color-obscuro;
-                font-size: 2.5rem !important;
+                font-size: 2.3rem !important;
                 strong{
-                font-size: 4rem;  
+                font-size: 3rem;  
                 line-height: 25px;
                 
                 border-bottom: 2px solid #FCAF00;
@@ -369,17 +368,16 @@
                     flex-direction: column;
                     color: @color-obscuro;
                     margin: 5px;
-                    margin-right: 190px;
-                    font-size: 2rem;
+                    margin-right: 150px;
+                    font-size: 1.5rem;
                     font-family: @font-family3;
                     text-align: left;
                     
                 }
                 img{
                     position: absolute;
-                    
-                    left: 310px;
-                    width: 200px;
+                    left: 190px;
+                    width: 160px;
                     height: auto;
                     border-radius: 50%;
                     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -396,16 +394,17 @@
             }
             .modal-footer{
                 .btn.btn.btn-primary{
-                    position: relative;
-                    right: 180px;
-                    text-decoration: none;
+                    display: flex;
                     background-color: transparent;
                     border: none;
                     color: @color-primario;
-                    font-size: 2rem;
+                    font-size: 1.7rem;
+                    .flecha{
+                        width: 28px;
+                    }
                 }
                 .btn.btn-danger{
-                    font-size: 2.4rem;
+                    font-size: 2rem;
                     padding: 10px;
                     
                 }
