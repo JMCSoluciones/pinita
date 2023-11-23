@@ -350,6 +350,7 @@
        /*-------estilo en modales------*/ 
        .modal-content{
             overflow: hidden;
+            
             .modal-title{
                 color: @color-obscuro;
                 font-size: 2.3rem !important;
@@ -366,17 +367,18 @@
             .modal-body{
                 position: relative;
                 margin: 5px;
-                height: 250px;
+                height: 215px;
                 p{
                     display: flex;
                     flex-direction: column;
                     color: @color-obscuro;
                     margin: 5px;
                     margin-right: 150px;
-                    font-size: 1.5rem;
+                    font-size: @indicacion;
                     font-family: @font-family3;
                     text-align: left;
                     width: 150px;
+                    
                     
                 }
                 img{
@@ -397,6 +399,10 @@
                 }
                 
             }
+            .modal-body.reg{
+                margin: 5px;
+                height: auto;
+            }
             .modal-footer{
                 .btn.btn.btn-primary{
                     display: flex;
@@ -408,15 +414,7 @@
                         width: 28px;
                     }
                 }
-                .btn.btn-danger{
-                    font-size: 2rem;
-                    padding: 10px;
-                    
-                }
-                .btn.btn-success{
-                    font-size: 2.4rem;
-                    padding: 10px;
-                }
+                
             }
         
         }
