@@ -377,7 +377,7 @@
                     font-size: @indicacion;
                     font-family: @font-family3;
                     text-align: left;
-                    width: 150px;
+                    
                     
                     
                 }
@@ -391,16 +391,20 @@
                 }
                 .contentRegistro__box__usuario{
                     p{
-                        color: @color-obscuro;
-                        border-bottom: none;
-                        margin: 0;
-                        font-size: 1.5rem;
+                        color: @color-ind;
+                        
+                        margin: 2px;
+                        font-size: @placeholder;
                     }
                 }
                 
             }
             .modal-body.reg{
                 margin: 5px;
+                height: auto;
+                
+            }
+            .modal-body.mensaje{
                 height: auto;
             }
             .modal-footer{
@@ -813,7 +817,7 @@
                             font-size: @indicacion;
                         }
                         .form-label2{
-                            color: @color-obscuro;
+                            color: @color-ind;
                             font-family: @font-family3;
                             font-size: @texto;
                             text-align: justify;
@@ -831,11 +835,12 @@
                         .form-control{
                             font-size: @placeholder;
                             padding: 13px;
+                            color: @color-ind;
                             
                         }
                         p{
                             font-size: @texto;
-                            color: @color-obscuro;
+                            color: @color-ind;
                             font-family: @font-family3;
                         }
                         input{
