@@ -477,7 +477,7 @@ body {
   text-align: center;
   margin: 0px;
 }
-.content__section-nuestrafundacion-blogimg .foto {
+.content__section-nuestrafundacion-blogimg #fotopost {
   max-width: 270px;
   margin: 0 auto;
   display: -webkit-box;
@@ -530,8 +530,8 @@ body {
   color: #474643;
   font-size: 1.8rem;
 }
-.content__section-nuestrafundacion-blogimg-box a img {
-  width: 25px;
+.content__section-nuestrafundacion-blogimg-box img {
+  width: 30px;
   height: auto;
 }
 .content__section-nuestrafundacion-blogimg .btn.btn-primary {
