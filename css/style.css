@@ -400,7 +400,8 @@ body {
 .content__section-nuestrafundacion-circulo .modal-content .modal-body {
   position: relative;
   margin: 5px;
-  height: 215px;
+  height: 200px;
+  overflow: hidden;
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-body p {
   display: -webkit-box;
@@ -419,7 +420,7 @@ body {
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-body img {
   position: absolute;
-  left: 190px;
+  right: -25px;
   width: 160px;
   height: auto;
   border-radius: 50%;
