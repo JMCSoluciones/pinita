@@ -935,6 +935,21 @@ body {
 .contentContacto__titulo__formu .boton button {
   font-weight: 500;
 }
+.contentContacto__titulo__maps {
+  position: relative;
+}
+.contentContacto__titulo__maps iframe {
+  position: absolute;
+  width: 360px;
+  height: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: -20px;
+}
 /*--------------footer--------*/
 footer {
   padding-top: 30px;
