@@ -413,14 +413,14 @@ body {
           flex-direction: column;
   color: #474643;
   margin: 5px;
-  margin-right: 150px;
+  margin-right: 180px;
   font-size: 1.5rem;
   font-family: 'Inter', sans-serf;
   text-align: left;
 }
 .content__section-nuestrafundacion-circulo .modal-content .modal-body img {
   position: absolute;
-  right: -25px;
+  right: -15px;
   width: 160px;
   height: auto;
   border-radius: 50%;
