@@ -210,6 +210,10 @@ body {
 .content__section-nuestrafundacion-blog {
   margin: 80px;
 }
+.content__section-nuestrafundacion-blogimg {
+  max-width: 1110px;
+  margin: 0 auto;
+}
 .content__section-Fundacion {
   overflow: hidden;
   position: relative;
