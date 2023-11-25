@@ -198,6 +198,9 @@ body {
 .content__section-nuestrafundacion-programas {
   margin-top: 20%;
 }
+.content__section-nuestrafundacion-programas strong {
+  font-size: 4.2rem;
+}
 .content__section-nuestrafundacion-circulo .modal-content .modal-title {
   font-size: 2rem ;
 }
