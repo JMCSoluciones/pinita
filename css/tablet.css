@@ -13,10 +13,6 @@ body {
 .hidden {
   display: none !important;
 }
-.carousel-item {
-  position: relative !important;
-  display: inline-block !important;
-}
 .content__section-nuestrafundacion-motvacion {
   background-image: url(../images/Tablet/tabletItemDonacion_1_1440x900.jpg);
   height: 466px;
