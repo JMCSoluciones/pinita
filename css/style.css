@@ -554,6 +554,7 @@ body {
   background-size: cover;
   width: auto;
   height: 500px;
+  /*------Contenido de Mision-----*/
 }
 .content__section-Fundacion-text {
   line-height: 1.2;
@@ -643,7 +644,6 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-/*------Contenido de Mision-----*/
 .content__section-Fundacion-Mision {
   top: 10px;
   position: relative;

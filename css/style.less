@@ -572,178 +572,177 @@
         }
         
     }
-    
-}
-.content__section-Fundacion-quienessomos{
-    padding: 10px;
-    position: relative;
-    overflow: hidden;
-    h2{
-        margin-top: 10%;
-        color: @color-obscuro;
-        text-align: center;
-        font-size: 3.1rem;
-        font-family: @font-family3;
-        
-    }
-    
-    p{
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        color: @color-obscuro;
-        margin: 5px;
-        margin-right: 150px;
-        font-size: @texto-body;
-        font-family: @font-family3;
-        text-align: left;
-        
-        
-    }
-    img{
-        
-        top: 90%;
-        position: absolute;
-        right: 180px;
-        display:flex;
-        width: 30px;
-        height: auto;
-    }
-    &-circulo{
-        
-        position: absolute;
-        display: flex;
-        right: -20px;
-        border-radius: 2px solid #9747FF;
+    &-quienessomos{
+        padding: 10px;
+        position: relative;
         overflow: hidden;
-        flex-wrap: wrap;
-        background-image: url(/images/Mobile/fundacion.jpg);
-        top: 30%;
-        background-size: cover;
-        clip-path: circle(50% at 50% 50%);
-        width: 190px;
-        height: 190px;
-        display: flex;
-    }
-   
-}
-
-/*------Contenido de Mision-----*/
-.content__section-Fundacion-Mision{
-    top: 10px;
-    position: relative;
-    display: flex;
-    background-image: url(../images/Mobile/mobileItemMision480x520.jpg);
-    background-size: cover;
-    width:  auto;
-    height: 480px; 
-    &-text{
-        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;        line-height: 1.2;
-        display: flex;
-        flex-direction: column;
-        width: 360vw;
-        height: 480px;
-        background-color: rgba(0, 0, 0, 20%);
-        h1{
-            margin: 20px;
-            color: @color-claro;
-            font-size: @texto-titulo;
-            font-family: @font-family;
-            border-bottom: 2px solid #F39E16;
-
-        }
-        p{
-            margin-right: 100px;
+        h2{
+            margin-top: 10%;
+            color: @color-obscuro;
+            text-align: center;
+            font-size: 3.1rem;
             font-family: @font-family3;
-            margin: 20px;
-            color:@color-claro;
-            font-size: 2.5rem;
+            
+        }
+        
+        p{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            color: @color-obscuro;
+            margin: 5px;
+            margin-right: 150px;
+            font-size: @texto-body;
+            font-family: @font-family3;
             text-align: left;
+            
+            
+        }
+        img{
+            
+            top: 90%;
+            position: absolute;
+            right: 180px;
+            display:flex;
+            width: 30px;
+            height: auto;
+        }
+        &-circulo{
+            
+            position: absolute;
+            display: flex;
+            right: -20px;
+            border-radius: 2px solid #9747FF;
+            overflow: hidden;
+            flex-wrap: wrap;
+            background-image: url(/images/Mobile/fundacion.jpg);
+            top: 30%;
+            background-size: cover;
+            clip-path: circle(50% at 50% 50%);
+            width: 190px;
+            height: 190px;
+            display: flex;
+        }
+       
+    }
+    /*------Contenido de Mision-----*/
+    &-Mision{
+        top: 10px;
+        position: relative;
+        display: flex;
+        background-image: url(../images/Mobile/mobileItemMision480x520.jpg);
+        background-size: cover;
+        width:  auto;
+        height: 480px; 
+        &-text{
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;        line-height: 1.2;
+            display: flex;
+            flex-direction: column;
+            width: 360vw;
+            height: 480px;
+            background-color: rgba(0, 0, 0, 20%);
+            h1{
+                margin: 20px;
+                color: @color-claro;
+                font-size: @texto-titulo;
+                font-family: @font-family;
+                border-bottom: 2px solid #F39E16;
+
+            }
+            p{
+                margin-right: 100px;
+                font-family: @font-family3;
+                margin: 20px;
+                color:@color-claro;
+                font-size: 2.5rem;
+                text-align: left;
+                
+            }
+        }
+    }
+    
+    &-Valores{
+    
+        p{
+            margin: 75px;
+            top: 5px;
+            position: relative;
+            color: @color-obscuro;
+            font-size: 3.5rem;
+            text-align: center;
+            font-weight: 500;
+            border-bottom: 2px solid #F39E16;
+            
             
         }
     }
-}
-.content__section-Fundacion-Valores{
+    &-lista{
     
-    p{
-        margin: 75px;
-        top: 5px;
-        position: relative;
-        color: @color-obscuro;
-        font-size: 3.5rem;
-        text-align: center;
-        font-weight: 500;
-        border-bottom: 2px solid #F39E16;
-        
-        
+        &-listaval{
+            &-text{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 55px;
+                position: relative;
+                
+              p{
+                
+                text-decoration: none;
+                line-height: 25px;
+                font-size: @texto-body;
+                position: absolute;
+                top: 0x;
+                color: @color-obscuro;
+                margin-left: 80px;
+                letter-spacing: 0.1sem;
+            
+                
+              }  
+              img{
+                position: absolute;
+                top: 0;
+                width: 35px;
+                margin-left: 42px;
+                
+              }
+            }
+    
+        }
     }
-}
-.content__section-Fundacion-lista{
-    
-    &-listaval{
+    &-vision{
+        margin-top: 10px;
+        top: 10px;
+        position: relative;
+        display: flex;
+        background-image: url(../images/Mobile/mobileItemVision480x520.jpg);
+        background-size: cover;
+        width:  auto;
+        height: 480px; 
         &-text{
             display: flex;
             flex-direction: column;
-            padding-bottom: 55px;
-            position: relative;
-            
-          p{
-            
-            text-decoration: none;
-            line-height: 25px;
-            font-size: @texto-body;
-            position: absolute;
-            top: 0x;
-            color: @color-obscuro;
-            margin-left: 80px;
-            letter-spacing: 0.1sem;
-        
-            
-          }  
-          img{
-            position: absolute;
-            top: 0;
-            width: 35px;
-            margin-left: 42px;
-            
-          }
-        }
-
-    }
-}
-.content__section-Fundacion-vision{
-    margin-top: 10px;
-    top: 10px;
-    position: relative;
-    display: flex;
-    background-image: url(../images/Mobile/mobileItemVision480x520.jpg);
-    background-size: cover;
-    width:  auto;
-    height: 480px; 
-    &-text{
-        display: flex;
-        flex-direction: column;
-        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;        line-height: 1.2;
-        width: 360vw;
-        height: 480px;
-        background-color: rgba(0, 0, 0, 20%);
-        h2{
-            margin: 20px;
-            color: @color-claro;
-            font-size: @texto-titulo;
-            font-family: @font-family;
-            text-align:right;
-            border-bottom: 2px solid #F39E16;
-
-        }
-        p{
-            
-            font-family: @font-family3;
-            margin: 20px;
-            color:@color-claro;
-            font-size: @texto-MV;
-            text-align: right;
-            
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;        line-height: 1.2;
+            width: 360vw;
+            height: 480px;
+            background-color: rgba(0, 0, 0, 20%);
+            h2{
+                margin: 20px;
+                color: @color-claro;
+                font-size: @texto-titulo;
+                font-family: @font-family;
+                text-align:right;
+                border-bottom: 2px solid #F39E16;
+    
+            }
+            p{
+                
+                font-family: @font-family3;
+                margin: 20px;
+                color:@color-claro;
+                font-size: @texto-MV;
+                text-align: right;
+                
+            }
         }
     }
 }
@@ -943,16 +942,6 @@
         
     }
 }
-
-
-
-   
-
-
-
-
-
-
 /*--------------footer--------*/
 footer{
     padding-top: 30px;
