@@ -241,16 +241,20 @@ body {
 }
 .content__section-Fundacion-text p:nth-child(1) {
   font-size: 4.2rem;
+  margin: 20px;
 }
 .content__section-Fundacion-text p:nth-child(2) {
   font-size: 4.2rem;
+  margin: 20px;
 }
 .content__section-Fundacion-text p:nth-child(3) {
   font-size: 4.2rem;
+  margin: 20px;
 }
 .content__section-Fundacion-quienessomos {
   max-width: 1110px;
   margin: 0 auto;
+  height: 400px;
 }
 .content__section-Fundacion-quienessomos h2 {
   margin-top: 10%;
