@@ -8,7 +8,19 @@ block  content
     .content__section-Fundacion-quienessomos
             h2 ¿Quienes somos?
             p En la Fundación Pinita nos preocupamos por el desarrollo de los niños y adultos mayores que se encuentran en situaciones vulnerables...
-            img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+            button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal') Ver mas
+                img(src="/images/icono/flecha_amarilla.svg", alt="logo de flecha")
+    #exampleModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalComedorLabel')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h1#exampleModalLabel.modal-title.fs-5 Entrega de #[br] #[strong alimentos a #[br] clientes]
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        p En pocas cosas se puede invertir mejor nuestro tiempo y esfuerzo que repartiendo sonrisas acompañadas de un alimento caliente a quien más lo necesita.
+                            
+                    
             .content__section-Fundacion-quienessomos-circulo
     .content__section-Fundacion-Mision
         .content__section-Fundacion-Mision-text
