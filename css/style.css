@@ -588,15 +588,6 @@ body {
   color: #FFFFFF;
   border-bottom: 2px solid #F39E16;
 }
-.content__section-Fundacion-text .btn-primary {
-  width: auto;
-  border: none;
-  top: 5px;
-  margin-left: 25px;
-  color: #fcaf00 !important;
-  font-size: 1.9rem;
-  background: transparent;
-}
 .content__section-Fundacion-quienessomos {
   padding: 10px;
   position: relative;
@@ -652,6 +643,26 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.content__section-Fundacion-quienessomos .btn.btn-primary {
+  position: relative;
+  top: -30px;
+  width: auto;
+  border: none;
+  margin-left: 60px;
+  color: #fcaf00;
+  font-size: 1.9rem;
+  background: transparent;
+}
+.content__section-Fundacion-quienessomos .btn.btn-primary img {
+  position: fixed;
+  top: 275px;
+  float: right;
+  width: 25px;
+}
+.content__section-Fundacion-quienessomos .btn-primary {
+  color: red;
+  border-color: red;
 }
 .content__section-Fundacion-Mision {
   top: 10px;

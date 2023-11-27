@@ -570,15 +570,7 @@
             color:@color-claro ;
             border-bottom: 2px solid #F39E16;
         }
-        .btn-primary{
-            width: auto;
-            border: none;
-            top: 5px;
-            margin-left: 25px;
-            color: @color-primario!important;
-            font-size: 1.9rem;
-            background: transparent;
-        }
+        
         
     }
     &-quienessomos{
@@ -630,6 +622,28 @@
             width: 190px;
             height: 190px;
             display: flex;
+        }
+        .btn.btn-primary{
+            position: relative;
+            top: -30px;
+            width: auto;
+            border: none;
+            margin-left:60px;
+            color: @color-primario;
+            font-size: 1.9rem;
+            background: transparent;
+            
+                                
+            img{
+                position: fixed;
+                top: 275px;
+                float: right;
+                width: 25px;
+            }
+        }
+        .btn-primary{
+            color: red;
+            border-color: red;
         }
     }
     /*------Contenido de Mision-----*/
