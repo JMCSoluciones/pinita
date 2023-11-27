@@ -238,10 +238,11 @@ body {
   display: flex;
   background-image: url(../images/Desktop/desktopSlides_Somos-1920x466.jpg);
   background-size: contain;
-  height: 249px;
+  width: 100%;
+  height: 460px;
 }
 .content__section-Fundacion-text {
-  height: 312px;
+  height: 248px;
   background-color: rgba(33, 37, 41, 0.555);
 }
 .content__section-Fundacion-text p:nth-child(1) {

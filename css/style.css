@@ -554,7 +554,7 @@ body {
   background-image: url(../images/Mobile/mobileSlide_somos-722x1048.jpg);
   background-size: cover;
   width: auto;
-  height: 312px;
+  height: 400px;
   /*------Contenido de Mision-----*/
 }
 .content__section-Fundacion-text {
@@ -562,7 +562,7 @@ body {
   position: absolute;
   background-size: contain;
   width: 100%;
-  height: 312px;
+  height: 400px;
   background-color: rgba(33, 37, 41, 0.555);
 }
 .content__section-Fundacion-text p:nth-child(1) {
