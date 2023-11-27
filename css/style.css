@@ -551,16 +551,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   background-image: url(../images/Mobile/mobileSlide_somos-722x1048.jpg);
-  background-size: cover;
+  background-size: contain;
   width: auto;
-  height: 500px;
+  height: 466px;
   /*------Contenido de Mision-----*/
 }
 .content__section-Fundacion-text {
   line-height: 1.2;
   position: absolute;
-  width: 360vw;
-  height: 500px;
+  background-size: contain;
+  width: 100%;
+  height: 466px;
   background-color: rgba(33, 37, 41, 0.555);
 }
 .content__section-Fundacion-text p:nth-child(1) {

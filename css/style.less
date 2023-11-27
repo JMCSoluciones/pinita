@@ -536,20 +536,21 @@
     position: relative;
     display: flex;
     background-image: url(../images/Mobile/mobileSlide_somos-722x1048.jpg);
-    background-size: cover;
+    background-size: contain;
     width:  auto;
-    height: 500px;
+    height: 466px;
     &-text{
         line-height: 1.2;
         position: absolute;
-        width: 360vw;
-        height: 500px;
+        background-size: contain;
+        width: 100%;
+        height: 466px;
         background-color: rgba(33, 37, 41, 0.555);
         p:nth-child(1){
             font-family: @font-family3;
             margin: 10px;
             position: relative;
-            top: 160px;
+            top: 60px;
             font-size: 4.2rem;
             color:@color-claro ;
         }
