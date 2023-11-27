@@ -67,3 +67,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.content__section-Fundacion {
+  background-image: url(../images/Tablet/tabletSlidesSomos-1110x466.jpg);
+}
