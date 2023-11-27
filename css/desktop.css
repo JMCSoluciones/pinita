@@ -242,7 +242,7 @@ body {
   height: 460px;
 }
 .content__section-Fundacion-text {
-  height: 248px;
+  height: 326px;
   background-color: rgba(33, 37, 41, 0.555);
 }
 .content__section-Fundacion-text p:nth-child(1) {
@@ -261,6 +261,7 @@ body {
   top: 5px;
 }
 .content__section-Fundacion-quienessomos {
+  top: -200px;
   max-width: 1110px;
   position: relative;
   overflow: hidden;
@@ -338,6 +339,7 @@ body {
   font-size: 1.5rem;
 }
 .content__section-Fundacion-Mision {
+  top: -130px;
   max-width: 1110px;
   margin: 0 auto;
   background-image: url(../images/Tablet/tabletItemMision1440x900.jpg);
@@ -378,6 +380,7 @@ body {
   margin: 0 auto;
 }
 .content__section-Fundacion-Valores p {
+  top: -100px;
   margin: 75px;
   position: relative;
   color: #474643;
@@ -394,6 +397,7 @@ body {
   margin-top: -150px;
 }
 .content__section-Fundacion-lista-listaval-text {
+  top: -90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,7 +426,7 @@ body {
   margin-left: 42px;
 }
 .content__section-Fundacion-vision {
-  top: 150px;
+  top: 20px;
   max-width: 1110px;
   margin: 0 auto;
   background-image: url(../images/Tablet/tabletItemVision1440x900.jpg);
@@ -595,7 +599,7 @@ body {
 }
 /*------------------footer--------------------*/
 footer {
-  margin-top: 80px;
+  margin-top: 5px;
   padding-top: 115px;
 }
 footer .footer__box__body {
