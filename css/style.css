@@ -654,15 +654,11 @@ body {
   font-size: 1.9rem;
   background: transparent;
 }
-.content__section-Fundacion-quienessomos .btn.btn-primary img {
-  position: fixed;
-  top: 275px;
-  float: right;
+.content__section-Fundacion-quienessomos .vector {
+  position: relative;
+  top: -25px;
+  left: 70px;
   width: 25px;
-}
-.content__section-Fundacion-quienessomos .btn-primary {
-  color: red;
-  border-color: red;
 }
 .content__section-Fundacion-Mision {
   top: 10px;
