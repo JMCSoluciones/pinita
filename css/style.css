@@ -550,10 +550,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-repeat: no-repeat;
   background-image: url(../images/Mobile/mobileSlide_somos-722x1048.jpg);
-  background-size: contain;
+  background-size: cover;
   width: auto;
-  height: 466px;
+  height: 312px;
   /*------Contenido de Mision-----*/
 }
 .content__section-Fundacion-text {
@@ -561,21 +562,21 @@ body {
   position: absolute;
   background-size: contain;
   width: 100%;
-  height: 466px;
+  height: 312px;
   background-color: rgba(33, 37, 41, 0.555);
 }
 .content__section-Fundacion-text p:nth-child(1) {
   font-family: 'Inter', sans-serf;
   margin: 10px;
   position: relative;
-  top: 160px;
+  top: 60px;
   font-size: 4.2rem;
   color: #FFFFFF;
 }
 .content__section-Fundacion-text p:nth-child(2) {
   font-family: 'Inter', sans-serf;
   position: relative;
-  top: 160px;
+  top: 60px;
   margin: 10px;
   font-size: 4.2rem;
   color: #FFFFFF;
@@ -583,7 +584,7 @@ body {
 .content__section-Fundacion-text p:nth-child(3) {
   font-family: 'Inter', sans-serf;
   position: relative;
-  top: 160px;
+  top: 60px;
   margin: 10px;
   font-size: 4.2rem;
   color: #FFFFFF;
