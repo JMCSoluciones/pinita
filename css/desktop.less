@@ -41,12 +41,12 @@
         border-radius: 20px;
         padding: 5px 10px;
      /* etiqueta a */
-     a{
-        text-decoration: none;
-        color: white;
-        padding:▸ 9px 25px;
-        font-size: 1.5rem;
-        font-weight:100;
+        a{
+            text-decoration: none;
+            color: white;
+            padding:▸ 9px 25px;
+            font-size: 1.5rem;
+            font-weight:100;
         }
         /* imagen de flecha*/
         img{
@@ -232,12 +232,11 @@
             margin: 20px;
         }
     }
-    
-    
-}
-.content__section-Fundacion{
+
     &-quienessomos{
         max-width: 1110px;
+        position: relative;
+        overflow: hidden;
         margin: 0 auto;
         height: 400px;
         h2{
@@ -248,138 +247,192 @@
             font-family: @font-family3;
             
         }
+        p{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            color: @color-obscuro;
+            margin: 5px;
+            margin-right: 150px;
+            font-size: @texto-body;
+            font-family: @font-family3;
+            text-align: left; 
+        }
 
         img{
             
             top: 60%;
             position: absolute;
-            left: 420px;
             display:flex;
             width: 30px;
             height: auto;
         }
-    }
-    
-
-}
-.content__section-Fundacion-Mision{
-    max-width: 1110px;
-    margin: 0 auto;
-    background-image: url(../images/Tablet/tabletItemMision1440x900.jpg);
-    background-size: cover;
-    height: 590px;
-    &-text{
-        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;        line-height: 1.2;
-        display: flex;
-        flex-direction: column;
-        height: 590px;
-        background-color: rgba(0, 0, 0, 40%);
-        h1{
-            margin: 20px;
-            color: @color-claro;
-            font-size: 4rem;
-            font-family: @font-family;
-            border-bottom: 2px solid #F39E16;
-
+        #fundacion{
+            position: absolute;
+            display: flex;
+            right: -20px;
+            transform: scale(1.2);
+            overflow: hidden;
+            flex-wrap: wrap;
+            top: 30%;
+            background-size: cover;
+            clip-path: circle(50% at 50% 50%);
+            width: 190px;
+            height: 190px;
+            display: flex;
         }
-        p{
-            margin-right: 100px;
-            font-family: @font-family3;
-            margin: 20px;
-            color:@color-claro;
-            font-size: 2rem;
-            text-align: left;
+        .btn.btn-primary{
+            position: relative;
+            top: -30px;
+            width: auto;
+            border: none;
+            margin-left:60px;
+            color: @color-primario;
+            font-size: 1.9rem;
+            background: transparent;         
             
         }
+        .modal-content{
+            strong{
+                font-size: 3rem;  
+                line-height: 25px;
+                border-bottom: 2px solid #FCAF00; 
+            }
+            .modal-body{
+                p{    
+                    color: red;
+                    margin: 5px;
+                    font-size: @modal;
+                }   
         
+            }
+        } 
     }
-
-}
-.content__section-Fundacion-Valores{
-    max-width: 1110px;
-    margin: 0 auto;
-    p{
-        margin: 75px;
-        top: 150px;
-        position: relative;
-        color: @color-obscuro;
-        font-size: 3rem;
-        text-align: center;
-        font-weight: 500;
-        border-bottom: 2px solid #F39E16;
-        
-        
-    }
-    
-}
-.content__section-Fundacion-lista{
-    max-width: 1110px;
-    margin: 0 auto;
-    &-listaval{
+    &-Mision{
+        max-width: 1110px;
+        margin: 0 auto;
+        background-image: url(../images/Tablet/tabletItemMision1440x900.jpg);
+        background-size: cover;
+        height: 590px;
         &-text{
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;        line-height: 1.2;
             display: flex;
             flex-direction: column;
-            padding-bottom: 55px;
-            position: relative;
+            height: 590px;
+            background-color: rgba(0, 0, 0, 40%);
+            h1{
+                margin: 20px;
+                color: @color-claro;
+                font-size: 4rem;
+                font-family: @font-family;
+                border-bottom: 2px solid #F39E16;
+    
+            }
+            p{
+                margin-right: 100px;
+                font-family: @font-family3;
+                margin: 20px;
+                color:@color-claro;
+                font-size: 2rem;
+                text-align: left;
+                
+            }
             
-          p{
-            
-            text-decoration: none;
-            margin: 20px;
-            line-height: 25px;
-            font-size: 1.9rem;
-            position: absolute;
-            top: 80px;
-            color: @color-obscuro;
-            margin-left: 80px;
-            letter-spacing: 0.1sem;
-        
-            
-          }  
-          img{
-            position: absolute;
-            top: 97px;
-            width: 35px;
-            margin-left: 42px;
-            
-          }
         }
-
+    
     }
-}
-.content__section-Fundacion-vision{
-    top: 100px;
-    max-width: 1110px;
-    margin: 0 auto;
-    background-image: url(../images/Tablet/tabletItemVision1440x900.jpg);
-    background-size: cover;
-    height: 590px;
-    &-text{
-        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;        line-height: 1.2;
-        display: flex;
-        flex-direction: column;
-        height: 590px;
-        background-color: rgba(0, 0, 0, 40%);
-        h1{
-            margin: 20px;
-            color: @color-claro;
-            font-size: 3rem;
-            font-family: @font-family;
-            border-bottom: 2px solid #F39E16;
-
-        }
+    &-Valores{
+        max-width: 1110px;
+        margin: 0 auto;
         p{
-            margin-right: 100px;
-            font-family: @font-family3;
-            margin: 20px;
-            color:@color-claro;
-            font-size: 2rem;
-            text-align: left;
+            margin: 75px;
+            position: relative;
+            color: @color-obscuro;
+            font-size: 3rem;
+            text-align: center;
+            font-weight: 500;
+            border-bottom: 2px solid #F39E16;
+            
             
         }
+        
     }
-
+    &-lista{
+        max-width: 1110px;
+        margin: 0 auto;
+        &-listaval{
+            margin-top: -150px;
+            &-text{
+                
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 55px;
+                position: relative;
+                
+              p{
+                
+                text-decoration: none;
+                margin: 20px;
+                line-height: 25px;
+                font-size: 1.9rem;
+                position: absolute;
+                top: 80px;
+                color: @color-obscuro;
+                margin-left: 80px;
+                letter-spacing: 0.1sem;
+            
+                
+              }  
+              img{
+                position: absolute;
+                top: 97px;
+                width: 35px;
+                margin-left: 42px;
+                
+              }
+            }
+    
+        }
+    }
+    &-vision{
+        top: 150px;
+        max-width: 1110px;
+        margin: 0 auto;
+        background-image: url(../images/Tablet/tabletItemVision1440x900.jpg);
+        background-size: cover;
+        height: 590px;
+        &-text{
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;        line-height: 1.2;
+            display: flex;
+            flex-direction: column;
+            height: 590px;
+            background-color: rgba(0, 0, 0, 40%);
+            h1{
+                margin: 20px;
+                color: @color-claro;
+                font-size: 3rem;
+                font-family: @font-family;
+                border-bottom: 2px solid #F39E16;
+    
+            }
+            p{
+                margin-right: 100px;
+                font-family: @font-family3;
+                margin: 20px;
+                color:@color-claro;
+                font-size: 2rem;
+                text-align: left;
+                
+            }
+        }
+    
+    }  
+    
 }
+
+
+
+
 .contentRegistro{
     max-width: 1110px;
     margin: 0 auto;
@@ -537,9 +590,10 @@
 
 /*------------------footer--------------------*/
 footer{
-    margin-top: 30px;
+    margin-top: 80px;
+    padding-top: 115px;
     &__header{
-          
+         
     }
     .footer__box{
         &__body{

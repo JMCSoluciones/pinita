@@ -253,6 +253,8 @@ body {
 }
 .content__section-Fundacion-quienessomos {
   max-width: 1110px;
+  position: relative;
+  overflow: hidden;
   margin: 0 auto;
   height: 400px;
 }
@@ -263,15 +265,68 @@ body {
   font-size: 2.8rem;
   font-family: 'Inter', sans-serf;
 }
+.content__section-Fundacion-quienessomos p {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #474643;
+  margin: 5px;
+  margin-right: 150px;
+  font-size: 1.8rem;
+  font-family: 'Inter', sans-serf;
+  text-align: left;
+}
 .content__section-Fundacion-quienessomos img {
   top: 60%;
   position: absolute;
-  left: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 30px;
   height: auto;
+}
+.content__section-Fundacion-quienessomos #fundacion {
+  position: absolute;
+  right: -20px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  top: 30%;
+  background-size: cover;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  width: 190px;
+  height: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.content__section-Fundacion-quienessomos .btn.btn-primary {
+  position: relative;
+  top: -30px;
+  width: auto;
+  border: none;
+  margin-left: 60px;
+  color: #fcaf00;
+  font-size: 1.9rem;
+  background: transparent;
+}
+.content__section-Fundacion-quienessomos .modal-content strong {
+  font-size: 3rem;
+  line-height: 25px;
+  border-bottom: 2px solid #FCAF00;
+}
+.content__section-Fundacion-quienessomos .modal-content .modal-body p {
+  color: red;
+  margin: 5px;
+  font-size: 1.5rem;
 }
 .content__section-Fundacion-Mision {
   max-width: 1110px;
@@ -315,7 +370,6 @@ body {
 }
 .content__section-Fundacion-Valores p {
   margin: 75px;
-  top: 150px;
   position: relative;
   color: #474643;
   font-size: 3rem;
@@ -326,6 +380,9 @@ body {
 .content__section-Fundacion-lista {
   max-width: 1110px;
   margin: 0 auto;
+}
+.content__section-Fundacion-lista-listaval {
+  margin-top: -150px;
 }
 .content__section-Fundacion-lista-listaval-text {
   display: -webkit-box;
@@ -356,7 +413,7 @@ body {
   margin-left: 42px;
 }
 .content__section-Fundacion-vision {
-  top: 100px;
+  top: 150px;
   max-width: 1110px;
   margin: 0 auto;
   background-image: url(../images/Tablet/tabletItemVision1440x900.jpg);
@@ -529,7 +586,8 @@ body {
 }
 /*------------------footer--------------------*/
 footer {
-  margin-top: 30px;
+  margin-top: 80px;
+  padding-top: 115px;
 }
 footer .footer__box__body {
   display: -webkit-box;

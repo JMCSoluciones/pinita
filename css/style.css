@@ -21,7 +21,7 @@ body {
 .slideContent {
   padding: 0;
   position: absolute;
-  top: 140px;
+  top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,6 +659,16 @@ body {
   top: -25px;
   left: 70px;
   width: 25px;
+}
+.content__section-Fundacion-quienessomos .modal-content strong {
+  font-size: 3rem;
+  line-height: 25px;
+  border-bottom: 2px solid #FCAF00;
+}
+.content__section-Fundacion-quienessomos .modal-content .modal-body p {
+  color: red;
+  margin: 5px;
+  font-size: 1.5rem;
 }
 .content__section-Fundacion-Mision {
   top: 10px;
