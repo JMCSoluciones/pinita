@@ -327,16 +327,11 @@ body {
   color: #fcaf00;
   font-size: 1.9rem;
   background: transparent;
+  text-decoration: none;
+  border-bottom: none;
 }
-.content__section-Fundacion-quienessomos .modal-content strong {
-  font-size: 3rem;
-  line-height: 25px;
-  border-bottom: 2px solid #FCAF00;
-}
-.content__section-Fundacion-quienessomos .modal-content .modal-body p {
+.content__section-Fundacion-quienessomos .modal-content .modal-title strong {
   color: red;
-  margin: 5px;
-  font-size: 1.5rem;
 }
 .content__section-Fundacion-Mision {
   top: -130px;

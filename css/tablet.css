@@ -70,3 +70,11 @@ body {
 .content__section-Fundacion {
   background-image: url(../images/Tablet/tabletSlidesSomos-1110x466.jpg);
 }
+.content__section-Fundacion-Mision {
+  background-image: url(../images/Tablet/tabletItemMision1440x900.jpg);
+}
+.content__section-Fundacion-Vision {
+  background-image: url(../images/Tablet/tabletItemVision1440x900.jpg);
+  width: auto;
+  height: 700px;
+}

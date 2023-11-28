@@ -266,7 +266,6 @@
             font-family: @font-family3;
             text-align: left; 
         }
-
         img{
             
             top: 60%;
@@ -297,24 +296,19 @@
             margin-left:60px;
             color: @color-primario;
             font-size: 1.9rem;
-            background: transparent;         
+            background: transparent; 
+            text-decoration: none; 
+            border-bottom: none;       
             
         }
-        .modal-content{
-            strong{
-                font-size: 3rem;  
-                line-height: 25px;
-                border-bottom: 2px solid #FCAF00; 
-            }
-            .modal-body{
-                p{    
-                    color: red;
-                    margin: 5px;
-                    font-size: @modal;
-                }   
         
+        .modal-content{
+            .modal-title{
+                strong{
+                    color: red;
+                }
             }
-        } 
+        }
     }
     &-Mision{
         top: -130px;
