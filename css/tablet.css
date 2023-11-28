@@ -85,3 +85,10 @@ body {
   width: 500px;
   margin: 0 auto;
 }
+.contentRegistro__box__usuario__formulario .mb-3 .form-label2 {
+  color: #838381;
+  font-family: 'Inter', sans-serf;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-bottom: 5%;
+}
