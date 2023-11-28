@@ -581,7 +581,7 @@ body {
 }
 /*------------------footer--------------------*/
 footer {
-  margin-top: 5px;
+  margin-top: -5px;
   padding-top: 115px;
 }
 footer .footer__box__body {
