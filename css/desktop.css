@@ -458,6 +458,7 @@ body {
   text-align: left;
 }
 .contentRegistro {
+  top: 10px;
   max-width: 1110px;
   margin: 0 auto;
 }
@@ -466,7 +467,8 @@ body {
   font-size: 2rem;
 }
 .contentRegistro__box__usuario__formulario {
-  margin: 15px;
+  width: 500px;
+  margin: 0 auto;
   padding: 10px;
   -webkit-box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
           box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
