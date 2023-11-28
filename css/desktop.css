@@ -488,10 +488,6 @@ body {
   color: #838381;
   font-family: 'Inter', sans-serf;
 }
-.contentRegistro__box__usuario__formulario .mb-3 input {
-  font-family: 'Inter', sans-serf;
-  font-size: 1.2rem;
-}
 .contentRegistro__box__usuario__formulario .boton {
   padding: 1px;
   margin-bottom: 15px;
@@ -578,6 +574,10 @@ body {
 .contentContacto__titulo p {
   text-align: end;
   font-size: 2rem;
+}
+.contentContacto__titulo__formu {
+  margin: 0 auto;
+  width: 500px;
 }
 /*------------------footer--------------------*/
 footer {
