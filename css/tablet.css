@@ -78,3 +78,10 @@ body {
   width: auto;
   height: 700px;
 }
+.content.login.content {
+  padding: 10px;
+}
+.content.login.content__inicio__form {
+  width: 500px;
+  margin: 0 auto;
+}
