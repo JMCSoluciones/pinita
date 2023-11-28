@@ -544,8 +544,14 @@ body {
   margin: 20px 50px;
 }
 /**--------------FUNDACION-----------------------*/
-#pmodal {
-  color: red !important;
+#fundacion .modal-header strong {
+  font-size: 3rem !important;
+  border-bottom: 2px solid #FCAF00;
+}
+#fundacion .modal-body #pmodal {
+  color: #474643;
+  margin: 5px;
+  font-size: 1.5rem;
 }
 .content__section-Fundacion {
   overflow: hidden;
@@ -664,15 +670,6 @@ body {
   top: -25px;
   left: 70px;
   width: 25px;
-}
-.content__section-Fundacion-quienessomos #fundacion .modal-header strong {
-  font-size: 3rem !important;
-  border-bottom: 2px solid #FCAF00;
-}
-.content__section-Fundacion-quienessomos #fundacion .modal-body #pmodal {
-  color: red;
-  margin: 5px;
-  font-size: 1.5rem;
 }
 .content__section-Fundacion-Mision {
   top: 10px;

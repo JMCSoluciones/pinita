@@ -531,8 +531,22 @@
 }
 
 /**--------------FUNDACION-----------------------*/
-#pmodal{
-    color: red !important;
+#fundacion{
+    .modal-header{
+        strong{
+            font-size: 3rem !important;  
+            border-bottom: 2px solid #FCAF00; 
+        }
+    }
+    
+    .modal-body{
+        #pmodal{    
+            color: @color-obscuro;
+            margin: 5px;
+            font-size: @modal;
+        }   
+
+    }
 }
 .content__section-Fundacion{
     overflow: hidden;
@@ -645,23 +659,7 @@
             
         }
         
-        #fundacion{
-            .modal-header{
-                strong{
-                    font-size: 3rem !important;  
-                    border-bottom: 2px solid #FCAF00; 
-                }
-            }
-            
-            .modal-body{
-                #pmodal{    
-                    color: red;
-                    margin: 5px;
-                    font-size: @modal;
-                }   
         
-            }
-        } 
         
     }
     
@@ -977,10 +975,6 @@
             }
         
         }
-        
-        
-        
-        
     }
     #mapa{
         margin: 0 auto;
