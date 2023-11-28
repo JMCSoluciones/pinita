@@ -963,6 +963,7 @@ body {
   font-weight: 500;
 }
 .contentContacto #mapa {
+  margin-top: 10px;
   margin: 0 auto;
   width: auto;
   display: -webkit-box;
@@ -971,6 +972,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.contentContacto #mapa iframe {
+  margin-top: 40px;
 }
 /*--------------footer--------*/
 footer {
