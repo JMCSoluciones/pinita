@@ -549,7 +549,7 @@ body {
   text-align: end;
 }
 .content.login.content__inicio__form {
-  margin: 60px;
+  margin: 0 auto;
   padding: 5px;
   -webkit-box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
           box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
