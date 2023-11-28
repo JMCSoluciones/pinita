@@ -531,6 +531,9 @@
 }
 
 /**--------------FUNDACION-----------------------*/
+#pmodal{
+    color: red !important;
+}
 .content__section-Fundacion{
     overflow: hidden;
     position: relative;
@@ -575,6 +578,7 @@
         
         
     }
+   
     &-quienessomos{
         padding: 10px;
         position: relative;
@@ -640,14 +644,17 @@
             width: 25px;
             
         }
-        .modal-content{
-            strong{
-                font-size: 3rem;  
-                line-height: 25px;
-                border-bottom: 2px solid #FCAF00; 
+        
+        #fundacion{
+            .modal-header{
+                strong{
+                    font-size: 3rem !important;  
+                    border-bottom: 2px solid #FCAF00; 
+                }
             }
+            
             .modal-body{
-                p{    
+                #pmodal{    
                     color: red;
                     margin: 5px;
                     font-size: @modal;
@@ -974,6 +981,12 @@
         
         
         
+    }
+    #mapa{
+        margin: 0 auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
     }
 }
 /*--------------footer--------*/
