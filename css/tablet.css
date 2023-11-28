@@ -56,6 +56,10 @@ body {
   height: 300px;
   overflow: hidden;
 }
+.contentContacto__titulo__formu {
+  margin: 0 auto;
+  width: 500px;
+}
 .contentContacto__maps iframe {
   display: -webkit-box;
   display: -ms-flexbox;
