@@ -92,3 +92,8 @@ body {
   text-align: justify;
   margin-bottom: 5%;
 }
+.contentRegistro__box__usuario__formulario .mb-3 p {
+  font-size: 1.2rem;
+  color: #838381;
+  font-family: 'Inter', sans-serf;
+}

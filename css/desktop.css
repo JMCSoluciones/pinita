@@ -483,19 +483,9 @@ body {
   text-align: justify;
   margin-bottom: 5%;
 }
-.contentRegistro__box__usuario__formulario .mb-3 .form-select {
-  font-family: 'Inter', sans-serf;
-}
-.contentRegistro__box__usuario__formulario .mb-3 select {
-  font-size: 1.5rem;
-  color: #212529;
-}
-.contentRegistro__box__usuario__formulario .mb-3 .form-control {
-  font-size: 1.2rem;
-  padding: 12px;
-}
 .contentRegistro__box__usuario__formulario .mb-3 p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  color: #838381;
   font-family: 'Inter', sans-serf;
 }
 .contentRegistro__box__usuario__formulario .mb-3 input {
