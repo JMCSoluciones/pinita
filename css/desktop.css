@@ -332,6 +332,8 @@ body {
   height: 590px;
 }
 .content__section-Fundacion-Mision-text {
+  position: absolute;
+  top: 80px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   line-height: 1.2;
@@ -342,23 +344,25 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 590px;
-  background-color: rgba(0, 0, 0, 0.4);
+  height: 381px;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .content__section-Fundacion-Mision-text h1 {
-  margin: 20px;
+  margin: 45px;
   color: #FFFFFF;
   font-size: 4rem;
   font-family: 'Raleway', sans-serif;
   border-bottom: 2px solid #F39E16;
 }
 .content__section-Fundacion-Mision-text p {
-  margin-right: 100px;
-  font-family: 'Inter', sans-serf;
-  margin: 20px;
   color: #FFFFFF;
-  font-size: 2rem;
-  text-align: left;
+  font-family: 'Inter', sans-serf;
+  margin-left: 266px;
+  margin-top: 64px;
+  font-size: 3rem;
+  text-align: center;
+  margin-right: 202px;
 }
 .content__section-Fundacion-Valores {
   max-width: 1110px;
