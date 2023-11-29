@@ -591,25 +591,10 @@ body {
 }
 .content__section-Fundacion-text p:nth-child(1) {
   font-family: 'Inter', sans-serf;
-  margin: 10px;
   position: relative;
-  top: 60px;
-  font-size: 4.2rem;
-  color: #FFFFFF;
-}
-.content__section-Fundacion-text p:nth-child(2) {
-  font-family: 'Inter', sans-serf;
-  position: relative;
-  top: 60px;
+  top: 40px;
   margin: 10px;
-  font-size: 4.2rem;
-  color: #FFFFFF;
-}
-.content__section-Fundacion-text p:nth-child(3) {
-  font-family: 'Inter', sans-serf;
-  position: relative;
-  top: 60px;
-  margin: 10px;
+  text-align: center;
   font-size: 4.2rem;
   color: #FFFFFF;
   border-bottom: 2px solid #F39E16;

@@ -242,23 +242,13 @@ body {
   height: 460px;
 }
 .content__section-Fundacion-text {
-  height: 332px;
+  height: 327px;
   background-color: rgba(33, 37, 41, 0.555);
 }
 .content__section-Fundacion-text p:nth-child(1) {
-  top: 10px;
+  top: -71px;
   font-size: 4.2rem;
-  margin: 20px;
-}
-.content__section-Fundacion-text p:nth-child(2) {
-  font-size: 4.2rem;
-  margin: 20px;
-  top: 15px;
-}
-.content__section-Fundacion-text p:nth-child(3) {
-  font-size: 4.2rem;
-  margin: 20px;
-  top: 5px;
+  margin: 223px;
 }
 .content__section-Fundacion-quienessomos {
   top: -200px;
