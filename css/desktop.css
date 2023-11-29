@@ -369,8 +369,10 @@ body {
   margin: 0 auto;
 }
 .content__section-Fundacion-Valores p {
-  top: -100px;
+  top: -144px;
   margin: 75px;
+  margin-left: 380px;
+  width: 395px;
   position: relative;
   color: #474643;
   font-size: 3rem;
@@ -384,9 +386,10 @@ body {
 }
 .content__section-Fundacion-lista-listaval {
   margin-top: -150px;
+  margin-left: 100px;
 }
 .content__section-Fundacion-lista-listaval-text {
-  top: -90px;
+  top: -125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,6 +399,8 @@ body {
           flex-direction: column;
   padding-bottom: 55px;
   position: relative;
+  width: 544px;
+  margin-left: 276px;
 }
 .content__section-Fundacion-lista-listaval-text p {
   text-decoration: none;
