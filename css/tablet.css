@@ -82,6 +82,13 @@ body {
   width: auto;
   height: 700px;
 }
+.content__section-Fundacion-quienessomos #fundacion {
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.content__section-Fundacion-quienessomos .btn.btn-primary {
+  margin-left: 338px;
+}
 .content.login.content {
   padding: 10px;
 }

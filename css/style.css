@@ -647,8 +647,8 @@ body {
       flex-wrap: wrap;
   top: 30%;
   background-size: cover;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
   width: 190px;
   height: 190px;
   display: -webkit-box;
@@ -899,10 +899,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.contentRegistro__box__usuario__formulario .boton button {
-  padding: 12px;
-  font-family: 'Inter', sans-serf;
 }
 .contentRegistro__box__usuario__formulario .boton-azul {
   display: -webkit-box;
