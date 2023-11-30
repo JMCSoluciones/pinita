@@ -501,12 +501,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.contentRegistro__box__usuario__formulario .boton button {
-  padding: 1px;
-  font-family: 'Inter', sans-serf;
-  font-size: 1.8rem;
-  font-weight: 500;
-}
 .contentRegistro__box__usuario__formulario .boton-azul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,15 +509,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 15px;
-}
-.contentRegistro__box__usuario__formulario .boton-azul button {
-  padding: 1px;
-  border: none;
-  font-family: 'Inter', sans-serf;
-  background: #2CA7EC;
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #FFFFFF;
 }
 /*-----------------Login-----------------------*/
 .content.login.content {
