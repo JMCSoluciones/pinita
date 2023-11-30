@@ -565,10 +565,6 @@ body {
           justify-content: center;
   padding: 0px auto;
 }
-.content.login.content__inicio .boton button {
-  font-size: 1.8rem;
-  font-weight: 500;
-}
 /*-------------contacto--------------------------*/
 .contentContacto {
   max-width: 1110px;
