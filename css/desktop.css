@@ -228,13 +228,31 @@ body {
   font-size: 1.8rem;
 }
 .content__section-nuestrafundacion-blog {
-  margin: 80px;
+  margin: 17px;
 }
-.content__section-nuestrafundacion-blogimg {
+.content__section-nuestrafundacion-blog-principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content__section-nuestrafundacion-blog-principal-blogimg {
   max-width: 1110px;
+  width: 500px;
   margin: 0 auto;
 }
-.content__section-nuestrafundacion-blogimg #fotopost {
+.content__section-nuestrafundacion-blog-principal-blogimg #fotopost {
   max-width: 400px;
   margin: 0 auto;
   display: -webkit-box;

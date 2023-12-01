@@ -209,20 +209,29 @@
         }
     }
     &-blog{
-        margin: 80px;
-    }  
-    &-blogimg{
-        max-width: 1110px;
-        margin: 0 auto;
-        #fotopost{
-            
-            max-width: 400px;
-            margin: 0 auto;
-            display: flex; 
-            height: auto; /* Altura automática para mantener la proporción original */
-            border-radius: 10px 10px 10px 10px;
+        margin: 17px;
+        &-principal{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            &-blogimg{
+                max-width: 1110px;
+                width: 500px;
+                margin: 0 auto;
+                #fotopost{
+                    
+                    max-width: 400px;
+                    margin: 0 auto;
+                    display: flex; 
+                    height: auto; /* Altura automática para mantener la proporción original */
+                    border-radius: 10px 10px 10px 10px;
+                }
+            } 
         }
-    } 
+    }  
+    
     
 }
 
