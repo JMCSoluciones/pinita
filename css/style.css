@@ -345,8 +345,22 @@ body {
 }
 .content__section-nuestrafundacion-circulo-item-txt {
   background-color: rgba(33, 37, 41, 0.555);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 160px;
   height: 160px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .content__section-nuestrafundacion-circulo-item-txt a {
   text-decoration: none;
@@ -365,9 +379,15 @@ body {
   width: 25px;
 }
 .content__section-nuestrafundacion-circulo-item-txt .btn.btn-primary {
+  position: relative;
   width: auto;
   border: none;
-  top: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 25px;
   color: #fcaf00;
   font-size: 1.9rem;
@@ -379,7 +399,13 @@ body {
   width: 25px;
 }
 .content__section-nuestrafundacion-circulo-item-txt p {
-  margin: 10%;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #FFFFFF;
   font-size: 2rem;
   text-align: center;

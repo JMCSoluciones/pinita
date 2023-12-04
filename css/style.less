@@ -308,8 +308,14 @@
             margin: 5px;
             &-txt{
                 background-color: rgba(33, 37, 41, 0.555);
+                display: flex;
                 width: 160px;
                 height: 160px;
+                position: relative;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: column;
+                
                 a{
                     text-decoration: none;
                     float: right;
@@ -323,9 +329,11 @@
                     }
                 }
                 .btn.btn-primary{
+                    position: relative;
                     width: auto;
                     border: none;
-                    top: 5px;
+                    align-items: center;
+                    justify-content: center;
                     margin-left: 25px;
                     color: @color-primario;
                     font-size: 1.9rem;
@@ -338,7 +346,9 @@
                     }
                 }
                 p{
-                    margin: 10%;
+                    position: relative;
+                    align-items: center;
+                    justify-content: center;
                     color: @color-claro;
                     font-size: 2rem;
                     text-align: center;
@@ -445,6 +455,7 @@
     }
     
     &-blogimg{
+        
         width: 341px;  
         margin-left: 10px;
         line-height: 1.5;
