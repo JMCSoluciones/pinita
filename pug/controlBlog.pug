@@ -1,8 +1,63 @@
-headerMod
-    .content
+extend ../components/templateMod.pug
+block  content
         .content.blog.content
-            .content.login.content__inicio
+            .content.blog.content-inicio
                 p Moderador
-        .content.blog.content.box 
-            a(href="#") 
-                img(src="../images/icono/blog.svg", alt="icono del blog")
+        .content.blog.content-inicio-box 
+            .content_CtrlClientes_tabs
+                #myTabContent.tab-content
+                    #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
+                        .content_CtrlClientestabs_item
+                            .content_CtrlClientestabsitem_header#usuario-header
+                                h3 Nombre
+                                form.d-flex(role="search")
+                                    input.form-control.me-2(type="search" placeholder="Search" aria-label="Search")
+                                    a(href='busqueda.html') 
+                                        .btn.btn-dark(type="submit") Buscar
+                                    input.btn-clean(type="reset" value="Limpiar") 
+                            .content_CtrlClientestabsitem_body
+                                .table-wrapper.content_CtrlClientestabsitembody_table
+                                    table.table.table-striped.table-hover
+                                        thead 
+                                            tr                  
+                                                th Id
+                                                th Nombre
+                                                th Fecha
+                                                th Detalles
+                                                th Acciones
+                                        tbody 
+                                            tr 
+                                                td 01
+                                                td dayana ornelas
+                                                td 05/12/2023
+                                                td
+                                                    a(href="ver-cliente.html") ver más... 
+                                                td
+                                                    a.edit(href="modificar-cliente.html")
+                                                        i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                                                    a.delete(href='#deleteProductoModal' data-toggle='modal')
+                                                        i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                                            tr 
+                                                td 02
+                                                td cliente 2
+                                                td 23/octubre/2023
+                                                td 
+                                                    a(href="ver-cliente.html") ver más... 
+                                                td
+                                                    a.edit(href="modificar-cliente.html")
+                                                        i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                                                    a.delete(href='#modalModificar' data-toggle='modal')
+                                                        i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                            .content_CtrlCotizacionestabsitem_footer
+                                nav(aria-label='...')
+                                    ul.pagination
+                                        li.page-item.disabled
+                                        a.page-link Previous
+                                        li.page-item
+                                        a.page-link(href='#') 1
+                                        li.page-item.active(aria-current='page')
+                                        a.page-link(href='#') 2
+                                        li.page-item
+                                        a.page-link(href='#') 3
+                                        li.page-item
+                                        a.page-link(href='#') Next   

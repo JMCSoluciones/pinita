@@ -1,11 +1,100 @@
-
-<headerMod>
-  <div class="content">
+<!DOCTYPE html >
+<html> 
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="initial-scale=1.0"/>
+    <title>Fundacion Pinita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Raleway:wght@100;300;400;600;800&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)"/>
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px)"/>
+    <link rel="stylesheet" href="css/menu.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+    <link rel="shortcut icon" href="images/favIcon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>
+  <body> 
+    <headerMod>
+      <nav class="menu">
+        <section class="menu__containermod"><img class="menu__logo" src="images/icono/logotipo.svg" alt="logotipo"/>
+          <ul class="menu__links">
+            <li class="menu__item"> <a class="menu__link" href="formlogin.html">cerrar cesión</a></li>
+          </ul>
+          <div class="menu__hamburger"> <img class="menu__img" src="images/icono/menu.svg" alt="icono de menu"/></div>
+        </section>
+      </nav>
+    </headerMod>
     <div class="content blog content">
-      <div class="content login content__inicio">
+      <div class="content blog content-inicio">
         <p>Moderador</p>
       </div>
     </div>
-    <div class="content blog content box"> <a href="#"> <img src="../images/icono/blog.svg" alt="icono del blog"/></a></div>
-  </div>
-</headerMod>
+    <div class="content blog content-inicio-box"> 
+      <div class="content_CtrlClientes_tabs">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="usuario-tab-pane" role="tabpanel" aria-labelledby="usuario-tab" tabindex="0"> 
+            <div class="content_CtrlClientestabs_item">
+              <div class="content_CtrlClientestabsitem_header" id="usuario-header">
+                <h3>Nombre</h3>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/><a href="busqueda.html"> 
+                    <div class="btn btn-dark" type="submit">Buscar</div></a>
+                  <input class="btn-clean" type="reset" value="Limpiar"/>
+                </form>
+              </div>
+              <div class="content_CtrlClientestabsitem_body">
+                <div class="table-wrapper content_CtrlClientestabsitembody_table">
+                  <table class="table table-striped table-hover">
+                    <thead> 
+                      <tr>                 
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                        <th>Detalles</th>
+                        <th>Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody> 
+                      <tr> 
+                        <td>01</td>
+                        <td>dayana ornelas</td>
+                        <td>05/12/2023</td>
+                        <td><a href="ver-cliente.html">ver más... </a></td>
+                        <td><a class="edit" href="modificar-cliente.html"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
+                      </tr>
+                      <tr> 
+                        <td>02</td>
+                        <td>cliente 2</td>
+                        <td>23/octubre/2023</td>
+                        <td> <a href="ver-cliente.html">ver más... </a></td>
+                        <td><a class="edit" href="modificar-cliente.html"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#modalModificar" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="content_CtrlCotizacionestabsitem_footer">
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item disabled"></li><a class="page-link">Previous</a>
+                    <li class="page-item"></li><a class="page-link" href="#">1</a>
+                    <li class="page-item active" aria-current="page"></li><a class="page-link" href="#">2</a>
+                    <li class="page-item"></li><a class="page-link" href="#">3</a>
+                    <li class="page-item"></li><a class="page-link" href="#">Next   </a>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

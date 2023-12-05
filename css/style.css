@@ -985,6 +985,20 @@ body {
 .contentContacto #mapa iframe {
   margin-top: 40px;
 }
+.content.blog.content-inicio p {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 2px solid #3DAEED;
+}
+.content.blog.content-box {
+  position: absolute;
+}
+.content.blog.content-box a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*--------------footer--------*/
 footer {
   padding-top: 30px;
