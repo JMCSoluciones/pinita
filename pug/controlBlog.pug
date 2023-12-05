@@ -3,13 +3,26 @@ block  content
         .content.blog.content
             .content.blog.content-inicio
                 p Moderador
-        .content.blog.content-inicio-box 
-            .content_CtrlClientes_tabs
+            .content.blog.content-inicio-box 
+                button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal') Nuevo Post
+            #exampleModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalComedorLabel')
+                .modal-dialog(role='document')
+                    .modal-content
+                        .modal-header
+                            h1#exampleModalLabel.modal-title.fs-5 Entrega de #[br] #[strong alimentos a #[br] clientes]
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                        .modal-body
+                            p e un alimento caliente a quien más lo necesita.
+                            
+                        .modal-footer
+                            button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Registrate como voluntaro
+            .content_blogcontent-inicio-box-tabs
                 #myTabContent.tab-content
                     #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
                         .content_CtrlClientestabs_item
                             .content_CtrlClientestabsitem_header#usuario-header
-                                h3 Nombre
+                                h3 Titulo
                                 form.d-flex(role="search")
                                     input.form-control.me-2(type="search" placeholder="Search" aria-label="Search")
                                     a(href='busqueda.html') 
@@ -21,20 +34,21 @@ block  content
                                         thead 
                                             tr                  
                                                 th Id
-                                                th Nombre
+                                                th Titulo
                                                 th Fecha
-                                                th Detalles
-                                                th Acciones
+                                                th modificar  
+                                                th Eliminar
                                         tbody 
                                             tr 
                                                 td 01
                                                 td dayana ornelas
                                                 td 05/12/2023
+                                                 td 
+                                                   
                                                 td
-                                                    a(href="ver-cliente.html") ver más... 
-                                                td
+                                                    
                                                     a.edit(href="modificar-cliente.html")
-                                                        i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                                                        i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;    
                                                     a.delete(href='#deleteProductoModal' data-toggle='modal')
                                                         i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
                                             tr 
@@ -42,7 +56,7 @@ block  content
                                                 td cliente 2
                                                 td 23/octubre/2023
                                                 td 
-                                                    a(href="ver-cliente.html") ver más... 
+                                                   
                                                 td
                                                     a.edit(href="modificar-cliente.html")
                                                         i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
