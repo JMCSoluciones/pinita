@@ -839,6 +839,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.content.login.content__inicio__form .boton .btn-lg {
+  background-color: #fcaf00;
+  border-color: #fcaf00;
+}
 /*----------REGISTRO--------------------------*/
 .contentRegistro {
   padding: 15px;
