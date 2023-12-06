@@ -36,41 +36,40 @@
         <p>Moderador</p>
       </div>
       <div class="content blog content-inicio-box"> 
-        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Nuevo Post</button>
+        <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Nuevo Post<img src="../images/icono/nuevopost.svg" alt="Nuevo post"/></button>
       </div>
       <div class="modal fade modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modalComedorLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Entrega de <br/> <strong>alimentos a <br/> clientes</strong></h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo post</h1>
               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
               <form class="content__form form_insert_post" id="formulario" action="insert_post.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
                 <div class="content__form__box">
                   <label class="content__form__box-label" for="txtTitulo">T&iacute;tulo: </label>
-                  <input class="content__form__box-input" id="txtTitulo" type="text" placeholder="Ingrese el título del Post" name="titulo" required="" maxlength="120"/>
+                  <textarea class="content__form__box-input" type="text" placeholder="Ingrese el título del Post" name="titulo" required="" maxlength="120"></textarea>
                 </div>
                 <div class="content__form__box">
                   <label class="content__form__box-label" for="txtExtracto">Extracto: </label>
-                  <textarea class="content__form__box-input" id="txtExtracto" placeholder="Ingrese un extracto del post" required="" rows="5" maxlength="180" name="extracto"></textarea>
+                  <textarea class="content__form__box-input" placeholder="Ingrese un extracto del post" required="" rows="5" maxlength="180" name="extracto"></textarea>
                 </div>
                 <div class="content__form__box">
                   <label class="content__form__box-label" for="txtContenido">Contenido: </label>
-                  <textarea class="content__form__box-input" id="txtContenido" placeholder="Ingrese el contenido del Post" wrap="soft" maxlength="5000" name="contenido"></textarea>
+                  <textarea class="content__form__box-input" placeholder="Ingrese el contenido del Post" wrap="soft" maxlength="5000" name="contenido"></textarea>
                 </div>
                 <div class="content__form__box">
                   <label class="content__form__box-label" for="ctaImagen">Imagen: </label><span>La imagen no debe tener un peso mayor a 500Kb.</span>
                   <input class="cta-imagen" id="imagen" type="file" placeholder="" accept="image/jpeg, image/png" name="imagen"/>
                 </div>
                 <input id="hidden" type="hidden" name="oculto" value="1"/>
-                <div class="content__form__box">
-                  <button class="content__form__box-cta" id="enviar" type="submit" name="guardar" onclick="return confirmacion()">Guardar</button><a id="btn-cerrar-popup-bottom" href="#" onclick="regresar()">Cancelar</a>
-                </div>
+                <div class="content__form__box">  </div>
               </form>
             </div>
             <div class="modal-footer">
-              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Registrate">Postear</button>
+              <button class="btn btn-danger btn-lg" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+              <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#Registrate">Postear</button>
             </div>
           </div>
         </div>
@@ -78,16 +77,15 @@
       <div class="content_blogcontent-inicio-box-tabs">
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="usuario-tab-pane" role="tabpanel" aria-labelledby="usuario-tab" tabindex="0"> 
-            <div class="content_CtrlClientestabs_item">
-              <div class="content_CtrlClientestabsitem_header" id="usuario-header">
-                <h3>Titulo</h3>
+            <div class="content_blogcontnet-inicio-box-tabs-item">
+              <div class="content_blogcontnet-inicio-box-tabs-item-cuerpo">
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/><a href="busqueda.html"> 
                     <div class="btn btn-dark" type="submit">Buscar</div></a>
                   <input class="btn-clean" type="reset" value="Limpiar"/>
                 </form>
               </div>
-              <div class="content_CtrlClientestabsitem_body">
+              <div class="content_blogcontnet-inicio-box-tabs-item-cuerpo-control">
                 <div class="table-wrapper content_CtrlClientestabsitembody_table">
                   <table class="table table-striped table-hover">
                     <thead> 
@@ -189,7 +187,7 @@
                   </table>
                 </div>
               </div>
-              <div class="content_CtrlCotizacionestabsitem_footer">
+              <div class="content_Ctrlblog_footer">
                 <nav aria-label="...">
                   <ul class="pagination">
                     <li class="page-item disabled"></li><a class="page-link">Previous</a>

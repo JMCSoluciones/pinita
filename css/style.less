@@ -983,27 +983,79 @@
         }
     }
 }
+/*-----------BLOG POST-------------------------*/
 .content.blog.content{
-
     &-inicio{
         p{
             color: black;
             font-size: 3rem;
             text-align: center;
             border-bottom: 2px solid #3DAEED;
+            margin-bottom: 10%;
         }
+        
     }
     &-box{
-        position: absolute;
-        a{
-           justify-content: center;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        .btn.btn-primary.btn-lg{
+            background-color: red;
             img{
-               
+                width: 30px;
             }
-    
         }
+
+        
     }
+
+    .modal-content{
+        
+        .modal-title{
+            margin-left: 90px;
+            color: @color-variacion;
+            font-size:@texto-MV !important;
+        }
+        .modal-body{
+            margin: 15px;
+            padding: 5px;
+            box-shadow: rgba(253, 183, 0,) 0px 0px 0px 1px;
+            border-radius: 10px;
+            .content__form__box{
+                display: grid;
+                gap: 5px;
+                margin: 10px auto;
+                width: 280px;
+                .content__form__box-label{
+                    font-size: @indicacion;
+                    
+                }
+                textarea{
+                    font-size: @placeholder;
+                }
+                span{
+                    font-size: @placeholder;
+                    color: @color-ind;
+                }
+            }
+            input{
+                font-size: @placeholder;
+                
+            }
+        }
+        .modal-footer{
+            .btn.btn-danger{
+                background-color: @color-primario;
+                border-color: @color-primario;
+            }
+        }
+    }   
+            
+    
 }
+
+
+
 /*--------------footer--------*/
 footer{
     padding-top: 30px;

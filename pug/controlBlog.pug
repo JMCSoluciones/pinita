@@ -4,47 +4,46 @@ block  content
             .content.blog.content-inicio
                 p Moderador
             .content.blog.content-inicio-box 
-                button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal') Nuevo Post
+                button.btn.btn-primary.btn-lg(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal') Nuevo Post
+                    img(src="../images/icono/nuevopost.svg", alt="Nuevo post")
             #exampleModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalComedorLabel')
                 .modal-dialog(role='document')
                     .modal-content
                         .modal-header
-                            h1#exampleModalLabel.modal-title.fs-5 Entrega de #[br] #[strong alimentos a #[br] clientes]
+                            h1#exampleModalLabel.modal-title.fs-5 Nuevo post
                             button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                                 span(aria-hidden='true') &times;
                         .modal-body
                             form#formulario.content__form.form_insert_post(action='insert_post.php' method='POST' enctype='multipart/form-data' accept-charset='utf-8')
                                 .content__form__box
                                     label.content__form__box-label(for='txtTitulo') T&iacute;tulo: 
-                                    input#txtTitulo.content__form__box-input(type='text' placeholder='Ingrese el título del Post' name='titulo' required='' maxlength='120')
+                                    textarea.content__form__box-input(type='text' placeholder='Ingrese el título del Post' name='titulo' required='' maxlength='120')
                                 .content__form__box
                                     label.content__form__box-label(for='txtExtracto') Extracto: 
-                                    textarea#txtExtracto.content__form__box-input(placeholder='Ingrese un extracto del post' required='' rows='5' maxlength='180' name='extracto')
+                                    textarea.content__form__box-input(placeholder='Ingrese un extracto del post' required='' rows='5' maxlength='180' name='extracto')
                                 .content__form__box
                                     label.content__form__box-label(for='txtContenido') Contenido: 
-                                    textarea#txtContenido.content__form__box-input(placeholder='Ingrese el contenido del Post' wrap='soft' maxlength='5000' name='contenido')
+                                    textarea.content__form__box-input(placeholder='Ingrese el contenido del Post' wrap='soft' maxlength='5000' name='contenido')
                                 .content__form__box
                                     label.content__form__box-label(for='ctaImagen') Imagen: 
                                     span La imagen no debe tener un peso mayor a 500Kb.
                                     input#imagen.cta-imagen(type='file' placeholder='' accept='image/jpeg, image/png' name='imagen')
                                 input#hidden(type='hidden' name='oculto' value='1')
-                                .content__form__box
-                                    button#enviar.content__form__box-cta(type='submit' name='guardar' onclick='return confirmacion()') Guardar
-                                    a#btn-cerrar-popup-bottom(href='#' onclick='regresar()') Cancelar
+                                .content__form__box   
                         .modal-footer
-                            button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Postear
+                            button.btn.btn-danger.btn-lg( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                            button.btn.btn-primary.btn-lg(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Postear
             .content_blogcontent-inicio-box-tabs
                 #myTabContent.tab-content
                     #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
-                        .content_CtrlClientestabs_item
-                            .content_CtrlClientestabsitem_header#usuario-header
-                                h3 Titulo
+                        .content_blogcontnet-inicio-box-tabs-item
+                            .content_blogcontnet-inicio-box-tabs-item-cuerpo
                                 form.d-flex(role="search")
                                     input.form-control.me-2(type="search" placeholder="Search" aria-label="Search")
                                     a(href='busqueda.html') 
                                         .btn.btn-dark(type="submit") Buscar
                                     input.btn-clean(type="reset" value="Limpiar") 
-                            .content_CtrlClientestabsitem_body
+                            .content_blogcontnet-inicio-box-tabs-item-cuerpo-control
                                 .table-wrapper.content_CtrlClientestabsitembody_table
                                     table.table.table-striped.table-hover
                                         thead 
@@ -123,7 +122,7 @@ block  content
                                                                     p En pocas cosas se puede invertir       
                                                                 .modal-footer
                                                                     button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#modaleliminar') Registrate como voluntaro
-                            .content_CtrlCotizacionestabsitem_footer
+                            .content_Ctrlblog_footer
                                 nav(aria-label='...')
                                     ul.pagination
                                         li.page-item.disabled

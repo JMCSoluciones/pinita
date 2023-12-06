@@ -985,19 +985,66 @@ body {
 .contentContacto #mapa iframe {
   margin-top: 40px;
 }
+/*-----------BLOG POST-------------------------*/
 .content.blog.content-inicio p {
   color: black;
   font-size: 3rem;
   text-align: center;
   border-bottom: 2px solid #3DAEED;
+  margin-bottom: 10%;
 }
 .content.blog.content-box {
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
-.content.blog.content-box a {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.content.blog.content-box .btn.btn-primary.btn-lg {
+  background-color: red;
+}
+.content.blog.content-box .btn.btn-primary.btn-lg img {
+  width: 30px;
+}
+.content.blog.content .modal-content .modal-title {
+  margin-left: 90px;
+  color: #2CA7EC;
+  font-size: 2.5rem !important;
+}
+.content.blog.content .modal-content .modal-body {
+  margin: 15px;
+  padding: 5px;
+  -webkit-box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+          box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+  border-radius: 10px;
+}
+.content.blog.content .modal-content .modal-body .content__form__box {
+  display: -ms-grid;
+  display: grid;
+  gap: 5px;
+  margin: 10px auto;
+  width: 280px;
+}
+.content.blog.content .modal-content .modal-body .content__form__box .content__form__box-label {
+  font-size: 1.5rem;
+}
+.content.blog.content .modal-content .modal-body .content__form__box textarea {
+  font-size: 1.2rem;
+}
+.content.blog.content .modal-content .modal-body .content__form__box span {
+  font-size: 1.2rem;
+  color: #838381;
+}
+.content.blog.content .modal-content .modal-body input {
+  font-size: 1.2rem;
+}
+.content.blog.content .modal-content .modal-footer .btn.btn-danger {
+  background-color: #fcaf00;
+  border-color: #fcaf00;
 }
 /*--------------footer--------*/
 footer {
