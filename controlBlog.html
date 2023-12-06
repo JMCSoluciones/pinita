@@ -46,10 +46,31 @@
               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-              <p>e un alimento caliente a quien más lo necesita.</p>
+              <form class="content__form form_insert_post" id="formulario" action="insert_post.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
+                <div class="content__form__box">
+                  <label class="content__form__box-label" for="txtTitulo">T&iacute;tulo: </label>
+                  <input class="content__form__box-input" id="txtTitulo" type="text" placeholder="Ingrese el título del Post" name="titulo" required="" maxlength="120"/>
+                </div>
+                <div class="content__form__box">
+                  <label class="content__form__box-label" for="txtExtracto">Extracto: </label>
+                  <textarea class="content__form__box-input" id="txtExtracto" placeholder="Ingrese un extracto del post" required="" rows="5" maxlength="180" name="extracto"></textarea>
+                </div>
+                <div class="content__form__box">
+                  <label class="content__form__box-label" for="txtContenido">Contenido: </label>
+                  <textarea class="content__form__box-input" id="txtContenido" placeholder="Ingrese el contenido del Post" wrap="soft" maxlength="5000" name="contenido"></textarea>
+                </div>
+                <div class="content__form__box">
+                  <label class="content__form__box-label" for="ctaImagen">Imagen: </label><span>La imagen no debe tener un peso mayor a 500Kb.</span>
+                  <input class="cta-imagen" id="imagen" type="file" placeholder="" accept="image/jpeg, image/png" name="imagen"/>
+                </div>
+                <input id="hidden" type="hidden" name="oculto" value="1"/>
+                <div class="content__form__box">
+                  <button class="content__form__box-cta" id="enviar" type="submit" name="guardar" onclick="return confirmacion()">Guardar</button><a id="btn-cerrar-popup-bottom" href="#" onclick="regresar()">Cancelar</a>
+                </div>
+              </form>
             </div>
             <div class="modal-footer">
-              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Registrate">Registrate como voluntaro</button>
+              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Registrate">Postear</button>
             </div>
           </div>
         </div>
@@ -85,14 +106,84 @@
                         <td>05/12/2023
                           <td> </td>
                         </td>
-                        <td><a class="edit" href="modificar-cliente.html"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;    </i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
+                        <td>
+                          <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modificarModal"> <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254; </i></button>
+                          <div class="modal fade modal fade" id="modificarModal" tabindex="-1" aria-labelledby="modificarmodal">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="modificarModalLabel">Confirmacion</h1>
+                                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>En pocas cosas se puede invertir       </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modificarmodal">Registrate como voluntaro   </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#eliminarModal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></button>
+                          <div class="modal fade modal fade" id="eliminarModal" tabindex="-1" aria-labelledby="modaleliminar">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="eliminarModalLabel">Confirmacion</h1>
+                                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>En pocas cosas se puede invertir       </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modaleliminar">Registrate como voluntaro                                    </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
                       <tr> 
                         <td>02</td>
                         <td>cliente 2</td>
                         <td>23/octubre/2023</td>
                         <td> </td>
-                        <td><a class="edit" href="modificar-cliente.html"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#modalModificar" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
+                        <td>
+                          <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modificarModal"> <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254; </i></button>
+                          <div class="modal fade modal fade" id="modificarModal" tabindex="-1" aria-labelledby="modificarmodal">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="modificarModalLabel">Confirmacion</h1>
+                                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>En pocas cosas se puede invertir       </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modificarmodal">Registrate como voluntaro   </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#eliminarModal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></button>
+                          <div class="modal fade modal fade" id="eliminarModal" tabindex="-1" aria-labelledby="modaleliminar">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="eliminarModalLabel">Confirmacion</h1>
+                                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>En pocas cosas se puede invertir       </p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modaleliminar">Registrate como voluntaro</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
                     </tbody>
                   </table>

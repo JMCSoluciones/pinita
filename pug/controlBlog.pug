@@ -13,10 +13,26 @@ block  content
                             button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                                 span(aria-hidden='true') &times;
                         .modal-body
-                            p e un alimento caliente a quien más lo necesita.
-                            
+                            form#formulario.content__form.form_insert_post(action='insert_post.php' method='POST' enctype='multipart/form-data' accept-charset='utf-8')
+                                .content__form__box
+                                    label.content__form__box-label(for='txtTitulo') T&iacute;tulo: 
+                                    input#txtTitulo.content__form__box-input(type='text' placeholder='Ingrese el título del Post' name='titulo' required='' maxlength='120')
+                                .content__form__box
+                                    label.content__form__box-label(for='txtExtracto') Extracto: 
+                                    textarea#txtExtracto.content__form__box-input(placeholder='Ingrese un extracto del post' required='' rows='5' maxlength='180' name='extracto')
+                                .content__form__box
+                                    label.content__form__box-label(for='txtContenido') Contenido: 
+                                    textarea#txtContenido.content__form__box-input(placeholder='Ingrese el contenido del Post' wrap='soft' maxlength='5000' name='contenido')
+                                .content__form__box
+                                    label.content__form__box-label(for='ctaImagen') Imagen: 
+                                    span La imagen no debe tener un peso mayor a 500Kb.
+                                    input#imagen.cta-imagen(type='file' placeholder='' accept='image/jpeg, image/png' name='imagen')
+                                input#hidden(type='hidden' name='oculto' value='1')
+                                .content__form__box
+                                    button#enviar.content__form__box-cta(type='submit' name='guardar' onclick='return confirmacion()') Guardar
+                                    a#btn-cerrar-popup-bottom(href='#' onclick='regresar()') Cancelar
                         .modal-footer
-                            button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Registrate como voluntaro
+                            button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Registrate') Postear
             .content_blogcontent-inicio-box-tabs
                 #myTabContent.tab-content
                     #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
@@ -47,10 +63,32 @@ block  content
                                                    
                                                 td
                                                     
-                                                    a.edit(href="modificar-cliente.html")
-                                                        i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;    
-                                                    a.delete(href='#deleteProductoModal' data-toggle='modal')
+                                                    button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#modificarModal') 
+                                                        i.material-icons(data-toggle='tooltip' title='Edit') &#xE254; 
+                                                    #modificarModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modificarmodal')
+                                                        .modal-dialog.modal-dialog-centered
+                                                            .modal-content
+                                                                .modal-header
+                                                                    h1#modificarModalLabel.modal-title.fs-5 Confirmacion
+                                                                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                                                        span(aria-hidden='true') &times;
+                                                                .modal-body
+                                                                    p En pocas cosas se puede invertir       
+                                                                .modal-footer
+                                                                    button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#modificarmodal') Registrate como voluntaro   
+                                                    button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#eliminarModal')
                                                         i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                                                    #eliminarModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaleliminar')
+                                                        .modal-dialog.modal-dialog-centered
+                                                            .modal-content
+                                                                .modal-header
+                                                                    h1#eliminarModalLabel.modal-title.fs-5 Confirmacion
+                                                                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                                                        span(aria-hidden='true') &times;
+                                                                .modal-body
+                                                                    p En pocas cosas se puede invertir       
+                                                                .modal-footer
+                                                                    button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#modaleliminar') Registrate como voluntaro                                    
                                             tr 
                                                 td 02
                                                 td cliente 2
@@ -58,10 +96,33 @@ block  content
                                                 td 
                                                    
                                                 td
-                                                    a.edit(href="modificar-cliente.html")
-                                                        i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                                                    a.delete(href='#modalModificar' data-toggle='modal')
+                                                    
+                                                    button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#modificarModal') 
+                                                        i.material-icons(data-toggle='tooltip' title='Edit') &#xE254; 
+                                                    #modificarModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modificarmodal')
+                                                        .modal-dialog.modal-dialog-centered
+                                                            .modal-content
+                                                                .modal-header
+                                                                    h1#modificarModalLabel.modal-title.fs-5 Confirmacion
+                                                                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                                                        span(aria-hidden='true') &times;
+                                                                .modal-body
+                                                                    p En pocas cosas se puede invertir       
+                                                                .modal-footer
+                                                                    button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#modificarmodal') Registrate como voluntaro   
+                                                    button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#eliminarModal')
                                                         i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                                                    #eliminarModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaleliminar')
+                                                        .modal-dialog.modal-dialog-centered
+                                                            .modal-content
+                                                                .modal-header
+                                                                    h1#eliminarModalLabel.modal-title.fs-5 Confirmacion
+                                                                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                                                        span(aria-hidden='true') &times;
+                                                                .modal-body
+                                                                    p En pocas cosas se puede invertir       
+                                                                .modal-footer
+                                                                    button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#modaleliminar') Registrate como voluntaro
                             .content_CtrlCotizacionestabsitem_footer
                                 nav(aria-label='...')
                                     ul.pagination
