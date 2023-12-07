@@ -993,21 +993,57 @@
             border-bottom: 2px solid #3DAEED;
             margin-bottom: 10%;
         }
-        
-    }
-    &-box{
-        display: flex;
-        justify-content: end;
-        align-items: end;
-        .btn.btn-primary.btn-lg{
-            background-color: red;
-            img{
-                width: 30px;
+        &-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btn.btn-primary.btn-lg{
+                margin-top: 5px;
+                margin-bottom: 12px;
+                background-color: @color-primario;
+                border-color: @color-primario;
+                font-size: @indicacion;
+                img{
+                    width: 18px;
+                }
+            }
+            
+    
+            
+        }
+        /*----------------estilos del delete----------*/
+        &-tabs{
+            &-item{
+                &-cuerpo{
+                    form.d-flex{
+                        .me-2{
+                            font-size: 2rem;
+                        }
+                    } 
+                }
+                
+                &-control{
+                    .table-wrapper.content_CtrlClientestabsitembody_table{
+                        .table.table-striped.table-hover{
+                            tbody{
+                                tr{
+                                    button{
+                                        background-color: @color-secundario !important;
+                                        border-color: @color-secundario !important;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                    
+                    
+                }
             }
         }
-
         
     }
+   
 
     .modal-content{
         

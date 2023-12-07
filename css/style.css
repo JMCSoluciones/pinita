@@ -986,6 +986,9 @@ body {
   margin-top: 40px;
 }
 /*-----------BLOG POST-------------------------*/
+.content.blog.content-inicio {
+  /*----------------estilos del delete----------*/
+}
 .content.blog.content-inicio p {
   color: black;
   font-size: 3rem;
@@ -993,22 +996,33 @@ body {
   border-bottom: 2px solid #3DAEED;
   margin-bottom: 10%;
 }
-.content.blog.content-box {
+.content.blog.content-inicio-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.content.blog.content-box .btn.btn-primary.btn-lg {
-  background-color: red;
+.content.blog.content-inicio-box .btn.btn-primary.btn-lg {
+  margin-top: 5px;
+  margin-bottom: 12px;
+  background-color: #fcaf00;
+  border-color: #fcaf00;
+  font-size: 1.5rem;
 }
-.content.blog.content-box .btn.btn-primary.btn-lg img {
-  width: 30px;
+.content.blog.content-inicio-box .btn.btn-primary.btn-lg img {
+  width: 18px;
+}
+.content.blog.content-inicio-tabs-item-cuerpo form.d-flex .me-2 {
+  font-size: 2rem;
+}
+.content.blog.content-inicio-tabs-item-control .table-wrapper.content_CtrlClientestabsitembody_table .table.table-striped.table-hover tbody tr button {
+  background-color: #E74C3C !important;
+  border-color: #E74C3C !important;
 }
 .content.blog.content .modal-content .modal-title {
   margin-left: 90px;
