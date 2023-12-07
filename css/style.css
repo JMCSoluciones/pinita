@@ -1017,13 +1017,6 @@ body {
 .content.blog.content-inicio-box .btn.btn-primary.btn-lg img {
   width: 18px;
 }
-.content.blog.content-inicio-tabs-item-cuerpo form.d-flex .me-2 {
-  font-size: 2rem;
-}
-.content.blog.content-inicio-tabs-item-control .table-wrapper.content_CtrlClientestabsitembody_table .table.table-striped.table-hover tbody tr button {
-  background-color: #E74C3C !important;
-  border-color: #E74C3C !important;
-}
 .content.blog.content .modal-content .modal-title {
   margin-left: 90px;
   color: #2CA7EC;
@@ -1059,6 +1052,9 @@ body {
 .content.blog.content .modal-content .modal-footer .btn.btn-danger {
   background-color: #fcaf00;
   border-color: #fcaf00;
+}
+.content_blog.content-inicio-box-tabs-item-cuerpo form.d-flex .form-control.me-2 {
+  font-size: 2rem ;
 }
 /*--------------footer--------*/
 footer {
