@@ -114,15 +114,16 @@ body {
 .slideContent__box a {
   /*justify-content: center;*/
   /* align-items: center;*/
-  gap: 5px;
-  margin: 5% 0;
-  background-color: #fcaf00;
-  border-radius: 13px;
-  padding: 0px 9px;
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-  font-weight: 300;
+  /* gap: 5px;
+            margin: 5% 0;
+            background-color: @color-primario;
+            border-radius: 13px;
+            padding: 0px 9px;  
+
+            text-decoration: none;
+            color: white;
+            font-size:  2rem;
+            font-weight:300;*/
 }
 /*----------------seccion de la pagina principal--------------*/
 .content__section-nuestrafundacion {

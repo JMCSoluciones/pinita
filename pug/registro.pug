@@ -25,12 +25,6 @@ block  content
                             label.form-label(for='formGroupExampleInput2') Telefono:
                             input#formGroupExampleInput6.form-control(type='number' placeholder='Ingrese su telefono a 10 digitos sin espacio')
                         .mb-3
-                            label.form-label(for='formGroupExampleInput2') Tipo de usuario:
-                            select.form-select(aria-label='Tipo de Usuario:')
-                                option(selected='') Tipo de Usuario
-                                option(value='1') Beneficiario
-                                option(value='2') Benefactor 
-                        .mb-3
                             label.form-label(for='formGroupExampleInput2') Observaciones:
                             textarea#floatingTextarea7.form-control(placeholder='Las observaciones deben contener maximo 180 caracteres' style='height: 100px')
                         .mb-3
@@ -41,6 +35,7 @@ block  content
                             label.form-label(for='formGroupExampleInput2') Confirmar Password:
                             input#formGroupExampleInput9.form-control(type='password' placeholder='Confirmar Password')
                         .boton 
-                            button.btn.btn-warning.btn-lg(type='button' ) Registrar
+                            a(href="formlogin.html")  
+                                button.btn.btn-warning.btn-lg(type='button' ) Registrar
                         .boton-azul
                             button.btn.btn-warning.btn-lg(type='button') Cancelar
