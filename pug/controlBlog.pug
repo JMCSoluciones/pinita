@@ -41,8 +41,8 @@ block  content
                             form.d-flex(role="search")
                                 input.form-control.me-2(type="search" placeholder="Search" aria-label="Search")
                                 a(href='busqueda.html') 
-                                    .btn.btn-dark(type="submit") Buscar
-                                input.btn-clean(type="reset" value="Limpiar") 
+                                    .btn.btn-secondary.btn-lg(type="submit") Buscar
+                                input#azul.btn-clean.btn-lg(type="reset" value="Limpiar") 
                         .content_blog.contnet-inicio-box-tabs-item-cuerpo-control
                             .table-wrapper.content_CtrlClientestabsitembody_table
                                 table.table.table-striped.table-hover
@@ -73,7 +73,7 @@ block  content
                                                                 p En pocas cosas se puede invertir       
                                                             .modal-footer
                                                                 button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#modificarmodal') Registrate como voluntaro   
-                                                button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#eliminarModal')
+                                                button#eliminar.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#eliminarModal')
                                                     i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
                                                 #eliminarModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaleliminar')
                                                     .modal-dialog.modal-dialog-centered
@@ -92,7 +92,6 @@ block  content
                                             td cliente 2
                                             td 23/octubre/2023
                                             td 
-                                            
                                             td
                                                 
                                                 button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#modificarModal') 
@@ -106,8 +105,7 @@ block  content
                                                                     span(aria-hidden='true') &times;
                                                             .modal-body
                                                                 p En pocas cosas se puede invertir       
-                                                            .modal-footer
-                                                                button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#modificarmodal') Registrate como voluntaro   
+                                                            .modal-footer   
                                                 button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#eliminarModal')
                                                     i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
                                                 #eliminarModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaleliminar')

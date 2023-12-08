@@ -987,9 +987,6 @@ body {
   margin-top: 40px;
 }
 /*-----------BLOG POST-------------------------*/
-.content.blog.content-inicio {
-  /*----------------estilos del delete----------*/
-}
 .content.blog.content-inicio p {
   color: black;
   font-size: 3rem;
@@ -1054,8 +1051,27 @@ body {
   background-color: #fcaf00;
   border-color: #fcaf00;
 }
-.content_blog.content-inicio-box-tabs-item-cuerpo form.d-flex .form-control.me-2 {
-  font-size: 2rem ;
+.content.blog.content .content_blog.content-inicio-box-tabs #myTabContent.tab-content .content_blog.contnet-inicio-box-tabs-item {
+  margin: 14px;
+  padding: 10px;
+  -webkit-box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+          box-shadow: rgba(253, 183, 0) 0px 0px 0px 1px;
+  border-radius: 10px;
+}
+.content.blog.content .content_blog.content-inicio-box-tabs #myTabContent.tab-content .content_blog.contnet-inicio-box-tabs-item-cuerpo .form-control.me-2 {
+  font-size: 1.2rem;
+}
+.content.blog.content .content_blog.content-inicio-box-tabs #myTabContent.tab-content .content_blog.contnet-inicio-box-tabs-item-cuerpo #azul {
+  background-color: #2CA7EC;
+  border-color: #2CA7EC;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+.content.blog.content .content_blog.content-inicio-box-tabs #myTabContent.tab-content .content_blog.contnet-inicio-box-tabs-item-control .table-wrapper.content_CtrlClientestabsitembody_table .table-striped.table-hover thead tr th {
+  color: red !important;
+}
+.content.blog.content .content_blog.content-inicio-box-tabs #myTabContent.tab-content .content_blog.contnet-inicio-box-tabs-item-control .table-wrapper.content_CtrlClientestabsitembody_table .table-striped.table-hover tbody tr #eliminar {
+  background-color: red;
 }
 /*--------------footer--------*/
 footer {

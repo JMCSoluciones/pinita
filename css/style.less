@@ -1010,12 +1010,8 @@
             
     
             
-        }
-        /*----------------estilos del delete----------*/
-        
+        }  
     }
-   
-
     .modal-content{
         
         .modal-title{
@@ -1056,24 +1052,59 @@
                 border-color: @color-primario;
             }
         }
-    }   
+    } 
+    
+    .content_blog.content-inicio-box-tabs{
+        #myTabContent.tab-content{
+            .content_blog.contnet-inicio-box-tabs-item{
+                margin: 14px;
+                padding: 10px;
+                box-shadow: rgba(253, 183, 0,) 0px 0px 0px 1px;
+                border-radius: 10px;
+                &-cuerpo{
+                    
+                    .form-control.me-2{
+                        font-size: @placeholder;
+                    }
+                    #azul{
+                        background-color:  @color-variacion;
+                        border-color: @color-variacion;
+                        border-radius: 4px;
+                        color: @color-claro;
+
+                        
+                    }   
+                }
+                &-control{
+                    .table-wrapper.content_CtrlClientestabsitembody_table{
+                        .table-striped.table-hover{
+                            thead{
+                                tr{
+                                    th{
+                                        color: red !important;
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    #eliminar{
+                                        background-color: red;
+                                    }
+                                }
+                            }
+                        }
+                    }  
+                }
+            }
+        }
+        
+        
+    }
 
             
     
 }
-.content_blog.content-inicio-box-tabs{
-    &-item{
-        &-cuerpo{
-            form.d-flex{
-                .form-control.me-2{
-                    font-size: 2rem ;
-                }
-            } 
-        }
 
-    }
-    
-}
 
 
 
