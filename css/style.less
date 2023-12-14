@@ -1053,53 +1053,36 @@
             }
         }
     } 
-    
-    .content_blog.content-inicio-box-tabs{
-        #myTabContent.tab-content{
-            .content_blog.contnet-inicio-box-tabs-item{
-                margin: 14px;
-                padding: 10px;
-                box-shadow: rgba(253, 183, 0,) 0px 0px 0px 1px;
-                border-radius: 10px;
-                &-cuerpo{
-                    
-                    .form-control.me-2{
-                        font-size: @placeholder;
-                    }
-                    #azul{
-                        background-color:  @color-variacion;
-                        border-color: @color-variacion;
-                        border-radius: 4px;
-                        color: @color-claro;
+    &-tabs{
+        &-item{
+            margin: 14px;
+            &-cuerpo{
 
-                        
-                    }   
-                }
-                &-control{
-                    .table-wrapper.content_CtrlClientestabsitembody_table{
-                        .table-striped.table-hover{
-                            thead{
-                                tr{
-                                    th{
-                                        color: red !important;
-                                    }
-                                }
-                            }
-                            tbody{
-                                tr{
-                                    #eliminar{
-                                        background-color: red;
-                                    }
+            }
+            &-control{
+                &__table{
+                    #modificar{
+                        background-color: red !important;
+                    }
+                    #eliminar{
+                        background-color: purple !important;
+                    }
+                    &-striped{
+                        thead{
+                            tr{
+                                th{
+                                    color: red !important;
                                 }
                             }
                         }
-                    }  
+                    }   
                 }
+                
             }
         }
-        
-        
-    }
+    }    
+    
+    
 
             
     
@@ -1311,3 +1294,6 @@ footer{
     }
 
 }
+
+
+
