@@ -1,4 +1,4 @@
-"""general URL Configuration
+"""ProyectoPinita URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -16,6 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+#Importar app con mis vistas
+from Index import views
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('index/', views.index, name='index'),
+    path('Fundacion', views.Fundacion, name='Fundacion'),
+    path('formlogin', views.formlogin, name='formlogin'),
+    path('registro', views.registro, name='registro'),
+    path('controlBlog', views.controlBlog, name='controlBlog'),
+    path('contacto', views.contacto, name='contacto'),
+    path('single', views.single, name='single')
+    
 ]

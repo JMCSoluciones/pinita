@@ -39,32 +39,60 @@
         </section>
       </nav>
     </header>
-    <div class="contentContacto">
-      <div class="contentContacto__titulo"> 
-        <p>Formulario de contacto</p>
-        <div class="contentContacto__titulo__formu">
-          <div class="mb-3">
-            <label class="form-label" for="formGroupExampleInput">Nombre:</label>
-            <input class="form-control" id="formGroupExampleInput" type="text" placeholder="Ingrese nombre"/>
-          </div>
-          <div class="mb-3">
-            <label class="form-label" for="formGroupExampleInput2">Teléfono:</label>
-            <input class="form-control" id="formGroupExampleInput2" type="number" placeholder="Teléfono"/>
-          </div>
-          <div class="mb-3">
-            <label class="form-label" for="formGroupExampleInput3">Asunto:</label>
-            <textarea class="form-control" id="floatingTextarea2" placeholder="" style="height: 50px"></textarea>
-          </div>
-          <div class="mb-3">
-            <label class="form-label" for="formGroupExampleInput3">Mensaje:</label>
-            <textarea class="form-control" id="floatingTextarea2" placeholder="" style="height: 100px">   </textarea>
-          </div>
-          <div class="boton"> 
-            <button class="btn btn-warning btn-lg" type="button">Enviar</button>
-          </div>
-        </div>
-        <div class="contenteContacto__titulo__formu__maps" id="mapa">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.536863147943!2d-102.30142972558792!3d21.87539305816424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee7e73cea6f3%3A0xafe77ee7e86da99e!2sPinita!5e0!3m2!1ses!2smx!4v1697662079683!5m2!1ses!2smx" width="600" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" display="flex" align-items="center" justify-content="center"></iframe>
+    <div class="contentRegistro">
+      <div class="contentRegistro__box">
+        <div class="contentRegistro__box__usuario"> 
+          <p>Registro
+            <div class="contentRegistro__box__usuario__formulario">
+              <div class="mb-3">
+                <label class="form-label" for="formGroupExampleInput2">Moderador:</label>
+                <input class="form-control" id="formGroupExampleInput" type="text" placeholder="Ingrese Moderador"/>
+                <p>Ingrese el nombre del moderador de 8 caracteres con el que podrá iniciar sesión. El nombre del moderador no debe contener solo números.</p>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="formGroupExampleInput2">Nombre Completo:</label>
+                <input class="form-control" id="formGroupExampleInput2" type="text" placeholder="Ingrese su nombre completo"/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="formGroupExampleInput2">Fecha Nacimiento:</label>
+                <input class="form-control" id="formGroupExampleInput3" type="date" placeholder=""/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="formGroupExampleInput2">Nacionalidad:</label>
+                <input class="form-control" id="formGroupExampleInput4" type="text" placeholder="Ingrese su nacionalidad"/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="formGroupExampleInput2">Domicilio:</label>
+                <input class="form-control" id="formGroupExampleInput5" type="text" placeholder="Ingrese su domicilio"/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="formGroupExampleInput2">Telefono:</label>
+                <input class="form-control" id="formGroupExampleInput6" type="number" placeholder="Ingrese su telefono a 10 digitos sin espacio"/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="formGroupExampleInput2">Email:</label>
+                <input class="form-control" id="formGroupExampleInput4" type="text" placeholder="Ingrese su correo electronico"/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="formGroupExampleInput2">Observaciones:</label>
+                <textarea class="form-control" id="floatingTextarea7" placeholder="Las observaciones deben contener maximo 180 caracteres" style="height: 100px"></textarea>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="formGroupExampleInput2">Password:</label>
+                <label class="form-label2" for="formGroupExampleInput2">La contraseña debe contener al menos una mayuscula, una minuscula, un caracter especial y un numero. Debe tener entre 8 y 12 caracteres.</label>
+                <input class="form-control" id="formGroupExampleInput8" type="password" placeholder="Password asta 12 caracteres"/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="formGroupExampleInput2">Confirmar Password:</label>
+                <input class="form-control" id="formGroupExampleInput9" type="password" placeholder="Confirmar Password"/>
+              </div>
+              <div class="boton"> <a href="formlogin.html"> 
+                  <button class="btn btn-warning btn-lg" type="button">Registrar</button></a></div>
+              <div class="boton-azul">
+                <button class="btn btn-warning btn-lg" type="button">Cancelar</button>
+              </div>
+            </div>
+          </p>
         </div>
       </div>
     </div>
