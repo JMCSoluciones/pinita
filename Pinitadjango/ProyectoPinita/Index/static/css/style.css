@@ -168,7 +168,7 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-image: url(../images/Mobile/mobileItemDonacion480x520.jpg);
+    background-image: url("{%static 'css/images/Mobile/mobileItemDonacion480x520.jpg'%}");
     background-repeat: no-repeat;
     -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
             box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -218,7 +218,7 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-image: url(../images/Mobile/mobileItemDonacion2480x520.jpg);
+    background-image: url("{%static 'css/images/Mobile/mobileItemDonacion2480x520.jpg' %}");
     width: 360;
     height: 400px;
     background-size: cover;
